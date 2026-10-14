@@ -1,0 +1,16 @@
+# .NET
+bin/
+obj/
+*.user
+
+# IDE
+.vs/
+.vscode/
+
+# Local secrets (company.md §4: env vars / user-secrets only, never committed)
+.env
+appsettings.Development.json
+appsettings.Local.json
+
+# Test results
+TestResults/

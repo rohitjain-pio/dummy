@@ -1,0 +1,2046 @@
+# .aidlc/01-brd-analysis/brd-analyst/requirements.yaml
+#
+# NOTE ON PRIORITY: every active requirement below carries priority: must.
+# Derivation basis: the whole BRD was accepted as one unphased release
+# (.aidlc/01-brd-analysis/brd-scope/scope-decision.md) — every one of the 18 Scope-section
+# capabilities, and the NFRs stated as blanket platform rules, is therefore
+# treated as committed for this release. Confirmed by Jayesh Idnani on
+# 2026-09-10 (see below) — all active requirements' priority_source is now
+# `confirmed`.
+
+meta:
+  project: School Management System
+  source: .aidlc/00-input/SMS-BRD(RJ) 2.md
+  source_sha256: 4c1c753552d1d7e42520590e850180ef2e7c6a4b50fbf91d5af013d6297a0897
+  produced_by: brd-analyst-agent
+  plugin_version: "0.3.0 (sdlc-greenfield-v3)"
+  generated: "2026-09-10T00:00:00Z"
+  priority_confirmed_by: "Jayesh Idnani"
+  priority_confirmed_at: "2026-09-10T00:00:00Z"
+  content_answers_confirmed_by: "Jayesh Idnani"
+  content_answers_confirmed_at: "2026-09-10T00:00:00Z"
+
+requirements:
+  # ---------------------------------------------------------------
+  # ROLES
+  # ---------------------------------------------------------------
+  - id: ROLE-001
+    type: role
+    statement: "Platform Operator (Super Administrator) — onboards and maintains institutions, manages subscriptions, operates across all tenants."
+    priority: must
+    priority_source: confirmed
+    source: "BRD 'Users and Stakeholders', §1"
+    quote: "Platform Operator (Super Administrator) — onboards and maintains institutions, manages subscriptions"
+    status: active
+
+  - id: ROLE-002
+    type: role
+    statement: "Administrator — owns institution configuration, master data, staff/student records, class structure and reporting."
+    priority: must
+    priority_source: confirmed
+    source: "BRD 'Users and Stakeholders'"
+    quote: "School Administrator / Principal / School In-charge — owns the institution's configuration"
+    status: active
+
+  - id: ROLE-003
+    type: role
+    statement: "Principal — institution leadership role, same permission set as Administrator/School In-charge."
+    priority: must
+    priority_source: confirmed
+    source: "BRD §2 'Permission model'"
+    quote: "Administrator, Principal and School In-charge may create, amend and remove students, teachers, classes"
+    status: active
+
+  - id: ROLE-004
+    type: role
+    statement: "School In-charge — institution leadership role, same permission set as Administrator/Principal."
+    priority: must
+    priority_source: confirmed
+    source: "BRD §2 'Permission model'"
+    quote: "Administrator, Principal and School In-charge may create, amend and remove students, teachers, classes"
+    status: active
+
+  - id: ROLE-005
+    type: role
+    statement: "Teacher — records daily attendance, views assigned classes/rosters, publishes announcements, participates in meetings."
+    priority: must
+    priority_source: confirmed
+    source: "BRD 'Users and Stakeholders'"
+    quote: "Teacher — records daily attendance, views assigned classes and student rosters"
+    status: active
+
+  - id: ROLE-006
+    type: role
+    statement: "Student — accesses attendance records, class timetable, examination schedules, announcements, own academic reports."
+    priority: must
+    priority_source: confirmed
+    source: "Q-C1"
+    quote: "Student and Parent access is limited to: attendance records, class timetable, examination schedules, school announcements, and academic reports"
+    status: active
+
+  - id: ROLE-007
+    type: role
+    statement: "Parent / Guardian — accesses the same information categories as Student, limited to linked children."
+    priority: must
+    priority_source: confirmed
+    source: "Q-C1"
+    quote: "Student and Parent access is limited to: attendance records, class timetable, examination schedules, school announcements, and academic reports"
+    status: active
+
+  # ---------------------------------------------------------------
+  # ENTITIES (business view)
+  # ---------------------------------------------------------------
+  - id: ENT-001
+    type: entity
+    statement: "Institution — the top-level subscribing school/tenant."
+    priority: must
+    priority_source: confirmed
+    source: "BRD §1"
+    quote: "Register an institution with its official registration number, name, contact details"
+    status: active
+
+  - id: ENT-002
+    type: entity
+    statement: "User Account — a signed-in identity bound to exactly one institution and role."
+    priority: must
+    priority_source: confirmed
+    source: "BRD §2"
+    quote: "Every user account is bound to exactly one institution at registration"
+    status: active
+
+  - id: ENT-003
+    type: entity
+    statement: "Student — an enrolled learner and their identity/demographic record."
+    priority: must
+    priority_source: confirmed
+    source: "BRD §3"
+    quote: "Enrol a student with school register number, roll number, name, date of birth"
+    status: active
+
+  - id: ENT-004
+    type: entity
+    statement: "Guardian (Parent) — the parent/guardian contact, and where linked, account, associated with a student."
+    priority: must
+    priority_source: confirmed
+    source: "BRD §3"
+    quote: "Record parent/guardian details — father's name, mother's name, contact email and telephone"
+    status: active
+
+  - id: ENT-005
+    type: entity
+    statement: "Teacher — a member of teaching staff and their assignments."
+    priority: must
+    priority_source: confirmed
+    source: "BRD §4"
+    quote: "Register a teacher with name, contact email, telephone, gender, address and joining date"
+    status: active
+
+  - id: ENT-006
+    type: entity
+    statement: "Class (Section) — a named, sectioned group of students with one class teacher."
+    priority: must
+    priority_source: confirmed
+    source: "BRD §5"
+    quote: "Create classes with a class name and section identifier"
+    status: active
+
+  - id: ENT-007
+    type: entity
+    statement: "Subject — an academic subject in the institution's catalogue, mapped to teachers and classes."
+    priority: must
+    priority_source: confirmed
+    source: "BRD §5"
+    quote: "Maintain the institution's subject catalogue"
+    status: active
+
+  - id: ENT-008
+    type: entity
+    statement: "Attendance Record — one outcome for one person on one date."
+    priority: must
+    priority_source: confirmed
+    source: "BRD §6"
+    quote: "Attendance is recorded against a specific person and a specific calendar date"
+    status: active
+
+  - id: ENT-009
+    type: entity
+    statement: "Announcement — a published institutional notice with author, content and effective date."
+    priority: must
+    priority_source: confirmed
+    source: "BRD §7"
+    quote: "Create an announcement with a title, detailed content and an effective date"
+    status: active
+
+  - id: ENT-010
+    type: entity
+    statement: "Collaboration Room — a named, passcode-gated space for messaging and meetings."
+    priority: must
+    priority_source: confirmed
+    source: "BRD §8"
+    quote: "Create a named collaboration room with a description and an access passcode"
+    status: active
+
+  - id: ENT-011
+    type: entity
+    statement: "Message — a retained, attributable text message within a room."
+    priority: must
+    priority_source: confirmed
+    source: "BRD §8"
+    quote: "Message history is retained for the life of the room and remains attributable to its author"
+    status: active
+
+  - id: ENT-012
+    type: entity
+    statement: "Meeting — a live audio/video session associated with a room."
+    priority: must
+    priority_source: confirmed
+    source: "BRD §8"
+    quote: "Start or join a live audio/video meeting associated with a room"
+    status: active
+
+  - id: ENT-013
+    type: entity
+    statement: "Report — a generated snapshot covering attendance, performance or course activity."
+    priority: must
+    priority_source: confirmed
+    source: "BRD §9"
+    quote: "Generate standard reports covering class attendance, student performance, course analytics"
+    status: active
+
+  - id: ENT-014
+    type: entity
+    statement: "Timetable / Period — a scheduled class, subject, room and teacher for a day/time slot."
+    priority: must
+    priority_source: confirmed
+    source: "BRD §10"
+    quote: "Maintain a weekly timetable of periods by day and time slot"
+    status: active
+
+  - id: ENT-015
+    type: entity
+    statement: "Subscription Plan — a commercial tier defining capacity, storage, support and capability entitlements."
+    priority: must
+    priority_source: confirmed
+    source: "BRD §12"
+    quote: "Each tier defines the institution's learner capacity, storage allowance, support level"
+    status: active
+
+  - id: ENT-016
+    type: entity
+    statement: "Institution Configuration — institution-level academic, notification and access settings."
+    priority: must
+    priority_source: confirmed
+    source: "BRD §11"
+    quote: "Maintain general institution settings including academic year, time zone and language preference"
+    status: active
+
+  - id: ENT-017
+    type: entity
+    statement: "Academic Year / Term — the academic-year and term/semester structure a rollover operates against."
+    priority: must
+    priority_source: confirmed
+    source: "Q-H1"
+    quote: "Academic Year → Term/Semester hierarchy as proposed"
+    status: active
+
+  # ---------------------------------------------------------------
+  # FUNCTIONAL — 6.1 Institution Management
+  # ---------------------------------------------------------------
+  - id: FR-001
+    type: functional
+    statement: "The Platform Operator can register an institution with its official registration number, name, contact details and full postal address."
+    priority: must
+    priority_source: confirmed
+    source: "BRD §1"
+    quote: "Register an institution with its official registration number, name, contact details and full postal address."
+    status: active
+    owner_role: ROLE-001
+
+  - id: FR-002
+    type: functional
+    statement: "An Institution Administrator can maintain and update their own institution's details."
+    priority: must
+    priority_source: confirmed
+    source: "BRD §1"
+    quote: "Institution administrators may update their own institution's details."
+    status: active
+    owner_role: ROLE-002
+
+  - id: FR-003
+    type: functional
+    statement: "The Platform Operator can assign, view and change an institution's subscription plan and subscription start date."
+    priority: must
+    priority_source: confirmed
+    source: "BRD §1"
+    quote: "Assign, view and change the institution's subscription plan and subscription start date."
+    status: active
+    owner_role: ROLE-001
+
+  - id: FR-004
+    type: functional
+    statement: "The Platform Operator can withdraw an institution from active service while preserving its historical record."
+    priority: must
+    priority_source: confirmed
+    source: "BRD §1"
+    quote: "Withdraw an institution from active service while preserving its historical record."
+    status: active
+    owner_role: ROLE-001
+
+  - id: FR-005
+    type: functional
+    statement: "The platform provides a searchable public directory of institutions, exposing institution name and city/region only, to support user self-registration."
+    priority: must
+    priority_source: confirmed
+    source: "Q-H7"
+    quote: "The public institution directory exposes institution name and city/region only"
+    status: active
+
+  - id: BR-001
+    type: business_rule
+    statement: "Only the Platform Operator may create or withdraw an institution."
+    priority: must
+    priority_source: confirmed
+    source: "BRD §1"
+    quote: "Only the Platform Operator may create or withdraw an institution."
+    status: active
+
+  - id: BR-002
+    type: business_rule
+    statement: "Institution administrators may update their own institution's details."
+    priority: must
+    priority_source: confirmed
+    source: "BRD §1"
+    quote: "Institution administrators may update their own institution's details."
+    status: active
+
+  - id: BR-003
+    type: business_rule
+    statement: "A new institution registration is rejected as a duplicate only when name, contact email and postal code all match an existing institution."
+    priority: must
+    priority_source: confirmed
+    source: "Q-M1"
+    quote: "All three fields (name, contact email, postal code) must match an existing institution for a new registration to be rejected"
+    status: active
+
+  - id: BR-004
+    type: business_rule
+    statement: "Contact email must be valid, telephone must be a valid contact number, and postal code must be a valid six-digit value."
+    priority: must
+    priority_source: confirmed
+    source: "BRD §1"
+    quote: "Contact email must be valid, telephone must be a valid contact number, and postal code must be a valid six-digit value."
+    status: active
+
+  - id: BR-005
+    type: business_rule
+    statement: "Institution withdrawal is a reversible deactivation; institutional records are retained and excluded from active operation, never destroyed."
+    priority: must
+    priority_source: confirmed
+    source: "BRD §1"
+    quote: "Withdrawal is a reversible deactivation; institutional records are retained and excluded from active operation, never destroyed."
+    status: active
+
+  - id: BR-006
+    type: business_rule
+    statement: "Every other business record in the platform belongs to exactly one institution."
+    priority: must
+    priority_source: confirmed
+    source: "BRD §1"
+    quote: "Every other business record in the platform belongs to exactly one institution."
+    status: active
+
+  # ---------------------------------------------------------------
+  # FUNCTIONAL — 6.2 Identity, Access and Security
+  # ---------------------------------------------------------------
+  - id: FR-006
+    type: functional
+    statement: "A prospective user can self-register a user account against a chosen institution and role, and is granted immediate access with no additional approval step."
+    priority: must
+    priority_source: confirmed
+    source: "Q-H6"
+    quote: "Self-registration grants immediate access for all roles, as the BRD currently describes"
+    status: active
+
+  - id: FR-007
+    type: functional
+    statement: "A registered user can sign in, establish a session, and sign out."
+    priority: must
+    priority_source: confirmed
+    source: "BRD §2"
+    quote: "Sign-in, session establishment and sign-out."
+    status: active
+
+  - id: FR-008
+    type: functional
+    statement: "A signed-in user can retrieve their own identity, institution and roles."
+    priority: must
+    priority_source: confirmed
+    source: "BRD §2"
+    quote: "Retrieval of the signed-in user's identity, institution and roles."
+    status: active
+
+  - id: FR-009
+    type: functional
+    statement: "Every business function and navigation destination is authorised by the requesting user's role."
+    priority: must
+    priority_source: confirmed
+    source: "BRD §2"
+    quote: "Role-based authorisation of every business function and navigation destination."
+    status: active
+
+  - id: FR-010
+    type: functional
+    statement: "The platform informs a user clearly when they lack permission for an action they attempted."
+    priority: must
+    priority_source: confirmed
+    source: "BRD §2"
+    quote: "Denial handling that informs a user clearly when they lack permission."
+    status: active
+
+  - id: BR-007
+    type: business_rule
+    statement: "The supported roles are Platform Operator, Administrator, Principal, School In-charge, Teacher, Student and Parent."
+    priority: must
+    priority_source: confirmed
+    source: "BRD §2"
+    quote: "The supported roles are Platform Operator (Super Administrator), Administrator, Principal, School In-charge, Teacher, Student and Parent."
+    status: active
+
+  - id: BR-008
+    type: business_rule
+    statement: "Every user account is bound to exactly one institution at registration and inherits that institution's data boundary permanently."
+    priority: must
+    priority_source: confirmed
+    source: "BRD §2"
+    quote: "Every user account is bound to exactly one institution at registration and inherits that institution's data boundary permanently."
+    status: active
+
+  - id: BR-009
+    type: business_rule
+    statement: "All business data access is filtered by the requesting user's institution; cross-institution access is prohibited for all roles other than the Platform Operator."
+    priority: must
+    priority_source: confirmed
+    source: "BRD §2"
+    quote: "cross-institution access is prohibited for all roles other than the Platform Operator."
+    status: active
+
+  - id: BR-010
+    type: business_rule
+    statement: "Administrator, Principal and School In-charge may create, amend and remove students, teachers, classes, attendance and announcements within their institution."
+    priority: must
+    priority_source: confirmed
+    source: "BRD §2"
+    quote: "Administrator, Principal and School In-charge may create, amend and remove students, teachers, classes, attendance and announcements"
+    status: active
+
+  - id: BR-011
+    type: business_rule
+    statement: "Teachers may view students and classes, record and amend attendance, and publish announcements; they may not create, amend or remove student, teacher or class master records."
+    priority: must
+    priority_source: confirmed
+    source: "BRD §2"
+    quote: "Teachers may view students and classes, record and amend attendance, and publish announcements"
+    status: active
+
+  - id: BR-012
+    type: business_rule
+    statement: "Students and Parents have read access to announcements and their own relevant information, and may participate in collaboration rooms."
+    priority: must
+    priority_source: confirmed
+    source: "BRD §2"
+    quote: "Students and Parents have read access to announcements and their own relevant information"
+    status: active
+
+  - id: BR-013
+    type: business_rule
+    statement: "Only the Platform Operator may operate across institutions."
+    priority: must
+    priority_source: confirmed
+    source: "BRD §2"
+    quote: "Only the Platform Operator may operate across institutions."
+    status: active
+
+  - id: BR-014
+    type: business_rule
+    statement: "Passwords must meet the platform's minimum complexity policy; credentials are never displayed or transmitted in readable form."
+    priority: must
+    priority_source: confirmed
+    source: "BRD §2"
+    quote: "Passwords must meet the platform's minimum complexity policy"
+    status: active
+    note: "Complexity policy figure deferred to Tech Design (L1)."
+
+  - id: BR-015
+    type: business_rule
+    statement: "Sessions expire after a defined period of validity and must be re-established by signing in again."
+    priority: must
+    priority_source: confirmed
+    source: "BRD §2"
+    quote: "Sessions expire after a defined period of validity"
+    status: active
+    note: "Expiry duration deferred to Tech Design (L2)."
+
+  - id: BR-016
+    type: business_rule
+    statement: "Sign-out immediately terminates the session."
+    priority: must
+    priority_source: confirmed
+    source: "BRD §2"
+    quote: "Sign-out immediately terminates the session."
+    status: active
+
+  # ---------------------------------------------------------------
+  # FUNCTIONAL — 6.3 Student Records Management
+  # ---------------------------------------------------------------
+  - id: FR-011
+    type: functional
+    statement: "Institution staff can enrol a student with school register number, roll number, name, date of birth, gender, contact email and class placement."
+    priority: must
+    priority_source: confirmed
+    source: "BRD §3"
+    quote: "Enrol a student with school register number, roll number, name, date of birth, gender, contact email and class placement."
+    status: active
+    owner_role: ROLE-002
+
+  - id: FR-012
+    type: functional
+    statement: "Institution staff can record parent/guardian details against the student."
+    priority: must
+    priority_source: confirmed
+    source: "BRD §3"
+    quote: "Record parent/guardian details — father's name, mother's name, contact email and telephone — against the student."
+    status: active
+
+  - id: FR-013
+    type: functional
+    statement: "Institution staff can amend student details and change class placement."
+    priority: must
+    priority_source: confirmed
+    source: "BRD §3"
+    quote: "Amend student details and change class placement."
+    status: active
+
+  - id: FR-014
+    type: functional
+    statement: "Institution staff can withdraw a student record as a reversible deactivation; historical attendance and class-assignment records remain intact and attributable regardless of active/withdrawn status."
+    priority: must
+    priority_source: confirmed
+    source: "Q-M2"
+    quote: "Student withdrawal and Teacher removal are reversible deactivations, consistent with the Institution withdrawal model."
+    status: active
+
+  - id: FR-015
+    type: functional
+    statement: "Institution staff and Teachers can retrieve a student individually, as a full institutional list, or as a class roster."
+    priority: must
+    priority_source: confirmed
+    source: "BRD §3"
+    quote: "Retrieve a student individually, as a full institutional list, or as a class roster."
+    status: active
+
+  - id: FR-016
+    type: functional
+    statement: "Institution staff can optionally link a student record to a platform user account."
+    priority: must
+    priority_source: confirmed
+    source: "BRD §3"
+    quote: "Optionally link a student record to a platform user account."
+    status: active
+
+  - id: FR-017
+    type: functional
+    statement: "The BRD includes Parent and Student roles but does not define the parent-student association process. The implementation approach is outside the scope of the current BRD and will be determined during solution design."
+    priority: must
+    priority_source: confirmed
+    source: "Q-C5 (revised)"
+    quote: "The BRD includes Parent and Student roles but does not define the parent-student association process. The implementation approach is outside the scope of the current BRD and will be determined during solution design."
+    status: deferred
+    deferred_to: "Tech Design"
+    note: "Revision of an earlier answer that specified a staff-initiated-at-enrolment mechanism; that specific business rule has been withdrawn. The Parent access capability itself (FR-075) remains committed — only the association mechanism is undefined here."
+
+  - id: BR-017
+    type: business_rule
+    statement: "A student belongs to exactly one institution and is placed in exactly one class at any time."
+    priority: must
+    priority_source: confirmed
+    source: "BRD §3"
+    quote: "A student belongs to exactly one institution and is placed in exactly one class at any time."
+    status: active
+
+  - id: BR-018
+    type: business_rule
+    statement: "School register number and roll number must be unique within the institution."
+    priority: must
+    priority_source: confirmed
+    source: "BRD §3"
+    quote: "School register number and roll number must be unique within the institution."
+    status: active
+
+  - id: BR-019
+    type: business_rule
+    statement: "Every student must have a class placement before attendance can be recorded for them."
+    priority: must
+    priority_source: confirmed
+    source: "BRD §3"
+    quote: "Every student must have a class placement before attendance can be recorded for them."
+    status: active
+
+  - id: BR-020
+    type: business_rule
+    statement: "Student records are visible only to authorised staff of the same institution."
+    priority: must
+    priority_source: confirmed
+    source: "BRD §3"
+    quote: "Student records are visible only to authorised staff of the same institution."
+    status: active
+
+  - id: BR-021
+    type: business_rule
+    statement: "Guardian contact details are treated as sensitive personal data and follow the same access rules as the student record."
+    priority: must
+    priority_source: confirmed
+    source: "BRD §3"
+    quote: "Guardian contact details are treated as sensitive personal data and follow the same access rules as the student record."
+    status: active
+
+  # ---------------------------------------------------------------
+  # FUNCTIONAL — 6.4 Teaching Staff Management
+  # ---------------------------------------------------------------
+  - id: FR-018
+    type: functional
+    statement: "Institution staff can register a teacher with name, contact email, telephone, gender, address and joining date."
+    priority: must
+    priority_source: confirmed
+    source: "BRD §4"
+    quote: "Register a teacher with name, contact email, telephone, gender, address and joining date."
+    status: active
+
+  - id: FR-019
+    type: functional
+    statement: "Institution staff can amend teacher details and remove a teacher from active service as a reversible deactivation; historical records remain intact regardless of active/removed status."
+    priority: must
+    priority_source: confirmed
+    source: "Q-M2"
+    quote: "Student withdrawal and Teacher removal are reversible deactivations, consistent with the Institution withdrawal model."
+    status: active
+
+  - id: FR-020
+    type: functional
+    statement: "Institution staff can retrieve a teacher individually or as a full institutional list."
+    priority: must
+    priority_source: confirmed
+    source: "BRD §4"
+    quote: "Retrieve a teacher individually or as a full institutional list."
+    status: active
+
+  - id: FR-021
+    type: functional
+    statement: "Institution staff can assign a teacher as class teacher of a class."
+    priority: must
+    priority_source: confirmed
+    source: "BRD §4"
+    quote: "Assign a teacher as class teacher of a class."
+    status: active
+
+  - id: FR-022
+    type: functional
+    statement: "Institution staff can assign a teacher to teach a given subject to a given class."
+    priority: must
+    priority_source: confirmed
+    source: "BRD §4"
+    quote: "Assign a teacher to teach a given subject to a given class."
+    status: active
+
+  - id: FR-023
+    type: functional
+    statement: "Institution staff can optionally link a teacher record to a platform user account."
+    priority: must
+    priority_source: confirmed
+    source: "BRD §4"
+    quote: "Optionally link a teacher record to a platform user account."
+    status: active
+
+  - id: BR-022
+    type: business_rule
+    statement: "A teacher belongs to exactly one institution."
+    priority: must
+    priority_source: confirmed
+    source: "BRD §4"
+    quote: "A teacher belongs to exactly one institution."
+    status: active
+
+  - id: BR-023
+    type: business_rule
+    statement: "A class may have at most one class teacher, and a teacher may be class teacher of at most one class."
+    priority: must
+    priority_source: confirmed
+    source: "BRD §4"
+    quote: "A class may have at most one class teacher, and a teacher may be class teacher of at most one class."
+    status: active
+
+  - id: BR-024
+    type: business_rule
+    statement: "A teacher may be assigned to multiple subject-and-class combinations."
+    priority: must
+    priority_source: confirmed
+    source: "BRD §4"
+    quote: "A teacher may be assigned to multiple subject-and-class combinations."
+    status: active
+
+  - id: BR-025
+    type: business_rule
+    statement: "Removing a teacher must not orphan class or attendance history; existing assignments must be reassigned or released first."
+    priority: must
+    priority_source: confirmed
+    source: "BRD §4"
+    quote: "Removing a teacher must not orphan class or attendance history; existing assignments must be reassigned or released first."
+    status: active
+
+  # ---------------------------------------------------------------
+  # FUNCTIONAL — 6.5 Class, Section and Subject Management
+  # ---------------------------------------------------------------
+  - id: FR-024
+    type: functional
+    statement: "Institution staff can create classes with a class name and section identifier."
+    priority: must
+    priority_source: confirmed
+    source: "BRD §5"
+    quote: "Create classes with a class name and section identifier."
+    status: active
+
+  - id: FR-025
+    type: functional
+    statement: "Institution staff can amend and remove classes."
+    priority: must
+    priority_source: confirmed
+    source: "BRD §5"
+    quote: "Amend and remove classes."
+    status: active
+
+  - id: FR-026
+    type: functional
+    statement: "Institution staff can assign a class teacher to each class."
+    priority: must
+    priority_source: confirmed
+    source: "BRD §5"
+    quote: "Assign a class teacher to each class."
+    status: active
+
+  - id: FR-027
+    type: functional
+    statement: "Institution staff and Teachers can retrieve classes individually or as a full institutional list, with the assigned class teacher shown."
+    priority: must
+    priority_source: confirmed
+    source: "BRD §5"
+    quote: "Retrieve classes individually or as a full institutional list, with the assigned class teacher shown."
+    status: active
+
+  - id: FR-028
+    type: functional
+    statement: "Institution staff can maintain the institution's subject catalogue."
+    priority: must
+    priority_source: confirmed
+    source: "BRD §5"
+    quote: "Maintain the institution's subject catalogue."
+    status: active
+
+  - id: FR-029
+    type: functional
+    statement: "Institution staff can map subjects to teachers and classes."
+    priority: must
+    priority_source: confirmed
+    source: "BRD §5"
+    quote: "Map subjects to teachers and classes."
+    status: active
+
+  - id: BR-026
+    type: business_rule
+    statement: "The combination of class name and section must be unique within an institution."
+    priority: must
+    priority_source: confirmed
+    source: "BRD §5"
+    quote: "The combination of class name and section must be unique within an institution."
+    status: active
+
+  - id: BR-027
+    type: business_rule
+    statement: "A class belongs to exactly one institution."
+    priority: must
+    priority_source: confirmed
+    source: "BRD §5"
+    quote: "A class belongs to exactly one institution."
+    status: active
+
+  - id: BR-028
+    type: business_rule
+    statement: "A class must not be removed while students remain placed in it."
+    priority: must
+    priority_source: confirmed
+    source: "BRD §5"
+    quote: "A class must not be removed while students remain placed in it."
+    status: active
+
+  - id: BR-029
+    type: business_rule
+    statement: "Class structure is maintained by institution leadership; teachers have read access only."
+    priority: must
+    priority_source: confirmed
+    source: "BRD §5"
+    quote: "Class structure is maintained by institution leadership; teachers have read access only."
+    status: active
+
+  # ---------------------------------------------------------------
+  # FUNCTIONAL — 6.6 Attendance Management
+  # ---------------------------------------------------------------
+  - id: FR-030
+    type: functional
+    statement: "A teacher can select a class and mark daily attendance for its complete roster in a single session."
+    priority: must
+    priority_source: confirmed
+    source: "BRD §6"
+    quote: "Select a class and mark daily attendance for its complete roster in a single session."
+    status: active
+
+  - id: FR-031
+    type: functional
+    statement: "An attendance outcome of Present, Absent, Late or Leave can be recorded for each learner; Leave is a plain status marker with no leave-request/approval/balance mechanics."
+    priority: must
+    priority_source: confirmed
+    source: "Q-M3"
+    quote: "\"Leave\" is a plain attendance-outcome marker recorded directly by a teacher or institution leadership"
+    status: active
+
+  - id: FR-032
+    type: functional
+    statement: "Institution leadership can record daily attendance for teaching staff using the same outcome set."
+    priority: must
+    priority_source: confirmed
+    source: "BRD §6"
+    quote: "Record daily attendance for teaching staff using the same outcome set."
+    status: active
+
+  - id: FR-033
+    type: functional
+    statement: "A teacher may self-correct their own attendance entries until the end of the attendance day, without approval."
+    priority: must
+    priority_source: confirmed
+    source: "Q-H2"
+    quote: "teachers may self-correct attendance until the end of the attendance day"
+    status: active
+
+  - id: FR-034
+    type: functional
+    statement: "A correction made from the day following the attendance date onward requires approval from an authorised academic leader (Principal, Vice Principal, or Academic Administrator)."
+    priority: must
+    priority_source: confirmed
+    source: "Q-H2"
+    quote: "corrections from the following day onward require approval from an authorised academic leader"
+    status: active
+
+  - id: FR-035
+    type: functional
+    statement: "An attendance record becomes locked to further correction after 30 calendar days; the lock period is a fixed platform-wide constant, not configurable per institution."
+    priority: must
+    priority_source: confirmed
+    source: "Q-H2"
+    quote: "records are locked to further correction after 30 calendar days. The 30-day lock period is a fixed platform-wide constant"
+    status: active
+
+  - id: FR-036
+    type: functional
+    statement: "Institution leadership can remove an erroneous attendance entry."
+    priority: must
+    priority_source: confirmed
+    source: "BRD §6"
+    quote: "Remove an erroneous attendance entry."
+    status: active
+
+  - id: FR-037
+    type: functional
+    statement: "Attendance can be retrieved individually, for a class, for a date, and as an institutional list."
+    priority: must
+    priority_source: confirmed
+    source: "BRD §6"
+    quote: "Retrieve attendance individually, for a class, for a date, and as an institutional list."
+    status: active
+
+  - id: BR-030
+    type: business_rule
+    statement: "Attendance is recorded against a specific person and a specific calendar date."
+    priority: must
+    priority_source: confirmed
+    source: "BRD §6"
+    quote: "Attendance is recorded against a specific person and a specific calendar date."
+    status: active
+
+  - id: BR-031
+    type: business_rule
+    statement: "Only one attendance outcome may exist per person per date; a second submission updates the existing record."
+    priority: must
+    priority_source: confirmed
+    source: "BRD §6"
+    quote: "Only one attendance outcome may exist per person per date; a second submission updates the existing record."
+    status: active
+
+  - id: BR-032
+    type: business_rule
+    statement: "Attendance may only be recorded for learners and staff of the user's own institution."
+    priority: must
+    priority_source: confirmed
+    source: "BRD §6"
+    quote: "Attendance may only be recorded for learners and staff of the user's own institution."
+    status: active
+
+  - id: BR-033
+    type: business_rule
+    statement: "Student attendance may be recorded by teachers and by institution leadership; staff attendance is recorded by institution leadership only."
+    priority: must
+    priority_source: confirmed
+    source: "BRD §6"
+    quote: "Student attendance may be recorded by teachers and by institution leadership; staff attendance is recorded by institution leadership only."
+    status: active
+
+  - id: BR-034
+    type: business_rule
+    statement: "When a class roster is opened for marking, every learner defaults to a not-present state until explicitly marked, so no learner is silently omitted."
+    priority: must
+    priority_source: confirmed
+    source: "BRD §6"
+    quote: "every learner defaults to a not-present state until explicitly marked, so no learner is silently omitted."
+    status: active
+
+  - id: BR-035
+    type: business_rule
+    statement: "Attendance history is retained for reporting and may be corrected, with corrections traceable to the user who made them."
+    priority: must
+    priority_source: confirmed
+    source: "BRD §6"
+    quote: "Attendance history is retained for reporting and may be corrected, with corrections traceable to the user who made them."
+    status: active
+
+  # ---------------------------------------------------------------
+  # FUNCTIONAL — 6.7 Announcements and Communication
+  # ---------------------------------------------------------------
+  - id: FR-038
+    type: functional
+    statement: "Leadership and Teachers can create an announcement with a title, detailed content and an effective date."
+    priority: must
+    priority_source: confirmed
+    source: "BRD §7"
+    quote: "Create an announcement with a title, detailed content and an effective date."
+    status: active
+
+  - id: FR-039
+    type: functional
+    statement: "The platform records the author of every announcement."
+    priority: must
+    priority_source: confirmed
+    source: "BRD §7"
+    quote: "Record the author of every announcement."
+    status: active
+
+  - id: FR-040
+    type: functional
+    statement: "Leadership and Teachers can amend the content of a published announcement."
+    priority: must
+    priority_source: confirmed
+    source: "BRD §7"
+    quote: "Amend the content of a published announcement."
+    status: active
+
+  - id: FR-041
+    type: functional
+    statement: "Institution leadership can withdraw an announcement."
+    priority: must
+    priority_source: confirmed
+    source: "BRD §7"
+    quote: "Withdraw an announcement."
+    status: active
+
+  - id: FR-042
+    type: functional
+    statement: "All authenticated users can view all current announcements for the institution, and view an individual announcement in full."
+    priority: must
+    priority_source: confirmed
+    source: "BRD §7"
+    quote: "View all current announcements for the institution, and view an individual announcement in full."
+    status: active
+
+  - id: BR-036
+    type: business_rule
+    statement: "Announcements are visible to every authenticated user of the publishing institution and to no one outside it."
+    priority: must
+    priority_source: confirmed
+    source: "BRD §7"
+    quote: "Announcements are visible to every authenticated user of the publishing institution and to no one outside it."
+    status: active
+
+  - id: BR-037
+    type: business_rule
+    statement: "Announcements may be created and amended by institution leadership and by teachers."
+    priority: must
+    priority_source: confirmed
+    source: "BRD §7"
+    quote: "Announcements may be created and amended by institution leadership and by teachers."
+    status: active
+
+  - id: BR-038
+    type: business_rule
+    statement: "Announcements may only be withdrawn by institution leadership."
+    priority: must
+    priority_source: confirmed
+    source: "BRD §7"
+    quote: "Announcements may only be withdrawn by institution leadership."
+    status: active
+
+  - id: BR-039
+    type: business_rule
+    statement: "Every announcement retains its author and date for institutional accountability."
+    priority: must
+    priority_source: confirmed
+    source: "BRD §7"
+    quote: "Every announcement retains its author and date for institutional accountability."
+    status: active
+
+  # ---------------------------------------------------------------
+  # FUNCTIONAL — 6.8 Collaboration, Messaging and Live Meetings
+  # ---------------------------------------------------------------
+  - id: FR-043
+    type: functional
+    statement: "An authenticated user can create a named collaboration room with a description and an access passcode; the passcode is shared out-of-band by the creator and not displayed in the room list."
+    priority: must
+    priority_source: confirmed
+    source: "Q-M4"
+    quote: "The room's passcode is shared out-of-band by the room's creator ... the platform does not display the passcode in the room list"
+    status: active
+
+  - id: FR-044
+    type: functional
+    statement: "An authenticated user can browse available rooms and join a room by providing the correct passcode."
+    priority: must
+    priority_source: confirmed
+    source: "BRD §8"
+    quote: "Browse available rooms and join a room by providing the correct passcode."
+    status: active
+
+  - id: FR-045
+    type: functional
+    statement: "Participants can exchange real-time text messages within a room, delivered to all participants present."
+    priority: must
+    priority_source: confirmed
+    source: "BRD §8"
+    quote: "Exchange real-time text messages within a room, delivered to all participants present."
+    status: active
+
+  - id: FR-046
+    type: functional
+    statement: "The platform retains message history and presents it to participants on joining."
+    priority: must
+    priority_source: confirmed
+    source: "BRD §8"
+    quote: "Retain message history and present it to participants on joining."
+    status: active
+
+  - id: FR-047
+    type: functional
+    statement: "Participants can see who is currently present in a room, and see typing and join/leave activity as it happens."
+    priority: must
+    priority_source: confirmed
+    source: "BRD §8"
+    quote: "See who is currently present in a room, and see typing and join/leave activity as it happens."
+    status: active
+
+  - id: FR-048
+    type: functional
+    statement: "A participant can start or join a live audio/video meeting associated with a room, with multiple simultaneous participants."
+    priority: must
+    priority_source: confirmed
+    source: "BRD §8"
+    quote: "Start or join a live audio/video meeting associated with a room, with multiple simultaneous participants."
+    status: active
+
+  - id: FR-049
+    type: functional
+    statement: "A participant can control their own microphone and camera during a meeting, with the state visible to other participants."
+    priority: must
+    priority_source: confirmed
+    source: "BRD §8"
+    quote: "Control one's own microphone and camera during a meeting, with the state visible to other participants."
+    status: active
+
+  - id: FR-050
+    type: functional
+    statement: "A participant can leave a room or a meeting, with other participants notified."
+    priority: must
+    priority_source: confirmed
+    source: "BRD §8"
+    quote: "Leave a room or a meeting, with other participants notified."
+    status: active
+
+  - id: FR-051
+    type: functional
+    statement: "A room's creator or institution leadership can remove a room when it is no longer required."
+    priority: must
+    priority_source: confirmed
+    source: "BRD §8"
+    quote: "Remove a room when it is no longer required."
+    status: active
+
+  - id: BR-040
+    type: business_rule
+    statement: "Only authenticated users may create, join or participate in rooms."
+    priority: must
+    priority_source: confirmed
+    source: "BRD §8"
+    quote: "Only authenticated users may create, join or participate in rooms."
+    status: active
+
+  - id: BR-041
+    type: business_rule
+    statement: "A room may only be joined by presenting the correct passcode."
+    priority: must
+    priority_source: confirmed
+    source: "BRD §8"
+    quote: "A room may only be joined by presenting the correct passcode."
+    status: active
+
+  - id: BR-042
+    type: business_rule
+    statement: "A room may be removed by its creator or by institution leadership; no other participant may remove it."
+    priority: must
+    priority_source: confirmed
+    source: "BRD §8"
+    quote: "A room may be removed by its creator or by institution leadership; no other participant may remove it."
+    status: active
+
+  - id: BR-043
+    type: business_rule
+    statement: "Message history is retained for the life of the room and remains attributable to its author."
+    priority: must
+    priority_source: confirmed
+    source: "BRD §8"
+    quote: "Message history is retained for the life of the room and remains attributable to its author."
+    status: active
+
+  - id: BR-044
+    type: business_rule
+    statement: "A message may be revised or withdrawn by its author; withdrawn messages remain accounted for in the record rather than erased."
+    priority: must
+    priority_source: confirmed
+    source: "BRD §8"
+    quote: "A message may be revised or withdrawn by its author; withdrawn messages remain accounted for in the record rather than erased."
+    status: active
+
+  - id: BR-045
+    type: business_rule
+    statement: "Message length is bounded to keep conversations legible and storage predictable."
+    priority: must
+    priority_source: confirmed
+    source: "BRD §8"
+    quote: "Message length is bounded to keep conversations legible and storage predictable."
+    status: active
+    note: "Specific bound deferred to Tech Design (L3)."
+
+  - id: BR-046
+    type: business_rule
+    statement: "Meeting participation is limited to users present in the associated room."
+    priority: must
+    priority_source: confirmed
+    source: "BRD §8"
+    quote: "Meeting participation is limited to users present in the associated room."
+    status: active
+
+  - id: BR-047
+    type: business_rule
+    statement: "Collaboration rooms and meetings are governed solely by authentication, passcode-gated access, and the existing role-based access model; no additional child-safeguarding-specific rule is introduced for this release."
+    priority: must
+    priority_source: confirmed
+    source: "Q-C4"
+    quote: "Collaboration rooms and meetings remain governed solely by the existing rules: authentication required, passcode-gated access, and the existing role-based access model."
+    status: active
+
+  # ---------------------------------------------------------------
+  # FUNCTIONAL — 6.9 Dashboards, Reporting and Analytics
+  # ---------------------------------------------------------------
+  - id: FR-052
+    type: functional
+    statement: "Institution leadership can view an institution dashboard presenting total students, total teachers, total classes, students present today and teachers present today."
+    priority: must
+    priority_source: confirmed
+    source: "BRD §9"
+    quote: "Institution dashboard presenting total students, total teachers, total classes, students present today and teachers present today."
+    status: active
+
+  - id: FR-053
+    type: functional
+    statement: "The Platform Operator can view a platform-wide summary presenting total institutions, students, teachers and classes for public presentation."
+    priority: must
+    priority_source: confirmed
+    source: "BRD §9"
+    quote: "Platform-wide summary presenting total institutions, students, teachers and classes for public presentation."
+    status: active
+
+  - id: FR-054
+    type: functional
+    statement: "Institution leadership and Teachers can generate standard reports covering class attendance, student performance, course activity and teacher performance."
+    priority: must
+    priority_source: confirmed
+    source: "BRD §9"
+    quote: "Generate standard reports covering class attendance, student performance, course analytics and teacher performance."
+    status: active
+
+  - id: FR-055
+    type: functional
+    statement: "A user can view when each report was last generated and access previously generated reports; report snapshots are retained indefinitely."
+    priority: must
+    priority_source: confirmed
+    source: "Q-M5"
+    quote: "Previously generated report snapshots are retained indefinitely and remain accessible"
+    status: active
+
+  - id: FR-056
+    type: functional
+    statement: "The dashboard presents headline operational indicators such as average attendance."
+    priority: must
+    priority_source: confirmed
+    source: "BRD §9"
+    quote: "Present headline operational indicators such as average attendance."
+    status: active
+
+  - id: FR-057
+    type: functional
+    statement: "Student performance reporting is based solely on attendance percentage."
+    priority: must
+    priority_source: confirmed
+    source: "Q-H3"
+    quote: "Student performance = attendance percentage only."
+    status: active
+
+  - id: FR-058
+    type: functional
+    statement: "Teacher performance reporting is based solely on attendance compliance and timeliness of attendance submission."
+    priority: must
+    priority_source: confirmed
+    source: "Q-H3"
+    quote: "Teacher performance = attendance compliance and timeliness of attendance submission only."
+    status: active
+
+  - id: BR-048
+    type: business_rule
+    statement: "Institution dashboards are scoped strictly to the signed-in user's institution."
+    priority: must
+    priority_source: confirmed
+    source: "BRD §9"
+    quote: "Institution dashboards are scoped strictly to the signed-in user's institution."
+    status: active
+
+  - id: BR-049
+    type: business_rule
+    statement: "Platform-wide summary figures are aggregate and non-identifying, and may be presented publicly."
+    priority: must
+    priority_source: confirmed
+    source: "BRD §9"
+    quote: "Platform-wide summary figures are aggregate and non-identifying, and may be presented publicly."
+    status: active
+
+  - id: BR-050
+    type: business_rule
+    statement: "Presence figures always reflect the current calendar date."
+    priority: must
+    priority_source: confirmed
+    source: "BRD §9"
+    quote: "Presence figures always reflect the current calendar date."
+    status: active
+
+  - id: BR-051
+    type: business_rule
+    statement: "Reports are available to institution leadership; teachers may access reports covering their own classes."
+    priority: must
+    priority_source: confirmed
+    source: "BRD §9"
+    quote: "Reports are available to institution leadership; teachers may access reports covering their own classes."
+    status: active
+
+  - id: BR-052
+    type: business_rule
+    statement: "Report outputs must be exportable for offline distribution."
+    priority: must
+    priority_source: confirmed
+    source: "BRD §9"
+    quote: "Report outputs must be exportable for offline distribution."
+    status: active
+
+  # ---------------------------------------------------------------
+  # FUNCTIONAL — 6.10 Scheduling
+  # ---------------------------------------------------------------
+  - id: FR-059
+    type: functional
+    statement: "Institution leadership can maintain a weekly timetable of periods by day and time slot."
+    priority: must
+    priority_source: confirmed
+    source: "BRD §10"
+    quote: "Maintain a weekly timetable of periods by day and time slot."
+    status: active
+
+  - id: FR-060
+    type: functional
+    statement: "Institution leadership can record the class, subject, teaching room and assigned teacher for each period."
+    priority: must
+    priority_source: confirmed
+    source: "BRD §10"
+    quote: "Record the class, subject, teaching room and assigned teacher for each period."
+    status: active
+
+  - id: FR-061
+    type: functional
+    statement: "Institution leadership can publish class and examination schedules to staff and learners."
+    priority: must
+    priority_source: confirmed
+    source: "BRD §10"
+    quote: "Publish class and examination schedules to staff and learners."
+    status: active
+
+  - id: FR-062
+    type: functional
+    statement: "Staff and learners can view the timetable by class and by teacher."
+    priority: must
+    priority_source: confirmed
+    source: "BRD §10"
+    quote: "View the timetable by class and by teacher."
+    status: active
+
+  - id: BR-053
+    type: business_rule
+    statement: "A teacher may not be scheduled to two periods in the same time slot."
+    priority: must
+    priority_source: confirmed
+    source: "BRD §10"
+    quote: "A teacher may not be scheduled to two periods in the same time slot."
+    status: active
+
+  - id: BR-054
+    type: business_rule
+    statement: "A class may not be scheduled to two periods in the same time slot."
+    priority: must
+    priority_source: confirmed
+    source: "BRD §10"
+    quote: "A class may not be scheduled to two periods in the same time slot."
+    status: active
+
+  - id: BR-055
+    type: business_rule
+    statement: "A teaching room may not be double-booked in the same time slot."
+    priority: must
+    priority_source: confirmed
+    source: "BRD §10"
+    quote: "A teaching room may not be double-booked in the same time slot."
+    status: active
+
+  - id: BR-056
+    type: business_rule
+    statement: "Schedules are maintained by institution leadership and are read-only to teachers and learners."
+    priority: must
+    priority_source: confirmed
+    source: "BRD §10"
+    quote: "Schedules are maintained by institution leadership and are read-only to teachers and learners."
+    status: active
+
+  # ---------------------------------------------------------------
+  # FUNCTIONAL — 6.11 Institution Configuration
+  # ---------------------------------------------------------------
+  - id: FR-063
+    type: functional
+    statement: "Institution leadership can maintain general institution settings including academic year, time zone and language preference."
+    priority: must
+    priority_source: confirmed
+    source: "BRD §11"
+    quote: "Maintain general institution settings including academic year, time zone and language preference."
+    status: active
+
+  - id: FR-064
+    type: functional
+    statement: "Institution leadership can maintain user roles, access permissions, account settings and password policy."
+    priority: must
+    priority_source: confirmed
+    source: "BRD §11"
+    quote: "Maintain user roles, access permissions, account settings and password policy."
+    status: active
+
+  - id: FR-065
+    type: functional
+    statement: "Institution leadership can configure notification preferences across email, SMS and in-platform alerts."
+    priority: must
+    priority_source: confirmed
+    source: "BRD §11"
+    quote: "Configure notification preferences across email, SMS and in-platform alerts."
+    status: active
+
+  - id: FR-066
+    type: functional
+    statement: "Institution leadership can maintain academic settings including grading scale, course categories, assessment types and report card format."
+    priority: must
+    priority_source: confirmed
+    source: "BRD §11"
+    quote: "Maintain academic settings including grading scale, course categories, assessment types and report card format."
+    status: active
+
+  - id: FR-067
+    type: functional
+    statement: "At academic year-end, the platform automatically promotes the full student roster by default, with institution leadership able to override and hold back individual students."
+    priority: must
+    priority_source: confirmed
+    source: "Q-H1"
+    quote: "Promotion at year-end is automatic for the full roster by default, with institution leadership able to override and hold back individual students"
+    status: active
+
+  - id: FR-068
+    type: functional
+    statement: "The platform generates new class rosters for the new academic year, while historical class allocations, enrolment, roster and attendance data remain preserved and available read-only."
+    priority: must
+    priority_source: confirmed
+    source: "Q-H1"
+    quote: "New class rosters are generated for the new academic year; historical class allocations, enrolment, roster and attendance data remain preserved and available read-only."
+    status: active
+
+  - id: BR-057
+    type: business_rule
+    statement: "Configuration applies only to the institution in which it is set."
+    priority: must
+    priority_source: confirmed
+    source: "BRD §11"
+    quote: "Configuration applies only to the institution in which it is set."
+    status: active
+
+  - id: BR-058
+    type: business_rule
+    statement: "Only institution leadership may change configuration."
+    priority: must
+    priority_source: confirmed
+    source: "BRD §11"
+    quote: "Only institution leadership may change configuration."
+    status: active
+
+  - id: BR-059
+    type: business_rule
+    statement: "Configuration changes take effect for all users of the institution from the point of change and are recorded for audit."
+    priority: must
+    priority_source: confirmed
+    source: "BRD §11"
+    quote: "Configuration changes take effect for all users of the institution from the point of change and are recorded for audit."
+    status: active
+    note: "Audit retention governed by platform-wide rule (NFR-033); no separate decision needed (L4)."
+
+  - id: BR-060
+    type: business_rule
+    statement: "Academic year rollover creates new academic records while preserving all historical academic, attendance and enrolment data for reporting and audit purposes."
+    priority: must
+    priority_source: confirmed
+    source: "Q-H1"
+    quote: "Academic year rollover shall create new academic records while preserving all historical academic, attendance, and enrollment data"
+    status: active
+
+  # ---------------------------------------------------------------
+  # FUNCTIONAL — 6.12 Commercial Presentation and Subscription
+  # ---------------------------------------------------------------
+  - id: FR-069
+    type: functional
+    statement: "A prospective customer can browse public product information, subscription plans, capabilities comparison, and submit a sales/support enquiry."
+    priority: must
+    priority_source: confirmed
+    source: "BRD §12"
+    quote: "Prospective customer: browse product information and plans, compare capabilities, submit an enquiry, start a trial."
+    status: active
+
+  - id: FR-070
+    type: functional
+    statement: "A prospective customer can start a 30-day trial without payment details."
+    priority: must
+    priority_source: confirmed
+    source: "Q-H5"
+    quote: "Standard trial duration is 30 days."
+    status: active
+
+  - id: FR-071
+    type: functional
+    statement: "If no purchase decision is made by the end of the trial, entitlements automatically revert to the entry (lowest-cost) tier rather than auto-billing the institution."
+    priority: must
+    priority_source: confirmed
+    source: "Q-H5"
+    quote: "entitlements revert to the entry (lowest-cost) tier rather than automatically billing the institution for the plan it trialled."
+    status: active
+
+  - id: FR-072
+    type: functional
+    statement: "The Platform Operator can assign and amend an institution's subscription plan and subscription date."
+    priority: must
+    priority_source: confirmed
+    source: "BRD §12"
+    quote: "Assignment of a subscription plan and subscription date to each institution."
+    status: active
+
+  - id: FR-073
+    type: functional
+    statement: "The platform blocks an action that would exceed the institution's tier learner capacity or storage allowance until the subscription plan is upgraded; no grace overage is provided."
+    priority: must
+    priority_source: confirmed
+    source: "Q-H4"
+    quote: "The platform blocks the action that would exceed the tier's learner capacity or storage allowance ... No grace overage is provided."
+    status: active
+
+  - id: BR-061
+    type: business_rule
+    statement: "Three commercial tiers are offered: an entry tier for small institutions, a mid tier for growing institutions, and a bespoke tier for large institutions and districts."
+    priority: must
+    priority_source: confirmed
+    source: "BRD §12"
+    quote: "Three commercial tiers are offered: an entry tier for small institutions, a mid tier for growing institutions, and a bespoke tier for large institutions and districts."
+    status: active
+
+  - id: BR-062
+    type: business_rule
+    statement: "Each tier defines the institution's learner capacity, storage allowance, support level and available capabilities; capabilities not included in a tier are unavailable to that institution."
+    priority: must
+    priority_source: confirmed
+    source: "BRD §12"
+    quote: "Each tier defines the institution's learner capacity, storage allowance, support level and available capabilities; capabilities not included in a tier are unavailable to that institution."
+    status: active
+
+  - id: BR-063
+    type: business_rule
+    statement: "Advanced analytics, parent access and custom reporting are reserved for higher tiers."
+    priority: must
+    priority_source: confirmed
+    source: "BRD §12"
+    quote: "Advanced analytics, parent access and custom reporting are reserved for higher tiers."
+    status: active
+
+  - id: BR-064
+    type: business_rule
+    statement: "Only the Platform Operator may assign or change an institution's subscription."
+    priority: must
+    priority_source: confirmed
+    source: "BRD §12"
+    quote: "Only the Platform Operator may assign or change an institution's subscription."
+    status: active
+
+  # ---------------------------------------------------------------
+  # FUNCTIONAL — 6.13 Student and Parent Access (cross-cutting)
+  # ---------------------------------------------------------------
+  - id: FR-074
+    type: functional
+    statement: "Students can access their own attendance records, class timetable, examination schedules, school announcements, and their own academic reports."
+    priority: must
+    priority_source: confirmed
+    source: "Q-C1"
+    quote: "Student and Parent access is limited to: attendance records, class timetable, examination schedules, school announcements, and academic reports derived from operational indicators"
+    status: active
+
+  - id: FR-075
+    type: functional
+    statement: "Parents can access, for their linked children only: attendance records, class timetable, examination schedules, school announcements, and academic reports."
+    priority: must
+    priority_source: confirmed
+    source: "Q-C1"
+    quote: "Student and Parent access is limited to: attendance records, class timetable, examination schedules, school announcements, and academic reports derived from operational indicators"
+    status: active
+
+  - id: BR-065
+    type: business_rule
+    statement: "Fee summaries/fee information, leave-request submission, and homework/assignment access are excluded from Student and Parent access, consistent with the Out-of-Scope section."
+    priority: must
+    priority_source: confirmed
+    source: "Q-C1"
+    quote: "Fee, leave-request and homework/assignment capabilities remain excluded per the Out-of-Scope section, which stands as written"
+    status: active
+
+  - id: BR-066
+    type: business_rule
+    statement: "Students and parents access only information directly associated with the learner(s) for whom access has been granted."
+    priority: must
+    priority_source: confirmed
+    source: "BRD 'Answers - Proposed Business Decisions' §4, as trimmed by Q-C1"
+    quote: "Students and parents shall only access information directly associated with the learner(s) for whom permission has been granted."
+    status: active
+
+  # ---------------------------------------------------------------
+  # EXCLUDED (dropped decisions, kept for traceability)
+  # ---------------------------------------------------------------
+  - id: FR-076
+    type: functional
+    statement: "Guardian consent capture at enrolment (privacy notice, processing, photo/media, emergency-contact, communication consent; dated, versioned, attributable records) gating enrolment completion."
+    priority: excluded
+    priority_source: confirmed
+    source: "BRD Open Question 6 / Proposed Decision 6"
+    quote: "Enrollment is considered complete only after required guardian consents have been captured."
+    status: excluded
+    excluded_reason: "Dropped entirely for this release — confirmed by Jayesh Idnani (Q-C3). Not a capability listed in the original Scope section; enrolment completion is not gated on consent in this release."
+
+  - id: FR-077
+    type: functional
+    statement: "Student/Parent access to fee summaries / fee information."
+    priority: excluded
+    priority_source: confirmed
+    source: "BRD 'Answers - Proposed Business Decisions' §4 vs. Out of Scope"
+    quote: "Fee summaries / Fee information"
+    status: excluded
+    excluded_reason: "Contradicts the Out-of-Scope fee/financial-transaction exclusion; trimmed per Q-C1, confirmed by Jayesh Idnani."
+
+  - id: FR-078
+    type: functional
+    statement: "Parent submission of leave requests."
+    priority: excluded
+    priority_source: confirmed
+    source: "BRD 'Answers - Proposed Business Decisions' §4 vs. Out of Scope"
+    quote: "Parents ... may submit leave requests"
+    status: excluded
+    excluded_reason: "Contradicts the Out-of-Scope leave-workflow exclusion; trimmed per Q-C1, confirmed by Jayesh Idnani."
+
+  - id: FR-079
+    type: functional
+    statement: "Student/Parent access to homework and assignments."
+    priority: excluded
+    priority_source: confirmed
+    source: "BRD 'Answers - Proposed Business Decisions' §4 vs. Out of Scope"
+    quote: "Homework and assignments"
+    status: excluded
+    excluded_reason: "Contradicts the Out-of-Scope learning-content/assignment exclusion; trimmed per Q-C1, confirmed by Jayesh Idnani."
+
+  - id: FR-080
+    type: functional
+    statement: "Student/teacher performance metrics based on homework completion, assignment submission, participation indicators, behavioural records, and engagement indicators."
+    priority: excluded
+    priority_source: confirmed
+    source: "BRD 'Answers - Proposed Business Decisions' §5 (Proposed Decision 5)"
+    quote: "homework completion rate, assignment submission rate, participation indicators, behavioral records"
+    status: excluded
+    excluded_reason: "No capturing mechanism exists in this release (homework/assignment functionality is out of scope); replaced by attendance-only metrics per Q-H3, confirmed by Jayesh Idnani."
+
+  - id: FR-081
+    type: functional
+    statement: "Fee collection, payroll, salary disbursement and any financial transaction processing."
+    priority: excluded
+    priority_source: confirmed
+    source: "BRD 'Out of Scope'"
+    quote: "Fee collection, payroll, salary disbursement and any financial transaction processing (planned as a subsequent release)."
+    status: excluded
+    excluded_reason: "Explicitly out of scope in the source BRD; planned as a subsequent release."
+
+  - id: FR-082
+    type: functional
+    statement: "Leave application, approval workflow and leave-balance tracking."
+    priority: excluded
+    priority_source: confirmed
+    source: "BRD 'Out of Scope'"
+    quote: "Leave application, approval workflow and leave-balance tracking (planned as a subsequent release)."
+    status: excluded
+    excluded_reason: "Explicitly out of scope in the source BRD; planned as a subsequent release."
+
+  - id: FR-083
+    type: functional
+    statement: "Biometric and hardware-driven attendance capture."
+    priority: excluded
+    priority_source: confirmed
+    source: "BRD 'Out of Scope'"
+    quote: "Biometric and hardware-driven attendance capture."
+    status: excluded
+    excluded_reason: "Explicitly out of scope in the source BRD."
+
+  - id: FR-084
+    type: functional
+    statement: "Learning content authoring, assignment submission, grading workflows and examination marking."
+    priority: excluded
+    priority_source: confirmed
+    source: "BRD 'Out of Scope'"
+    quote: "Learning content authoring, assignment submission, grading workflows and examination marking."
+    status: excluded
+    excluded_reason: "Explicitly out of scope in the source BRD."
+
+  - id: FR-085
+    type: functional
+    statement: "Transport, hostel, library and inventory management."
+    priority: excluded
+    priority_source: confirmed
+    source: "BRD 'Out of Scope'"
+    quote: "Transport, hostel, library and inventory management."
+    status: excluded
+    excluded_reason: "Explicitly out of scope in the source BRD."
+
+  - id: FR-086
+    type: functional
+    statement: "Payment gateway integration and invoicing to institutions."
+    priority: excluded
+    priority_source: confirmed
+    source: "BRD 'Out of Scope'"
+    quote: "Payment gateway integration and invoicing to institutions."
+    status: excluded
+    excluded_reason: "Explicitly out of scope in the source BRD."
+
+  - id: FR-087
+    type: functional
+    statement: "Native mobile applications."
+    priority: excluded
+    priority_source: confirmed
+    source: "BRD 'Out of Scope'"
+    quote: "Native mobile applications."
+    status: excluded
+    excluded_reason: "Explicitly out of scope in the source BRD."
+
+  - id: FR-088
+    type: functional
+    statement: "Data migration from any specific incumbent system."
+    priority: excluded
+    priority_source: confirmed
+    source: "BRD 'Out of Scope'"
+    quote: "Data migration from any specific incumbent system."
+    status: excluded
+    excluded_reason: "Explicitly out of scope in the source BRD."
+
+  # ---------------------------------------------------------------
+  # NON-FUNCTIONAL (business view)
+  # ---------------------------------------------------------------
+  - id: NFR-001
+    type: non_functional
+    statement: "Navigation is consistent and role-aware, presenting only the destinations a user is entitled to use."
+    priority: must
+    priority_source: confirmed
+    source: "BRD 'Non-Functional Requirements' - Usability"
+    quote: "Consistent, role-aware navigation that presents only the destinations a user is entitled to use."
+    status: active
+
+  - id: NFR-002
+    type: non_functional
+    statement: "Core daily tasks — marking a class register, publishing an announcement, joining a meeting — are completable in no more than three steps."
+    priority: must
+    priority_source: confirmed
+    source: "BRD 'Non-Functional Requirements' - Usability"
+    quote: "Core daily tasks — marking a class register, publishing an announcement, joining a meeting — completable in no more than three steps."
+    status: active
+
+  - id: NFR-003
+    type: non_functional
+    statement: "The platform gives clear confirmation before destructive actions, and explicit, non-technical feedback on success and failure."
+    priority: must
+    priority_source: confirmed
+    source: "BRD 'Non-Functional Requirements' - Usability"
+    quote: "Clear confirmation before destructive actions, and explicit, non-technical feedback on success and failure."
+    status: active
+
+  - id: NFR-004
+    type: non_functional
+    statement: "The platform presents meaningful empty and loading states so users always know the system's condition."
+    priority: must
+    priority_source: confirmed
+    source: "BRD 'Non-Functional Requirements' - Usability"
+    quote: "Meaningful empty and loading states so users always know the system's condition."
+    status: active
+
+  - id: NFR-005
+    type: non_functional
+    statement: "The platform is accessible to WCAG 2.1 AA."
+    priority: must
+    priority_source: confirmed
+    source: "BRD 'Non-Functional Requirements' - Usability"
+    quote: "Accessible to WCAG 2.1 AA."
+    status: active
+
+  - id: NFR-006
+    type: non_functional
+    statement: "Standard list and detail views return within 2 seconds under normal load."
+    priority: must
+    priority_source: confirmed
+    source: "BRD 'Non-Functional Requirements' - Performance"
+    quote: "Standard list and detail views return within 2 seconds under normal load."
+    status: active
+    numeric_target: "< 2000ms, normal load"
+    target_source: sourced
+
+  - id: NFR-007
+    type: non_functional
+    statement: "Dashboard summaries render within 3 seconds."
+    priority: must
+    priority_source: confirmed
+    source: "BRD 'Non-Functional Requirements' - Performance"
+    quote: "Dashboard summaries render within 3 seconds."
+    status: active
+    numeric_target: "< 3000ms"
+    target_source: sourced
+
+  - id: NFR-008
+    type: non_functional
+    statement: "Chat messages are delivered to all present participants within 1 second."
+    priority: must
+    priority_source: confirmed
+    source: "BRD 'Non-Functional Requirements' - Performance"
+    quote: "Chat messages are delivered to all present participants within 1 second."
+    status: active
+    numeric_target: "< 1000ms"
+    target_source: sourced
+
+  - id: NFR-009
+    type: non_functional
+    statement: "Live meeting audio and video maintain conversational quality for the supported participant count."
+    priority: must
+    priority_source: confirmed
+    source: "BRD 'Non-Functional Requirements' - Performance"
+    quote: "Live meeting audio and video maintain conversational quality for the supported participant count."
+    status: active
+
+  - id: NFR-010
+    type: non_functional
+    statement: "The platform maintains 99.5% availability during the institutional working day."
+    priority: must
+    priority_source: confirmed
+    source: "BRD 'Non-Functional Requirements' - Reliability"
+    quote: "99.5% availability during the institutional working day."
+    status: active
+    numeric_target: "99.5% availability (working day)"
+    target_source: sourced
+
+  - id: NFR-011
+    type: non_functional
+    statement: "No submitted attendance, announcement or message data is lost."
+    priority: must
+    priority_source: confirmed
+    source: "BRD 'Non-Functional Requirements' - Reliability"
+    quote: "No loss of submitted attendance, announcement or message data."
+    status: active
+
+  - id: NFR-012
+    type: non_functional
+    statement: "Interrupted collaboration sessions reconnect automatically and restore conversation history."
+    priority: must
+    priority_source: confirmed
+    source: "BRD 'Non-Functional Requirements' - Reliability"
+    quote: "Interrupted collaboration sessions reconnect automatically and restore conversation history."
+    status: active
+
+  - id: NFR-013
+    type: non_functional
+    statement: "Daily backup is performed with a documented recovery objective."
+    priority: must
+    priority_source: confirmed
+    source: "BRD 'Non-Functional Requirements' - Reliability"
+    quote: "Daily backup with a documented recovery objective."
+    status: active
+
+  - id: NFR-014
+    type: non_functional
+    statement: "Authentication is required for all business functions; only public product information and non-identifying aggregate figures are open."
+    priority: must
+    priority_source: confirmed
+    source: "BRD 'Non-Functional Requirements' - Security"
+    quote: "Authentication required for all business functions; only public product information and non-identifying aggregate figures are open."
+    status: active
+
+  - id: NFR-015
+    type: non_functional
+    statement: "Role-based authorisation is enforced on every function."
+    priority: must
+    priority_source: confirmed
+    source: "BRD 'Non-Functional Requirements' - Security"
+    quote: "Enforced role-based authorisation on every function."
+    status: active
+
+  - id: NFR-016
+    type: non_functional
+    statement: "Each institution's data is absolutely isolated from every other institution's, with the sole bounded exception of the public directory exposing institution name and city/region."
+    priority: must
+    priority_source: confirmed
+    source: "Q-H7"
+    quote: "confirmed as an intentional, bounded exception to the \"absolute isolation\" NFR"
+    status: active
+
+  - id: NFR-017
+    type: non_functional
+    statement: "Session credentials are protected against theft and misuse in the browser and transmitted only over encrypted connections."
+    priority: must
+    priority_source: confirmed
+    source: "BRD 'Non-Functional Requirements' - Security"
+    quote: "Session credentials protected against theft and misuse in the browser and transmitted only over encrypted connections."
+    status: active
+
+  - id: NFR-018
+    type: non_functional
+    statement: "Personal data of learners, guardians and staff is encrypted in transit and at rest, and handled in line with applicable data-protection obligations."
+    priority: must
+    priority_source: confirmed
+    source: "BRD 'Non-Functional Requirements' - Security"
+    quote: "Personal data of learners, guardians and staff encrypted in transit and at rest, and handled in line with applicable data-protection obligations."
+    status: active
+
+  - id: NFR-019
+    type: non_functional
+    statement: "Access to collaboration rooms is gated by passcode."
+    priority: must
+    priority_source: confirmed
+    source: "BRD 'Non-Functional Requirements' - Security"
+    quote: "Access to collaboration rooms gated by passcode."
+    status: active
+
+  - id: NFR-020
+    type: non_functional
+    statement: "The platform supports many independent institutions concurrently."
+    priority: must
+    priority_source: confirmed
+    source: "BRD 'Non-Functional Requirements' - Scalability"
+    quote: "Supports many independent institutions concurrently on one platform."
+    status: active
+
+  - id: NFR-021
+    type: non_functional
+    statement: "The platform supports institutions from under 200 learners to unlimited enrolment as defined by subscription tier."
+    priority: must
+    priority_source: confirmed
+    source: "BRD 'Non-Functional Requirements' - Scalability"
+    quote: "Supports institutions from under 200 learners to unlimited enrolment as defined by subscription tier."
+    status: active
+
+  - id: NFR-022
+    type: non_functional
+    statement: "The platform absorbs attendance-capture peaks at the start of the school day without degradation."
+    priority: must
+    priority_source: confirmed
+    source: "BRD 'Non-Functional Requirements' - Scalability"
+    quote: "Absorbs attendance-capture peaks at the start of the school day without degradation."
+    status: active
+
+  - id: NFR-023
+    type: non_functional
+    statement: "Storage grows with institutional volume within tier allowances."
+    priority: must
+    priority_source: confirmed
+    source: "BRD 'Non-Functional Requirements' - Scalability"
+    quote: "Storage grows with institutional volume within tier allowances."
+    status: active
+
+  - id: NFR-024
+    type: non_functional
+    statement: "The platform is fully usable on current versions of major desktop browsers."
+    priority: must
+    priority_source: confirmed
+    source: "BRD 'Non-Functional Requirements' - Compatibility"
+    quote: "Fully usable on current versions of major desktop browsers."
+    status: active
+
+  - id: NFR-025
+    type: non_functional
+    statement: "The platform is responsive across desktop, tablet and mobile screen sizes."
+    priority: must
+    priority_source: confirmed
+    source: "BRD 'Non-Functional Requirements' - Compatibility"
+    quote: "Responsive across desktop, tablet and mobile screen sizes."
+    status: active
+
+  - id: NFR-026
+    type: non_functional
+    statement: "Live meetings are supported on browsers providing standard camera and microphone access."
+    priority: must
+    priority_source: confirmed
+    source: "BRD 'Non-Functional Requirements' - Compatibility"
+    quote: "Live meetings supported on browsers providing standard camera and microphone access."
+    status: active
+
+  - id: NFR-027
+    type: non_functional
+    statement: "Reports are exportable in commonly used document formats."
+    priority: must
+    priority_source: confirmed
+    source: "BRD 'Non-Functional Requirements' - Compatibility"
+    quote: "Reports exportable in commonly used document formats."
+    status: active
+
+  - id: NFR-028
+    type: non_functional
+    statement: "Creation, amendment and removal of student, staff, class, attendance and announcement records are attributable to a user with a timestamp."
+    priority: must
+    priority_source: confirmed
+    source: "BRD 'Non-Functional Requirements' - Auditability"
+    quote: "Creation, amendment and removal of student, staff, class, attendance and announcement records are attributable to a user with a timestamp."
+    status: active
+
+  - id: NFR-029
+    type: non_functional
+    statement: "Announcement authorship and date are retained permanently."
+    priority: must
+    priority_source: confirmed
+    source: "BRD 'Non-Functional Requirements' - Auditability"
+    quote: "Announcement authorship and date retained permanently."
+    status: active
+
+  - id: NFR-030
+    type: non_functional
+    statement: "Messages remain attributable to their author, including after revision or withdrawal."
+    priority: must
+    priority_source: confirmed
+    source: "BRD 'Non-Functional Requirements' - Auditability"
+    quote: "Messages remain attributable to their author, including after revision or withdrawal."
+    status: active
+
+  - id: NFR-031
+    type: non_functional
+    statement: "Sign-in, sign-out and permission denials are logged."
+    priority: must
+    priority_source: confirmed
+    source: "BRD 'Non-Functional Requirements' - Auditability"
+    quote: "Sign-in, sign-out and permission denials are logged."
+    status: active
+
+  - id: NFR-032
+    type: non_functional
+    statement: "Institution withdrawal and subscription changes are recorded and reversible."
+    priority: must
+    priority_source: confirmed
+    source: "BRD 'Non-Functional Requirements' - Auditability"
+    quote: "Institution withdrawal and subscription changes are recorded and reversible."
+    status: active
+
+  - id: NFR-033
+    type: non_functional
+    statement: "Audit history is retained for the institution's defined retention period and is not editable by end users."
+    priority: must
+    priority_source: confirmed
+    source: "BRD 'Non-Functional Requirements' - Auditability"
+    quote: "Audit history is retained for the institution's defined retention period and is not editable by end users."
+    status: active
+
+  # ---------------------------------------------------------------
+  # COMPLIANCE
+  # ---------------------------------------------------------------
+  - id: CMP-001
+    type: compliance
+    statement: "Student and Guardian personal records are retained for 7 years after the student leaves the institution; Staff personal records are retained for 7 years after employment termination."
+    priority: must
+    priority_source: confirmed
+    source: "Q-C2"
+    quote: "Student and Guardian records retained 7 years after the student leaves the institution; Staff records retained 7 years after employment termination."
+    status: active
+
+  - id: CMP-002
+    type: compliance
+    statement: "On subscription end, data remains accessible for export during a 90-day grace period, then is archived, then securely deleted or anonymised once the applicable retention period completes (unless a specific legal obligation requires longer). No specific named regulation/jurisdiction applies."
+    priority: must
+    priority_source: confirmed
+    source: "Q-C2"
+    quote: "On subscription end, data remains accessible for export during a 90-day grace period, then is archived, then is securely deleted or anonymised"
+    status: active
+
+  - id: CMP-003
+    type: compliance
+    statement: "Personal information is securely deleted or anonymised when retention obligations expire; audit logs may be retained in anonymised form; all deletion activities are recorded for audit."
+    priority: must
+    priority_source: confirmed
+    source: "BRD 'Answers - Proposed Business Decisions' §2 (Deletion Requirements)"
+    quote: "Personal information shall be securely deleted or anonymized when retention obligations expire."
+    status: active
+
+requirements_excluded_summary:
+  count: 13
+  ids: [FR-076, FR-077, FR-078, FR-079, FR-080, FR-081, FR-082, FR-083, FR-084, FR-085, FR-086, FR-087, FR-088]
+
+requirements_active_summary:
+  functional: 75
+  business_rule: 66
+  non_functional: 33
+  compliance: 3
+  entity: 17
+  role: 7

@@ -1,0 +1,348 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TestRun id="3db743a2-a9b7-45f6-a313-4c621f8e1ae5" name="DurgeshChoudhary@PIO-LAP-624 2026-09-11 20:44:17" runUser="AzureAD\DurgeshChoudhary" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">
+  <Times creation="2026-09-11T20:44:17.3256740+05:30" queuing="2026-09-11T20:44:17.3256746+05:30" start="2026-09-11T20:44:16.2019300+05:30" finish="2026-09-11T20:44:25.2219546+05:30" />
+  <TestSettings name="default" id="5c49e100-dd2c-4562-9f01-3c448a35a93e">
+    <Deployment runDeploymentRoot="DurgeshChoudhary_PIO-LAP-624_2026-09-11_20_44_17" />
+  </TestSettings>
+  <Results>
+    <UnitTestResult executionId="6a09b240-4efc-4619-95d1-8fbcaf07c3f7" testId="39be401d-d5fe-bba4-eca9-d83f62b06189" testName="SchoolSync.IntegrationTests.Persistence.AuditLoggingInterceptorTests.ExecuteUpdate_bulk_operation_bypasses_the_interceptor_and_produces_no_audit_row" computerName="PIO-LAP-624" duration="00:00:02.1860768" startTime="2026-09-11T20:44:17.1927260+05:30" endTime="2026-09-11T20:44:19.3852820+05:30" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="6a09b240-4efc-4619-95d1-8fbcaf07c3f7" />
+    <UnitTestResult executionId="d118e58a-2f9d-4952-8519-0b00885cf2dc" testId="062b0953-666a-5a2b-d616-90a2666391c5" testName="SchoolSync.IntegrationTests.Persistence.TenantQueryFilterTests.Fetching_tenant_Bs_student_by_its_real_id_while_scoped_to_tenant_A_returns_null" computerName="PIO-LAP-624" duration="00:00:00.0565250" startTime="2026-09-11T20:44:18.4436489+05:30" endTime="2026-09-11T20:44:18.4999561+05:30" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="d118e58a-2f9d-4952-8519-0b00885cf2dc" />
+    <UnitTestResult executionId="823ddbae-718f-4b87-8374-b89d48ece29e" testId="4295388d-72cb-a40c-1868-9ab2a7096cf1" testName="SchoolSync.IntegrationTests.Persistence.TenantQueryFilterTests.Teacher_a_second_entity_type_is_also_tenant_scoped_by_the_same_convention" computerName="PIO-LAP-624" duration="00:00:00.0332198" startTime="2026-09-11T20:44:18.5040948+05:30" endTime="2026-09-11T20:44:18.5371211+05:30" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="823ddbae-718f-4b87-8374-b89d48ece29e" />
+    <UnitTestResult executionId="2fcd1e5e-1a0c-443b-9d27-393ec7fa7c30" testId="7ddc4304-4be7-2e18-8549-231f8830c766" testName="SchoolSync.IntegrationTests.Persistence.AuditLoggingInterceptorTests.Creating_a_governed_entity_through_normal_SaveChanges_produces_exactly_one_audit_row" computerName="PIO-LAP-624" duration="00:00:00.0112517" startTime="2026-09-11T20:44:19.5067979+05:30" endTime="2026-09-11T20:44:19.5179570+05:30" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="2fcd1e5e-1a0c-443b-9d27-393ec7fa7c30" />
+    <UnitTestResult executionId="e8d34dd6-5181-4f99-9f28-5338876a9f8f" testId="b37b3a36-36a8-157c-9e95-9a65663c61b8" testName="SchoolSync.IntegrationTests.Auth.PasswordPolicyTests.Rejects_passwords_that_are_one_condition_away_from_passing(password: &quot;Password123!&quot;)" computerName="PIO-LAP-624" duration="00:00:00.0001527" startTime="2026-09-11T20:44:17.2321358+05:30" endTime="2026-09-11T20:44:17.2321989+05:30" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="e8d34dd6-5181-4f99-9f28-5338876a9f8f" />
+    <UnitTestResult executionId="ed7f6282-5e39-41ce-a4f2-b6529a5feae1" testId="e54618dd-8a0a-c701-a04c-b5bae6443bd7" testName="SchoolSync.IntegrationTests.Domain.SoftDeleteTests.Deactivate_then_Reactivate_restores_exactly_the_original_state(entity: Student { Class = null, ClassId = null, DateOfBirth = 01/01/2010, DeactivatedAtUtc = null, Email = &quot;e@e.com&quot;, ··· })" computerName="PIO-LAP-624" duration="00:00:00.0003824" startTime="2026-09-11T20:44:17.2270341+05:30" endTime="2026-09-11T20:44:17.2301211+05:30" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="ed7f6282-5e39-41ce-a4f2-b6529a5feae1" />
+    <UnitTestResult executionId="32e29a75-2e77-45c5-8168-84f5638dd192" testId="4089adc0-e945-43c3-ea88-1e613ef68364" testName="SchoolSync.IntegrationTests.Auth.AuthEndpointsTests.Registering_as_PlatformOperator_is_rejected_even_though_the_field_accepts_the_string" computerName="PIO-LAP-624" duration="00:00:00.0255237" startTime="2026-09-11T20:44:19.4684841+05:30" endTime="2026-09-11T20:44:19.8578304+05:30" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="32e29a75-2e77-45c5-8168-84f5638dd192" />
+    <UnitTestResult executionId="f77b4744-ceb7-486f-a09b-d7baf3e15ad7" testId="e54618dd-8a0a-c701-a04c-b5bae6443bd7" testName="SchoolSync.IntegrationTests.Domain.SoftDeleteTests.Deactivate_then_Reactivate_restores_exactly_the_original_state(entity: Teacher { Address = &quot;A&quot;, ContactEmail = &quot;e@e.com&quot;, DeactivatedAtUtc = null, Gender = &quot;G&quot;, Id = d12f15e0-b0a4-420c-9351-e821cbbb8a5e, ··· })" computerName="PIO-LAP-624" duration="00:00:00.0004445" startTime="2026-09-11T20:44:17.2319778+05:30" endTime="2026-09-11T20:44:17.2325433+05:30" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="f77b4744-ceb7-486f-a09b-d7baf3e15ad7" />
+    <UnitTestResult executionId="8b55737e-c82e-43a3-9578-eaa71c582b96" testId="d7872f97-c564-fbc3-95bb-2a0459d1393d" testName="SchoolSync.IntegrationTests.Auth.AuthEndpointsTests.Login_with_wrong_password_and_login_with_unknown_username_return_the_identical_generic_error" computerName="PIO-LAP-624" duration="00:00:02.0425665" startTime="2026-09-11T20:44:22.8639112+05:30" endTime="2026-09-11T20:44:25.1210771+05:30" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="8b55737e-c82e-43a3-9578-eaa71c582b96" />
+    <UnitTestResult executionId="434031c1-3961-4db2-bbed-b5fac6517e4a" testId="0400772b-0502-3065-04f6-63d0bb84723b" testName="SchoolSync.IntegrationTests.Persistence.AuditLoggingInterceptorTests.No_production_source_file_calls_ExecuteUpdate_or_ExecuteDelete_on_a_governed_entity" computerName="PIO-LAP-624" duration="00:00:00.0297652" startTime="2026-09-11T20:44:19.4769536+05:30" endTime="2026-09-11T20:44:19.5065804+05:30" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="434031c1-3961-4db2-bbed-b5fac6517e4a" />
+    <UnitTestResult executionId="28c30b8e-55ab-46dd-9c2f-f7f72e0f4f3f" testId="127878c8-099a-30ea-0dab-f27390dace99" testName="SchoolSync.IntegrationTests.Auth.PasswordPolicyTests.Rejects_passwords_that_are_one_condition_away_from_passing(password: &quot;Sh0rt!ab&quot;)" computerName="PIO-LAP-624" duration="00:00:00.0000060" startTime="2026-09-11T20:44:17.2731896+05:30" endTime="2026-09-11T20:44:17.2733015+05:30" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="28c30b8e-55ab-46dd-9c2f-f7f72e0f4f3f" />
+    <UnitTestResult executionId="f3028491-9718-4271-bf47-8d209a5a976c" testId="afe8c4ce-57c2-10c0-c4ef-f4e8183b3191" testName="SchoolSync.IntegrationTests.Auth.PasswordPolicyTests.Accepts_a_password_meeting_every_condition" computerName="PIO-LAP-624" duration="00:00:00.0119797" startTime="2026-09-11T20:44:17.1906975+05:30" endTime="2026-09-11T20:44:17.2115962+05:30" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="f3028491-9718-4271-bf47-8d209a5a976c" />
+    <UnitTestResult executionId="3aed18c4-a165-4247-b150-f0030a9e9217" testId="998269c2-03d5-9a03-e068-8ca2d87f35be" testName="SchoolSync.IntegrationTests.Auth.AuthEndpointsTests.Full_register_login_refresh_logout_cycle_succeeds_end_to_end" computerName="PIO-LAP-624" duration="00:00:02.3587558" startTime="2026-09-11T20:44:19.8581824+05:30" endTime="2026-09-11T20:44:22.5328854+05:30" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="3aed18c4-a165-4247-b150-f0030a9e9217" />
+    <UnitTestResult executionId="107ce37b-211a-413c-bb52-8172eb0a7ffa" testId="28b5d1d0-e3e5-a7c5-e7be-6f2adb561e4e" testName="SchoolSync.IntegrationTests.Persistence.TenantQueryFilterTests.Bypass_path_returns_both_tenants_rows_proving_the_escape_hatch_itself_works" computerName="PIO-LAP-624" duration="00:00:00.0036376" startTime="2026-09-11T20:44:18.5003454+05:30" endTime="2026-09-11T20:44:18.5037601+05:30" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="107ce37b-211a-413c-bb52-8172eb0a7ffa" />
+    <UnitTestResult executionId="e76a7b96-5d3c-4944-a0f1-c32ef90f983d" testId="7734e212-947e-69dc-ec63-c2f14ecc75c9" testName="SchoolSync.IntegrationTests.Auth.AuthEndpointsTests.Registering_with_a_policy_violating_password_is_rejected" computerName="PIO-LAP-624" duration="00:00:00.0137082" startTime="2026-09-11T20:44:22.5349016+05:30" endTime="2026-09-11T20:44:22.8636494+05:30" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="e76a7b96-5d3c-4944-a0f1-c32ef90f983d" />
+    <UnitTestResult executionId="e02dd550-dae6-4f66-8dbd-a0b24e7a3be7" testId="42f8b2b8-c41a-058f-a2c8-9ce6d8bc03c7" testName="SchoolSync.IntegrationTests.Auth.AuthEndpointsTests.Calling_me_without_a_bearer_token_is_unauthorized" computerName="PIO-LAP-624" duration="00:00:00.0214777" startTime="2026-09-11T20:44:19.2020153+05:30" endTime="2026-09-11T20:44:19.4682256+05:30" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="e02dd550-dae6-4f66-8dbd-a0b24e7a3be7" />
+    <UnitTestResult executionId="87df2443-5a49-425a-9d09-5d253fe292af" testId="e54618dd-8a0a-c701-a04c-b5bae6443bd7" testName="SchoolSync.IntegrationTests.Domain.SoftDeleteTests.Deactivate_then_Reactivate_restores_exactly_the_original_state(entity: Room { CreatedBy = null, CreatedByUserId = 9b9bd08d-0dbd-42a4-b4e5-e9f223665aba, DeactivatedAtUtc = null, Description = null, Id = 5989dd1a-f566-47bb-83a9-8301177f2ca3, ··· })" computerName="PIO-LAP-624" duration="00:00:00.0001495" startTime="2026-09-11T20:44:17.2326133+05:30" endTime="2026-09-11T20:44:17.2737471+05:30" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="87df2443-5a49-425a-9d09-5d253fe292af" />
+    <UnitTestResult executionId="d66195d7-a2be-4ba3-9849-c37e196b98c5" testId="aaa6a2cb-657f-9109-ce3a-6234a29a74b0" testName="SchoolSync.IntegrationTests.Auth.PasswordPolicyTests.Rejects_passwords_that_are_one_condition_away_from_passing(password: &quot;lowercase123&quot;)" computerName="PIO-LAP-624" duration="00:00:00.0002147" startTime="2026-09-11T20:44:17.2324784+05:30" endTime="2026-09-11T20:44:17.2326707+05:30" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="d66195d7-a2be-4ba3-9849-c37e196b98c5" />
+    <UnitTestResult executionId="0b863ef6-c32c-4f63-a73e-3da250e15c54" testId="8b53e8a7-7d86-55b8-b72b-24b23c68edd9" testName="SchoolSync.IntegrationTests.Auth.PasswordPolicyTests.Rejects_null_or_empty" computerName="PIO-LAP-624" duration="00:00:00.0000929" startTime="2026-09-11T20:44:17.2736956+05:30" endTime="2026-09-11T20:44:17.2739422+05:30" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="0b863ef6-c32c-4f63-a73e-3da250e15c54" />
+    <UnitTestResult executionId="3e20b233-73fc-4de4-bbfc-ce352f52105f" testId="36eff14a-8467-bc05-21fd-4a73b6392370" testName="SchoolSync.IntegrationTests.Persistence.TenantQueryFilterTests.Listing_students_as_tenant_A_never_returns_tenant_Bs_seeded_row" computerName="PIO-LAP-624" duration="00:00:01.2440440" startTime="2026-09-11T20:44:17.1926950+05:30" endTime="2026-09-11T20:44:18.4433200+05:30" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="3e20b233-73fc-4de4-bbfc-ce352f52105f" />
+    <UnitTestResult executionId="4e9180df-86ef-4fd5-a32a-8b3277b0c2f6" testId="e54618dd-8a0a-c701-a04c-b5bae6443bd7" testName="SchoolSync.IntegrationTests.Domain.SoftDeleteTests.Deactivate_then_Reactivate_restores_exactly_the_original_state(entity: Institution { City = &quot;C&quot;, ContactEmail = &quot;e@e.com&quot;, CreatedAtUtc = 2026-09-11T15:14:17.1849499Z, DeactivatedAtUtc = null, Id = aa9e5941-854e-4bff-b1ef-b73064e47e13, ··· })" computerName="PIO-LAP-624" duration="00:00:00.0075292" startTime="2026-09-11T20:44:17.2006440+05:30" endTime="2026-09-11T20:44:17.2176952+05:30" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="4e9180df-86ef-4fd5-a32a-8b3277b0c2f6" />
+    <UnitTestResult executionId="18dee66f-b189-4dab-a720-a20e05e25757" testId="763ec2b9-0398-f08e-c0e4-7b815d5d7599" testName="SchoolSync.IntegrationTests.Persistence.AuditLoggingInterceptorTests.Deactivating_a_governed_entity_is_classified_as_Deactivate_not_a_generic_Update" computerName="PIO-LAP-624" duration="00:00:00.0913248" startTime="2026-09-11T20:44:19.3855880+05:30" endTime="2026-09-11T20:44:19.4767013+05:30" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="18dee66f-b189-4dab-a720-a20e05e25757" />
+    <UnitTestResult executionId="5a7506ea-e313-4128-a5a7-0ead73ae6e1c" testId="653be64c-264e-a3eb-454a-eec5ac287ba9" testName="SchoolSync.IntegrationTests.Auth.AuthEndpointsTests.Registering_the_same_username_twice_is_rejected_as_a_conflict" computerName="PIO-LAP-624" duration="00:00:00.9583274" startTime="2026-09-11T20:44:17.1926254+05:30" endTime="2026-09-11T20:44:19.2006039+05:30" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="5a7506ea-e313-4128-a5a7-0ead73ae6e1c" />
+    <UnitTestResult executionId="ffe05429-b4c8-43ad-9d1d-222e09817a7a" testId="e54618dd-8a0a-c701-a04c-b5bae6443bd7" testName="SchoolSync.IntegrationTests.Domain.SoftDeleteTests.Deactivate_then_Reactivate_restores_exactly_the_original_state(entity: UserAccount { DeactivatedAtUtc = null, Email = &quot;e@e.com&quot;, Id = 6ba9b682-f2c8-4237-b274-881c676e84aa, Institution = null, InstitutionId = 007f8848-3610-47b6-a183-e342223aa240, ··· })" computerName="PIO-LAP-624" duration="00:00:00.0004568" startTime="2026-09-11T20:44:17.2738664+05:30" endTime="2026-09-11T20:44:17.2740644+05:30" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="ffe05429-b4c8-43ad-9d1d-222e09817a7a" />
+    <UnitTestResult executionId="166a54ea-3aea-46de-8011-9aaac56ddf90" testId="a03d60bf-a387-cb7d-58d4-2c21bc1f7796" testName="SchoolSync.IntegrationTests.Domain.SoftDeleteTests.No_production_source_file_calls_Remove_on_a_soft_deletable_DbSet" computerName="PIO-LAP-624" duration="00:00:00.0527071" startTime="2026-09-11T20:44:17.2742386+05:30" endTime="2026-09-11T20:44:17.2765635+05:30" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="166a54ea-3aea-46de-8011-9aaac56ddf90" />
+  </Results>
+  <TestDefinitions>
+    <UnitTest name="SchoolSync.IntegrationTests.Auth.AuthEndpointsTests.Registering_the_same_username_twice_is_rejected_as_a_conflict" storage="d:\projects\migration\claudecode\aidlc\test plugin manual\school management system\tests\schoolsync.integrationtests\bin\debug\net10.0\schoolsync.integrationtests.dll" id="653be64c-264e-a3eb-454a-eec5ac287ba9">
+      <Execution id="5a7506ea-e313-4128-a5a7-0ead73ae6e1c" />
+      <TestMethod codeBase="D:\Projects\Migration\ClaudeCode\AIDLC\Test Plugin Manual\School Management System\tests\SchoolSync.IntegrationTests\bin\Debug\net10.0\SchoolSync.IntegrationTests.dll" adapterTypeName="executor://xunit/VsTestRunner3/netcore/" className="SchoolSync.IntegrationTests.Auth.AuthEndpointsTests" name="Registering_the_same_username_twice_is_rejected_as_a_conflict" />
+    </UnitTest>
+    <UnitTest name="SchoolSync.IntegrationTests.Domain.SoftDeleteTests.No_production_source_file_calls_Remove_on_a_soft_deletable_DbSet" storage="d:\projects\migration\claudecode\aidlc\test plugin manual\school management system\tests\schoolsync.integrationtests\bin\debug\net10.0\schoolsync.integrationtests.dll" id="a03d60bf-a387-cb7d-58d4-2c21bc1f7796">
+      <Execution id="166a54ea-3aea-46de-8011-9aaac56ddf90" />
+      <TestMethod codeBase="D:\Projects\Migration\ClaudeCode\AIDLC\Test Plugin Manual\School Management System\tests\SchoolSync.IntegrationTests\bin\Debug\net10.0\SchoolSync.IntegrationTests.dll" adapterTypeName="executor://xunit/VsTestRunner3/netcore/" className="SchoolSync.IntegrationTests.Domain.SoftDeleteTests" name="No_production_source_file_calls_Remove_on_a_soft_deletable_DbSet" />
+    </UnitTest>
+    <UnitTest name="SchoolSync.IntegrationTests.Persistence.TenantQueryFilterTests.Bypass_path_returns_both_tenants_rows_proving_the_escape_hatch_itself_works" storage="d:\projects\migration\claudecode\aidlc\test plugin manual\school management system\tests\schoolsync.integrationtests\bin\debug\net10.0\schoolsync.integrationtests.dll" id="28b5d1d0-e3e5-a7c5-e7be-6f2adb561e4e">
+      <Execution id="107ce37b-211a-413c-bb52-8172eb0a7ffa" />
+      <TestMethod codeBase="D:\Projects\Migration\ClaudeCode\AIDLC\Test Plugin Manual\School Management System\tests\SchoolSync.IntegrationTests\bin\Debug\net10.0\SchoolSync.IntegrationTests.dll" adapterTypeName="executor://xunit/VsTestRunner3/netcore/" className="SchoolSync.IntegrationTests.Persistence.TenantQueryFilterTests" name="Bypass_path_returns_both_tenants_rows_proving_the_escape_hatch_itself_works" />
+    </UnitTest>
+    <UnitTest name="SchoolSync.IntegrationTests.Persistence.AuditLoggingInterceptorTests.Creating_a_governed_entity_through_normal_SaveChanges_produces_exactly_one_audit_row" storage="d:\projects\migration\claudecode\aidlc\test plugin manual\school management system\tests\schoolsync.integrationtests\bin\debug\net10.0\schoolsync.integrationtests.dll" id="7ddc4304-4be7-2e18-8549-231f8830c766">
+      <Execution id="2fcd1e5e-1a0c-443b-9d27-393ec7fa7c30" />
+      <TestMethod codeBase="D:\Projects\Migration\ClaudeCode\AIDLC\Test Plugin Manual\School Management System\tests\SchoolSync.IntegrationTests\bin\Debug\net10.0\SchoolSync.IntegrationTests.dll" adapterTypeName="executor://xunit/VsTestRunner3/netcore/" className="SchoolSync.IntegrationTests.Persistence.AuditLoggingInterceptorTests" name="Creating_a_governed_entity_through_normal_SaveChanges_produces_exactly_one_audit_row" />
+    </UnitTest>
+    <UnitTest name="SchoolSync.IntegrationTests.Auth.AuthEndpointsTests.Login_with_wrong_password_and_login_with_unknown_username_return_the_identical_generic_error" storage="d:\projects\migration\claudecode\aidlc\test plugin manual\school management system\tests\schoolsync.integrationtests\bin\debug\net10.0\schoolsync.integrationtests.dll" id="d7872f97-c564-fbc3-95bb-2a0459d1393d">
+      <Execution id="8b55737e-c82e-43a3-9578-eaa71c582b96" />
+      <TestMethod codeBase="D:\Projects\Migration\ClaudeCode\AIDLC\Test Plugin Manual\School Management System\tests\SchoolSync.IntegrationTests\bin\Debug\net10.0\SchoolSync.IntegrationTests.dll" adapterTypeName="executor://xunit/VsTestRunner3/netcore/" className="SchoolSync.IntegrationTests.Auth.AuthEndpointsTests" name="Login_with_wrong_password_and_login_with_unknown_username_return_the_identical_generic_error" />
+    </UnitTest>
+    <UnitTest name="SchoolSync.IntegrationTests.Auth.AuthEndpointsTests.Calling_me_without_a_bearer_token_is_unauthorized" storage="d:\projects\migration\claudecode\aidlc\test plugin manual\school management system\tests\schoolsync.integrationtests\bin\debug\net10.0\schoolsync.integrationtests.dll" id="42f8b2b8-c41a-058f-a2c8-9ce6d8bc03c7">
+      <Execution id="e02dd550-dae6-4f66-8dbd-a0b24e7a3be7" />
+      <TestMethod codeBase="D:\Projects\Migration\ClaudeCode\AIDLC\Test Plugin Manual\School Management System\tests\SchoolSync.IntegrationTests\bin\Debug\net10.0\SchoolSync.IntegrationTests.dll" adapterTypeName="executor://xunit/VsTestRunner3/netcore/" className="SchoolSync.IntegrationTests.Auth.AuthEndpointsTests" name="Calling_me_without_a_bearer_token_is_unauthorized" />
+    </UnitTest>
+    <UnitTest name="SchoolSync.IntegrationTests.Auth.AuthEndpointsTests.Registering_as_PlatformOperator_is_rejected_even_though_the_field_accepts_the_string" storage="d:\projects\migration\claudecode\aidlc\test plugin manual\school management system\tests\schoolsync.integrationtests\bin\debug\net10.0\schoolsync.integrationtests.dll" id="4089adc0-e945-43c3-ea88-1e613ef68364">
+      <Execution id="32e29a75-2e77-45c5-8168-84f5638dd192" />
+      <TestMethod codeBase="D:\Projects\Migration\ClaudeCode\AIDLC\Test Plugin Manual\School Management System\tests\SchoolSync.IntegrationTests\bin\Debug\net10.0\SchoolSync.IntegrationTests.dll" adapterTypeName="executor://xunit/VsTestRunner3/netcore/" className="SchoolSync.IntegrationTests.Auth.AuthEndpointsTests" name="Registering_as_PlatformOperator_is_rejected_even_though_the_field_accepts_the_string" />
+    </UnitTest>
+    <UnitTest name="SchoolSync.IntegrationTests.Persistence.TenantQueryFilterTests.Fetching_tenant_Bs_student_by_its_real_id_while_scoped_to_tenant_A_returns_null" storage="d:\projects\migration\claudecode\aidlc\test plugin manual\school management system\tests\schoolsync.integrationtests\bin\debug\net10.0\schoolsync.integrationtests.dll" id="062b0953-666a-5a2b-d616-90a2666391c5">
+      <Execution id="d118e58a-2f9d-4952-8519-0b00885cf2dc" />
+      <TestMethod codeBase="D:\Projects\Migration\ClaudeCode\AIDLC\Test Plugin Manual\School Management System\tests\SchoolSync.IntegrationTests\bin\Debug\net10.0\SchoolSync.IntegrationTests.dll" adapterTypeName="executor://xunit/VsTestRunner3/netcore/" className="SchoolSync.IntegrationTests.Persistence.TenantQueryFilterTests" name="Fetching_tenant_Bs_student_by_its_real_id_while_scoped_to_tenant_A_returns_null" />
+    </UnitTest>
+    <UnitTest name="SchoolSync.IntegrationTests.Auth.AuthEndpointsTests.Registering_with_a_policy_violating_password_is_rejected" storage="d:\projects\migration\claudecode\aidlc\test plugin manual\school management system\tests\schoolsync.integrationtests\bin\debug\net10.0\schoolsync.integrationtests.dll" id="7734e212-947e-69dc-ec63-c2f14ecc75c9">
+      <Execution id="e76a7b96-5d3c-4944-a0f1-c32ef90f983d" />
+      <TestMethod codeBase="D:\Projects\Migration\ClaudeCode\AIDLC\Test Plugin Manual\School Management System\tests\SchoolSync.IntegrationTests\bin\Debug\net10.0\SchoolSync.IntegrationTests.dll" adapterTypeName="executor://xunit/VsTestRunner3/netcore/" className="SchoolSync.IntegrationTests.Auth.AuthEndpointsTests" name="Registering_with_a_policy_violating_password_is_rejected" />
+    </UnitTest>
+    <UnitTest name="SchoolSync.IntegrationTests.Domain.SoftDeleteTests.Deactivate_then_Reactivate_restores_exactly_the_original_state" storage="d:\projects\migration\claudecode\aidlc\test plugin manual\school management system\tests\schoolsync.integrationtests\bin\debug\net10.0\schoolsync.integrationtests.dll" id="e54618dd-8a0a-c701-a04c-b5bae6443bd7">
+      <Execution id="4e9180df-86ef-4fd5-a32a-8b3277b0c2f6" />
+      <TestMethod codeBase="D:\Projects\Migration\ClaudeCode\AIDLC\Test Plugin Manual\School Management System\tests\SchoolSync.IntegrationTests\bin\Debug\net10.0\SchoolSync.IntegrationTests.dll" adapterTypeName="executor://xunit/VsTestRunner3/netcore/" className="SchoolSync.IntegrationTests.Domain.SoftDeleteTests" name="Deactivate_then_Reactivate_restores_exactly_the_original_state" />
+    </UnitTest>
+    <UnitTest name="SchoolSync.IntegrationTests.Persistence.AuditLoggingInterceptorTests.No_production_source_file_calls_ExecuteUpdate_or_ExecuteDelete_on_a_governed_entity" storage="d:\projects\migration\claudecode\aidlc\test plugin manual\school management system\tests\schoolsync.integrationtests\bin\debug\net10.0\schoolsync.integrationtests.dll" id="0400772b-0502-3065-04f6-63d0bb84723b">
+      <Execution id="434031c1-3961-4db2-bbed-b5fac6517e4a" />
+      <TestMethod codeBase="D:\Projects\Migration\ClaudeCode\AIDLC\Test Plugin Manual\School Management System\tests\SchoolSync.IntegrationTests\bin\Debug\net10.0\SchoolSync.IntegrationTests.dll" adapterTypeName="executor://xunit/VsTestRunner3/netcore/" className="SchoolSync.IntegrationTests.Persistence.AuditLoggingInterceptorTests" name="No_production_source_file_calls_ExecuteUpdate_or_ExecuteDelete_on_a_governed_entity" />
+    </UnitTest>
+    <UnitTest name="SchoolSync.IntegrationTests.Persistence.TenantQueryFilterTests.Listing_students_as_tenant_A_never_returns_tenant_Bs_seeded_row" storage="d:\projects\migration\claudecode\aidlc\test plugin manual\school management system\tests\schoolsync.integrationtests\bin\debug\net10.0\schoolsync.integrationtests.dll" id="36eff14a-8467-bc05-21fd-4a73b6392370">
+      <Execution id="3e20b233-73fc-4de4-bbfc-ce352f52105f" />
+      <TestMethod codeBase="D:\Projects\Migration\ClaudeCode\AIDLC\Test Plugin Manual\School Management System\tests\SchoolSync.IntegrationTests\bin\Debug\net10.0\SchoolSync.IntegrationTests.dll" adapterTypeName="executor://xunit/VsTestRunner3/netcore/" className="SchoolSync.IntegrationTests.Persistence.TenantQueryFilterTests" name="Listing_students_as_tenant_A_never_returns_tenant_Bs_seeded_row" />
+    </UnitTest>
+    <UnitTest name="SchoolSync.IntegrationTests.Auth.AuthEndpointsTests.Full_register_login_refresh_logout_cycle_succeeds_end_to_end" storage="d:\projects\migration\claudecode\aidlc\test plugin manual\school management system\tests\schoolsync.integrationtests\bin\debug\net10.0\schoolsync.integrationtests.dll" id="998269c2-03d5-9a03-e068-8ca2d87f35be">
+      <Execution id="3aed18c4-a165-4247-b150-f0030a9e9217" />
+      <TestMethod codeBase="D:\Projects\Migration\ClaudeCode\AIDLC\Test Plugin Manual\School Management System\tests\SchoolSync.IntegrationTests\bin\Debug\net10.0\SchoolSync.IntegrationTests.dll" adapterTypeName="executor://xunit/VsTestRunner3/netcore/" className="SchoolSync.IntegrationTests.Auth.AuthEndpointsTests" name="Full_register_login_refresh_logout_cycle_succeeds_end_to_end" />
+    </UnitTest>
+    <UnitTest name="SchoolSync.IntegrationTests.Auth.PasswordPolicyTests.Accepts_a_password_meeting_every_condition" storage="d:\projects\migration\claudecode\aidlc\test plugin manual\school management system\tests\schoolsync.integrationtests\bin\debug\net10.0\schoolsync.integrationtests.dll" id="afe8c4ce-57c2-10c0-c4ef-f4e8183b3191">
+      <Execution id="f3028491-9718-4271-bf47-8d209a5a976c" />
+      <TestMethod codeBase="D:\Projects\Migration\ClaudeCode\AIDLC\Test Plugin Manual\School Management System\tests\SchoolSync.IntegrationTests\bin\Debug\net10.0\SchoolSync.IntegrationTests.dll" adapterTypeName="executor://xunit/VsTestRunner3/netcore/" className="SchoolSync.IntegrationTests.Auth.PasswordPolicyTests" name="Accepts_a_password_meeting_every_condition" />
+    </UnitTest>
+    <UnitTest name="SchoolSync.IntegrationTests.Persistence.AuditLoggingInterceptorTests.Deactivating_a_governed_entity_is_classified_as_Deactivate_not_a_generic_Update" storage="d:\projects\migration\claudecode\aidlc\test plugin manual\school management system\tests\schoolsync.integrationtests\bin\debug\net10.0\schoolsync.integrationtests.dll" id="763ec2b9-0398-f08e-c0e4-7b815d5d7599">
+      <Execution id="18dee66f-b189-4dab-a720-a20e05e25757" />
+      <TestMethod codeBase="D:\Projects\Migration\ClaudeCode\AIDLC\Test Plugin Manual\School Management System\tests\SchoolSync.IntegrationTests\bin\Debug\net10.0\SchoolSync.IntegrationTests.dll" adapterTypeName="executor://xunit/VsTestRunner3/netcore/" className="SchoolSync.IntegrationTests.Persistence.AuditLoggingInterceptorTests" name="Deactivating_a_governed_entity_is_classified_as_Deactivate_not_a_generic_Update" />
+    </UnitTest>
+    <UnitTest name="SchoolSync.IntegrationTests.Auth.PasswordPolicyTests.Rejects_passwords_that_are_one_condition_away_from_passing(password: &quot;lowercase123&quot;)" storage="d:\projects\migration\claudecode\aidlc\test plugin manual\school management system\tests\schoolsync.integrationtests\bin\debug\net10.0\schoolsync.integrationtests.dll" id="aaa6a2cb-657f-9109-ce3a-6234a29a74b0">
+      <Execution id="d66195d7-a2be-4ba3-9849-c37e196b98c5" />
+      <TestMethod codeBase="D:\Projects\Migration\ClaudeCode\AIDLC\Test Plugin Manual\School Management System\tests\SchoolSync.IntegrationTests\bin\Debug\net10.0\SchoolSync.IntegrationTests.dll" adapterTypeName="executor://xunit/VsTestRunner3/netcore/" className="SchoolSync.IntegrationTests.Auth.PasswordPolicyTests" name="Rejects_passwords_that_are_one_condition_away_from_passing" />
+    </UnitTest>
+    <UnitTest name="SchoolSync.IntegrationTests.Persistence.TenantQueryFilterTests.Teacher_a_second_entity_type_is_also_tenant_scoped_by_the_same_convention" storage="d:\projects\migration\claudecode\aidlc\test plugin manual\school management system\tests\schoolsync.integrationtests\bin\debug\net10.0\schoolsync.integrationtests.dll" id="4295388d-72cb-a40c-1868-9ab2a7096cf1">
+      <Execution id="823ddbae-718f-4b87-8374-b89d48ece29e" />
+      <TestMethod codeBase="D:\Projects\Migration\ClaudeCode\AIDLC\Test Plugin Manual\School Management System\tests\SchoolSync.IntegrationTests\bin\Debug\net10.0\SchoolSync.IntegrationTests.dll" adapterTypeName="executor://xunit/VsTestRunner3/netcore/" className="SchoolSync.IntegrationTests.Persistence.TenantQueryFilterTests" name="Teacher_a_second_entity_type_is_also_tenant_scoped_by_the_same_convention" />
+    </UnitTest>
+    <UnitTest name="SchoolSync.IntegrationTests.Auth.PasswordPolicyTests.Rejects_null_or_empty" storage="d:\projects\migration\claudecode\aidlc\test plugin manual\school management system\tests\schoolsync.integrationtests\bin\debug\net10.0\schoolsync.integrationtests.dll" id="8b53e8a7-7d86-55b8-b72b-24b23c68edd9">
+      <Execution id="0b863ef6-c32c-4f63-a73e-3da250e15c54" />
+      <TestMethod codeBase="D:\Projects\Migration\ClaudeCode\AIDLC\Test Plugin Manual\School Management System\tests\SchoolSync.IntegrationTests\bin\Debug\net10.0\SchoolSync.IntegrationTests.dll" adapterTypeName="executor://xunit/VsTestRunner3/netcore/" className="SchoolSync.IntegrationTests.Auth.PasswordPolicyTests" name="Rejects_null_or_empty" />
+    </UnitTest>
+    <UnitTest name="SchoolSync.IntegrationTests.Persistence.AuditLoggingInterceptorTests.ExecuteUpdate_bulk_operation_bypasses_the_interceptor_and_produces_no_audit_row" storage="d:\projects\migration\claudecode\aidlc\test plugin manual\school management system\tests\schoolsync.integrationtests\bin\debug\net10.0\schoolsync.integrationtests.dll" id="39be401d-d5fe-bba4-eca9-d83f62b06189">
+      <Execution id="6a09b240-4efc-4619-95d1-8fbcaf07c3f7" />
+      <TestMethod codeBase="D:\Projects\Migration\ClaudeCode\AIDLC\Test Plugin Manual\School Management System\tests\SchoolSync.IntegrationTests\bin\Debug\net10.0\SchoolSync.IntegrationTests.dll" adapterTypeName="executor://xunit/VsTestRunner3/netcore/" className="SchoolSync.IntegrationTests.Persistence.AuditLoggingInterceptorTests" name="ExecuteUpdate_bulk_operation_bypasses_the_interceptor_and_produces_no_audit_row" />
+    </UnitTest>
+    <UnitTest name="SchoolSync.IntegrationTests.Auth.PasswordPolicyTests.Rejects_passwords_that_are_one_condition_away_from_passing(password: &quot;Sh0rt!ab&quot;)" storage="d:\projects\migration\claudecode\aidlc\test plugin manual\school management system\tests\schoolsync.integrationtests\bin\debug\net10.0\schoolsync.integrationtests.dll" id="127878c8-099a-30ea-0dab-f27390dace99">
+      <Execution id="28c30b8e-55ab-46dd-9c2f-f7f72e0f4f3f" />
+      <TestMethod codeBase="D:\Projects\Migration\ClaudeCode\AIDLC\Test Plugin Manual\School Management System\tests\SchoolSync.IntegrationTests\bin\Debug\net10.0\SchoolSync.IntegrationTests.dll" adapterTypeName="executor://xunit/VsTestRunner3/netcore/" className="SchoolSync.IntegrationTests.Auth.PasswordPolicyTests" name="Rejects_passwords_that_are_one_condition_away_from_passing" />
+    </UnitTest>
+    <UnitTest name="SchoolSync.IntegrationTests.Auth.PasswordPolicyTests.Rejects_passwords_that_are_one_condition_away_from_passing(password: &quot;Password123!&quot;)" storage="d:\projects\migration\claudecode\aidlc\test plugin manual\school management system\tests\schoolsync.integrationtests\bin\debug\net10.0\schoolsync.integrationtests.dll" id="b37b3a36-36a8-157c-9e95-9a65663c61b8">
+      <Execution id="e8d34dd6-5181-4f99-9f28-5338876a9f8f" />
+      <TestMethod codeBase="D:\Projects\Migration\ClaudeCode\AIDLC\Test Plugin Manual\School Management System\tests\SchoolSync.IntegrationTests\bin\Debug\net10.0\SchoolSync.IntegrationTests.dll" adapterTypeName="executor://xunit/VsTestRunner3/netcore/" className="SchoolSync.IntegrationTests.Auth.PasswordPolicyTests" name="Rejects_passwords_that_are_one_condition_away_from_passing" />
+    </UnitTest>
+  </TestDefinitions>
+  <TestEntries>
+    <TestEntry testId="39be401d-d5fe-bba4-eca9-d83f62b06189" executionId="6a09b240-4efc-4619-95d1-8fbcaf07c3f7" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="062b0953-666a-5a2b-d616-90a2666391c5" executionId="d118e58a-2f9d-4952-8519-0b00885cf2dc" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="4295388d-72cb-a40c-1868-9ab2a7096cf1" executionId="823ddbae-718f-4b87-8374-b89d48ece29e" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="7ddc4304-4be7-2e18-8549-231f8830c766" executionId="2fcd1e5e-1a0c-443b-9d27-393ec7fa7c30" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="b37b3a36-36a8-157c-9e95-9a65663c61b8" executionId="e8d34dd6-5181-4f99-9f28-5338876a9f8f" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="e54618dd-8a0a-c701-a04c-b5bae6443bd7" executionId="ed7f6282-5e39-41ce-a4f2-b6529a5feae1" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="4089adc0-e945-43c3-ea88-1e613ef68364" executionId="32e29a75-2e77-45c5-8168-84f5638dd192" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="e54618dd-8a0a-c701-a04c-b5bae6443bd7" executionId="f77b4744-ceb7-486f-a09b-d7baf3e15ad7" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="d7872f97-c564-fbc3-95bb-2a0459d1393d" executionId="8b55737e-c82e-43a3-9578-eaa71c582b96" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="0400772b-0502-3065-04f6-63d0bb84723b" executionId="434031c1-3961-4db2-bbed-b5fac6517e4a" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="127878c8-099a-30ea-0dab-f27390dace99" executionId="28c30b8e-55ab-46dd-9c2f-f7f72e0f4f3f" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="afe8c4ce-57c2-10c0-c4ef-f4e8183b3191" executionId="f3028491-9718-4271-bf47-8d209a5a976c" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="998269c2-03d5-9a03-e068-8ca2d87f35be" executionId="3aed18c4-a165-4247-b150-f0030a9e9217" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="28b5d1d0-e3e5-a7c5-e7be-6f2adb561e4e" executionId="107ce37b-211a-413c-bb52-8172eb0a7ffa" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="7734e212-947e-69dc-ec63-c2f14ecc75c9" executionId="e76a7b96-5d3c-4944-a0f1-c32ef90f983d" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="42f8b2b8-c41a-058f-a2c8-9ce6d8bc03c7" executionId="e02dd550-dae6-4f66-8dbd-a0b24e7a3be7" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="e54618dd-8a0a-c701-a04c-b5bae6443bd7" executionId="87df2443-5a49-425a-9d09-5d253fe292af" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="aaa6a2cb-657f-9109-ce3a-6234a29a74b0" executionId="d66195d7-a2be-4ba3-9849-c37e196b98c5" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="8b53e8a7-7d86-55b8-b72b-24b23c68edd9" executionId="0b863ef6-c32c-4f63-a73e-3da250e15c54" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="36eff14a-8467-bc05-21fd-4a73b6392370" executionId="3e20b233-73fc-4de4-bbfc-ce352f52105f" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="e54618dd-8a0a-c701-a04c-b5bae6443bd7" executionId="4e9180df-86ef-4fd5-a32a-8b3277b0c2f6" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="763ec2b9-0398-f08e-c0e4-7b815d5d7599" executionId="18dee66f-b189-4dab-a720-a20e05e25757" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="653be64c-264e-a3eb-454a-eec5ac287ba9" executionId="5a7506ea-e313-4128-a5a7-0ead73ae6e1c" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="e54618dd-8a0a-c701-a04c-b5bae6443bd7" executionId="ffe05429-b4c8-43ad-9d1d-222e09817a7a" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="a03d60bf-a387-cb7d-58d4-2c21bc1f7796" executionId="166a54ea-3aea-46de-8011-9aaac56ddf90" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+  </TestEntries>
+  <TestLists>
+    <TestList name="Results Not in a List" id="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestList name="All Loaded Results" id="19431567-8539-422a-85d7-44ee4e166bda" />
+  </TestLists>
+  <ResultSummary outcome="Completed">
+    <Counters total="25" executed="25" passed="25" failed="0" error="0" timeout="0" aborted="0" inconclusive="0" passedButRunAborted="0" notRunnable="0" notExecuted="0" disconnected="0" warning="0" completed="0" inProgress="0" pending="0" />
+    <Output>
+      <StdOut>[xUnit.net 00:00:00.00] xUnit.net VSTest Adapter v3.1.4+50e68bbb8b (64-bit .NET 10.0.3)&#xD;
+[xUnit.net 00:00:00.11]   Discovering: SchoolSync.IntegrationTests&#xD;
+[xUnit.net 00:00:00.19]   Discovered:  SchoolSync.IntegrationTests&#xD;
+[xUnit.net 00:00:00.22]   Starting:    SchoolSync.IntegrationTests&#xD;
+info: Microsoft.Hosting.Lifetime[0]&#xD;
+      Application started. Press Ctrl+C to shut down.&#xD;
+info: Microsoft.Hosting.Lifetime[0]&#xD;
+      Hosting environment: Testing&#xD;
+info: Microsoft.Hosting.Lifetime[0]&#xD;
+      Content root path: D:\Projects\Migration\ClaudeCode\AIDLC\Test Plugin Manual\School Management System\src\SchoolSync.Api&#xD;
+warn: Microsoft.EntityFrameworkCore.Model.Validation[10622]&#xD;
+      Entity 'AcademicYear' has a global query filter defined and is the required end of a relationship with the entity 'Enrollment'. This may lead to unexpected results when the required entity is filtered out. Either configure the navigation as optional, or define matching query filters for both entities in the navigation. See https://go.microsoft.com/fwlink/?linkid=2131316 for more information.&#xD;
+warn: Microsoft.EntityFrameworkCore.Model.Validation[10622]&#xD;
+      Entity 'Room' has a global query filter defined and is the required end of a relationship with the entity 'Meeting'. This may lead to unexpected results when the required entity is filtered out. Either configure the navigation as optional, or define matching query filters for both entities in the navigation. See https://go.microsoft.com/fwlink/?linkid=2131316 for more information.&#xD;
+warn: Microsoft.EntityFrameworkCore.Model.Validation[10622]&#xD;
+      Entity 'UserAccount' has a global query filter defined and is the required end of a relationship with the entity 'Message'. This may lead to unexpected results when the required entity is filtered out. Either configure the navigation as optional, or define matching query filters for both entities in the navigation. See https://go.microsoft.com/fwlink/?linkid=2131316 for more information.&#xD;
+warn: Microsoft.EntityFrameworkCore.Model.Validation[10622]&#xD;
+      Entity 'Student' has a global query filter defined and is the required end of a relationship with the entity 'ParentLinkCode'. This may lead to unexpected results when the required entity is filtered out. Either configure the navigation as optional, or define matching query filters for both entities in the navigation. See https://go.microsoft.com/fwlink/?linkid=2131316 for more information.&#xD;
+warn: Microsoft.EntityFrameworkCore.Model.Validation[10622]&#xD;
+      Entity 'UserAccount' has a global query filter defined and is the required end of a relationship with the entity 'ParentStudentLink'. This may lead to unexpected results when the required entity is filtered out. Either configure the navigation as optional, or define matching query filters for both entities in the navigation. See https://go.microsoft.com/fwlink/?linkid=2131316 for more information.&#xD;
+warn: Microsoft.EntityFrameworkCore.Model.Validation[10622]&#xD;
+      Entity 'UserAccount' has a global query filter defined and is the required end of a relationship with the entity 'RefreshToken'. This may lead to unexpected results when the required entity is filtered out. Either configure the navigation as optional, or define matching query filters for both entities in the navigation. See https://go.microsoft.com/fwlink/?linkid=2131316 for more information.&#xD;
+warn: Microsoft.EntityFrameworkCore.Model.Validation[10622]&#xD;
+      Entity 'Class' has a global query filter defined and is the required end of a relationship with the entity 'SubjectTeacherClassMapping'. This may lead to unexpected results when the required entity is filtered out. Either configure the navigation as optional, or define matching query filters for both entities in the navigation. See https://go.microsoft.com/fwlink/?linkid=2131316 for more information.&#xD;
+warn: Microsoft.EntityFrameworkCore.Model.Validation[10622]&#xD;
+      Entity 'AcademicYear' has a global query filter defined and is the required end of a relationship with the entity 'Term'. This may lead to unexpected results when the required entity is filtered out. Either configure the navigation as optional, or define matching query filters for both entities in the navigation. See https://go.microsoft.com/fwlink/?linkid=2131316 for more information.&#xD;
+info: Microsoft.EntityFrameworkCore.Update[30100]&#xD;
+      Saved 2 entities to in-memory store.&#xD;
+warn: Microsoft.AspNetCore.HttpsPolicy.HttpsRedirectionMiddleware[3]&#xD;
+      Failed to determine the https port for redirect.&#xD;
+info: Microsoft.EntityFrameworkCore.Update[30100]&#xD;
+      Saved 1 entities to in-memory store.&#xD;
+info: Microsoft.EntityFrameworkCore.Update[30100]&#xD;
+      Saved 1 entities to in-memory store.&#xD;
+info: Microsoft.Hosting.Lifetime[0]&#xD;
+      Application is shutting down...&#xD;
+info: Microsoft.Hosting.Lifetime[0]&#xD;
+      Application started. Press Ctrl+C to shut down.&#xD;
+info: Microsoft.Hosting.Lifetime[0]&#xD;
+      Hosting environment: Testing&#xD;
+info: Microsoft.Hosting.Lifetime[0]&#xD;
+      Content root path: D:\Projects\Migration\ClaudeCode\AIDLC\Test Plugin Manual\School Management System\src\SchoolSync.Api&#xD;
+warn: Microsoft.EntityFrameworkCore.Model.Validation[10622]&#xD;
+      Entity 'AcademicYear' has a global query filter defined and is the required end of a relationship with the entity 'Enrollment'. This may lead to unexpected results when the required entity is filtered out. Either configure the navigation as optional, or define matching query filters for both entities in the navigation. See https://go.microsoft.com/fwlink/?linkid=2131316 for more information.&#xD;
+warn: Microsoft.EntityFrameworkCore.Model.Validation[10622]&#xD;
+      Entity 'Room' has a global query filter defined and is the required end of a relationship with the entity 'Meeting'. This may lead to unexpected results when the required entity is filtered out. Either configure the navigation as optional, or define matching query filters for both entities in the navigation. See https://go.microsoft.com/fwlink/?linkid=2131316 for more information.&#xD;
+warn: Microsoft.EntityFrameworkCore.Model.Validation[10622]&#xD;
+      Entity 'UserAccount' has a global query filter defined and is the required end of a relationship with the entity 'Message'. This may lead to unexpected results when the required entity is filtered out. Either configure the navigation as optional, or define matching query filters for both entities in the navigation. See https://go.microsoft.com/fwlink/?linkid=2131316 for more information.&#xD;
+warn: Microsoft.EntityFrameworkCore.Model.Validation[10622]&#xD;
+      Entity 'Student' has a global query filter defined and is the required end of a relationship with the entity 'ParentLinkCode'. This may lead to unexpected results when the required entity is filtered out. Either configure the navigation as optional, or define matching query filters for both entities in the navigation. See https://go.microsoft.com/fwlink/?linkid=2131316 for more information.&#xD;
+warn: Microsoft.EntityFrameworkCore.Model.Validation[10622]&#xD;
+      Entity 'UserAccount' has a global query filter defined and is the required end of a relationship with the entity 'ParentStudentLink'. This may lead to unexpected results when the required entity is filtered out. Either configure the navigation as optional, or define matching query filters for both entities in the navigation. See https://go.microsoft.com/fwlink/?linkid=2131316 for more information.&#xD;
+warn: Microsoft.EntityFrameworkCore.Model.Validation[10622]&#xD;
+      Entity 'UserAccount' has a global query filter defined and is the required end of a relationship with the entity 'RefreshToken'. This may lead to unexpected results when the required entity is filtered out. Either configure the navigation as optional, or define matching query filters for both entities in the navigation. See https://go.microsoft.com/fwlink/?linkid=2131316 for more information.&#xD;
+warn: Microsoft.EntityFrameworkCore.Model.Validation[10622]&#xD;
+      Entity 'Class' has a global query filter defined and is the required end of a relationship with the entity 'SubjectTeacherClassMapping'. This may lead to unexpected results when the required entity is filtered out. Either configure the navigation as optional, or define matching query filters for both entities in the navigation. See https://go.microsoft.com/fwlink/?linkid=2131316 for more information.&#xD;
+warn: Microsoft.EntityFrameworkCore.Model.Validation[10622]&#xD;
+      Entity 'AcademicYear' has a global query filter defined and is the required end of a relationship with the entity 'Term'. This may lead to unexpected results when the required entity is filtered out. Either configure the navigation as optional, or define matching query filters for both entities in the navigation. See https://go.microsoft.com/fwlink/?linkid=2131316 for more information.&#xD;
+info: Microsoft.EntityFrameworkCore.Update[30100]&#xD;
+      Saved 2 entities to in-memory store.&#xD;
+warn: Microsoft.AspNetCore.HttpsPolicy.HttpsRedirectionMiddleware[3]&#xD;
+      Failed to determine the https port for redirect.&#xD;
+info: Microsoft.Hosting.Lifetime[0]&#xD;
+      Application is shutting down...&#xD;
+info: Microsoft.Hosting.Lifetime[0]&#xD;
+      Application started. Press Ctrl+C to shut down.&#xD;
+info: Microsoft.Hosting.Lifetime[0]&#xD;
+      Hosting environment: Testing&#xD;
+info: Microsoft.Hosting.Lifetime[0]&#xD;
+      Content root path: D:\Projects\Migration\ClaudeCode\AIDLC\Test Plugin Manual\School Management System\src\SchoolSync.Api&#xD;
+warn: Microsoft.EntityFrameworkCore.Model.Validation[10622]&#xD;
+      Entity 'AcademicYear' has a global query filter defined and is the required end of a relationship with the entity 'Enrollment'. This may lead to unexpected results when the required entity is filtered out. Either configure the navigation as optional, or define matching query filters for both entities in the navigation. See https://go.microsoft.com/fwlink/?linkid=2131316 for more information.&#xD;
+warn: Microsoft.EntityFrameworkCore.Model.Validation[10622]&#xD;
+      Entity 'Room' has a global query filter defined and is the required end of a relationship with the entity 'Meeting'. This may lead to unexpected results when the required entity is filtered out. Either configure the navigation as optional, or define matching query filters for both entities in the navigation. See https://go.microsoft.com/fwlink/?linkid=2131316 for more information.&#xD;
+warn: Microsoft.EntityFrameworkCore.Model.Validation[10622]&#xD;
+      Entity 'UserAccount' has a global query filter defined and is the required end of a relationship with the entity 'Message'. This may lead to unexpected results when the required entity is filtered out. Either configure the navigation as optional, or define matching query filters for both entities in the navigation. See https://go.microsoft.com/fwlink/?linkid=2131316 for more information.&#xD;
+warn: Microsoft.EntityFrameworkCore.Model.Validation[10622]&#xD;
+      Entity 'Student' has a global query filter defined and is the required end of a relationship with the entity 'ParentLinkCode'. This may lead to unexpected results when the required entity is filtered out. Either configure the navigation as optional, or define matching query filters for both entities in the navigation. See https://go.microsoft.com/fwlink/?linkid=2131316 for more information.&#xD;
+warn: Microsoft.EntityFrameworkCore.Model.Validation[10622]&#xD;
+      Entity 'UserAccount' has a global query filter defined and is the required end of a relationship with the entity 'ParentStudentLink'. This may lead to unexpected results when the required entity is filtered out. Either configure the navigation as optional, or define matching query filters for both entities in the navigation. See https://go.microsoft.com/fwlink/?linkid=2131316 for more information.&#xD;
+warn: Microsoft.EntityFrameworkCore.Model.Validation[10622]&#xD;
+      Entity 'UserAccount' has a global query filter defined and is the required end of a relationship with the entity 'RefreshToken'. This may lead to unexpected results when the required entity is filtered out. Either configure the navigation as optional, or define matching query filters for both entities in the navigation. See https://go.microsoft.com/fwlink/?linkid=2131316 for more information.&#xD;
+warn: Microsoft.EntityFrameworkCore.Model.Validation[10622]&#xD;
+      Entity 'Class' has a global query filter defined and is the required end of a relationship with the entity 'SubjectTeacherClassMapping'. This may lead to unexpected results when the required entity is filtered out. Either configure the navigation as optional, or define matching query filters for both entities in the navigation. See https://go.microsoft.com/fwlink/?linkid=2131316 for more information.&#xD;
+warn: Microsoft.EntityFrameworkCore.Model.Validation[10622]&#xD;
+      Entity 'AcademicYear' has a global query filter defined and is the required end of a relationship with the entity 'Term'. This may lead to unexpected results when the required entity is filtered out. Either configure the navigation as optional, or define matching query filters for both entities in the navigation. See https://go.microsoft.com/fwlink/?linkid=2131316 for more information.&#xD;
+info: Microsoft.EntityFrameworkCore.Update[30100]&#xD;
+      Saved 2 entities to in-memory store.&#xD;
+warn: Microsoft.AspNetCore.HttpsPolicy.HttpsRedirectionMiddleware[3]&#xD;
+      Failed to determine the https port for redirect.&#xD;
+info: Microsoft.Hosting.Lifetime[0]&#xD;
+      Application is shutting down...&#xD;
+info: Microsoft.Hosting.Lifetime[0]&#xD;
+      Application started. Press Ctrl+C to shut down.&#xD;
+info: Microsoft.Hosting.Lifetime[0]&#xD;
+      Hosting environment: Testing&#xD;
+info: Microsoft.Hosting.Lifetime[0]&#xD;
+      Content root path: D:\Projects\Migration\ClaudeCode\AIDLC\Test Plugin Manual\School Management System\src\SchoolSync.Api&#xD;
+warn: Microsoft.EntityFrameworkCore.Model.Validation[10622]&#xD;
+      Entity 'AcademicYear' has a global query filter defined and is the required end of a relationship with the entity 'Enrollment'. This may lead to unexpected results when the required entity is filtered out. Either configure the navigation as optional, or define matching query filters for both entities in the navigation. See https://go.microsoft.com/fwlink/?linkid=2131316 for more information.&#xD;
+warn: Microsoft.EntityFrameworkCore.Model.Validation[10622]&#xD;
+      Entity 'Room' has a global query filter defined and is the required end of a relationship with the entity 'Meeting'. This may lead to unexpected results when the required entity is filtered out. Either configure the navigation as optional, or define matching query filters for both entities in the navigation. See https://go.microsoft.com/fwlink/?linkid=2131316 for more information.&#xD;
+warn: Microsoft.EntityFrameworkCore.Model.Validation[10622]&#xD;
+      Entity 'UserAccount' has a global query filter defined and is the required end of a relationship with the entity 'Message'. This may lead to unexpected results when the required entity is filtered out. Either configure the navigation as optional, or define matching query filters for both entities in the navigation. See https://go.microsoft.com/fwlink/?linkid=2131316 for more information.&#xD;
+warn: Microsoft.EntityFrameworkCore.Model.Validation[10622]&#xD;
+      Entity 'Student' has a global query filter defined and is the required end of a relationship with the entity 'ParentLinkCode'. This may lead to unexpected results when the required entity is filtered out. Either configure the navigation as optional, or define matching query filters for both entities in the navigation. See https://go.microsoft.com/fwlink/?linkid=2131316 for more information.&#xD;
+warn: Microsoft.EntityFrameworkCore.Model.Validation[10622]&#xD;
+      Entity 'UserAccount' has a global query filter defined and is the required end of a relationship with the entity 'ParentStudentLink'. This may lead to unexpected results when the required entity is filtered out. Either configure the navigation as optional, or define matching query filters for both entities in the navigation. See https://go.microsoft.com/fwlink/?linkid=2131316 for more information.&#xD;
+warn: Microsoft.EntityFrameworkCore.Model.Validation[10622]&#xD;
+      Entity 'UserAccount' has a global query filter defined and is the required end of a relationship with the entity 'RefreshToken'. This may lead to unexpected results when the required entity is filtered out. Either configure the navigation as optional, or define matching query filters for both entities in the navigation. See https://go.microsoft.com/fwlink/?linkid=2131316 for more information.&#xD;
+warn: Microsoft.EntityFrameworkCore.Model.Validation[10622]&#xD;
+      Entity 'Class' has a global query filter defined and is the required end of a relationship with the entity 'SubjectTeacherClassMapping'. This may lead to unexpected results when the required entity is filtered out. Either configure the navigation as optional, or define matching query filters for both entities in the navigation. See https://go.microsoft.com/fwlink/?linkid=2131316 for more information.&#xD;
+warn: Microsoft.EntityFrameworkCore.Model.Validation[10622]&#xD;
+      Entity 'AcademicYear' has a global query filter defined and is the required end of a relationship with the entity 'Term'. This may lead to unexpected results when the required entity is filtered out. Either configure the navigation as optional, or define matching query filters for both entities in the navigation. See https://go.microsoft.com/fwlink/?linkid=2131316 for more information.&#xD;
+info: Microsoft.EntityFrameworkCore.Update[30100]&#xD;
+      Saved 2 entities to in-memory store.&#xD;
+warn: Microsoft.AspNetCore.HttpsPolicy.HttpsRedirectionMiddleware[3]&#xD;
+      Failed to determine the https port for redirect.&#xD;
+info: Microsoft.EntityFrameworkCore.Update[30100]&#xD;
+      Saved 1 entities to in-memory store.&#xD;
+info: Microsoft.EntityFrameworkCore.Update[30100]&#xD;
+      Saved 1 entities to in-memory store.&#xD;
+info: Microsoft.EntityFrameworkCore.Update[30100]&#xD;
+      Saved 1 entities to in-memory store.&#xD;
+info: Microsoft.EntityFrameworkCore.Update[30100]&#xD;
+      Saved 2 entities to in-memory store.&#xD;
+info: Microsoft.EntityFrameworkCore.Update[30100]&#xD;
+      Saved 1 entities to in-memory store.&#xD;
+info: Microsoft.Hosting.Lifetime[0]&#xD;
+      Application is shutting down...&#xD;
+info: Microsoft.Hosting.Lifetime[0]&#xD;
+      Application started. Press Ctrl+C to shut down.&#xD;
+info: Microsoft.Hosting.Lifetime[0]&#xD;
+      Hosting environment: Testing&#xD;
+info: Microsoft.Hosting.Lifetime[0]&#xD;
+      Content root path: D:\Projects\Migration\ClaudeCode\AIDLC\Test Plugin Manual\School Management System\src\SchoolSync.Api&#xD;
+warn: Microsoft.EntityFrameworkCore.Model.Validation[10622]&#xD;
+      Entity 'AcademicYear' has a global query filter defined and is the required end of a relationship with the entity 'Enrollment'. This may lead to unexpected results when the required entity is filtered out. Either configure the navigation as optional, or define matching query filters for both entities in the navigation. See https://go.microsoft.com/fwlink/?linkid=2131316 for more information.&#xD;
+warn: Microsoft.EntityFrameworkCore.Model.Validation[10622]&#xD;
+      Entity 'Room' has a global query filter defined and is the required end of a relationship with the entity 'Meeting'. This may lead to unexpected results when the required entity is filtered out. Either configure the navigation as optional, or define matching query filters for both entities in the navigation. See https://go.microsoft.com/fwlink/?linkid=2131316 for more information.&#xD;
+warn: Microsoft.EntityFrameworkCore.Model.Validation[10622]&#xD;
+      Entity 'UserAccount' has a global query filter defined and is the required end of a relationship with the entity 'Message'. This may lead to unexpected results when the required entity is filtered out. Either configure the navigation as optional, or define matching query filters for both entities in the navigation. See https://go.microsoft.com/fwlink/?linkid=2131316 for more information.&#xD;
+warn: Microsoft.EntityFrameworkCore.Model.Validation[10622]&#xD;
+      Entity 'Student' has a global query filter defined and is the required end of a relationship with the entity 'ParentLinkCode'. This may lead to unexpected results when the required entity is filtered out. Either configure the navigation as optional, or define matching query filters for both entities in the navigation. See https://go.microsoft.com/fwlink/?linkid=2131316 for more information.&#xD;
+warn: Microsoft.EntityFrameworkCore.Model.Validation[10622]&#xD;
+      Entity 'UserAccount' has a global query filter defined and is the required end of a relationship with the entity 'ParentStudentLink'. This may lead to unexpected results when the required entity is filtered out. Either configure the navigation as optional, or define matching query filters for both entities in the navigation. See https://go.microsoft.com/fwlink/?linkid=2131316 for more information.&#xD;
+warn: Microsoft.EntityFrameworkCore.Model.Validation[10622]&#xD;
+      Entity 'UserAccount' has a global query filter defined and is the required end of a relationship with the entity 'RefreshToken'. This may lead to unexpected results when the required entity is filtered out. Either configure the navigation as optional, or define matching query filters for both entities in the navigation. See https://go.microsoft.com/fwlink/?linkid=2131316 for more information.&#xD;
+warn: Microsoft.EntityFrameworkCore.Model.Validation[10622]&#xD;
+      Entity 'Class' has a global query filter defined and is the required end of a relationship with the entity 'SubjectTeacherClassMapping'. This may lead to unexpected results when the required entity is filtered out. Either configure the navigation as optional, or define matching query filters for both entities in the navigation. See https://go.microsoft.com/fwlink/?linkid=2131316 for more information.&#xD;
+warn: Microsoft.EntityFrameworkCore.Model.Validation[10622]&#xD;
+      Entity 'AcademicYear' has a global query filter defined and is the required end of a relationship with the entity 'Term'. This may lead to unexpected results when the required entity is filtered out. Either configure the navigation as optional, or define matching query filters for both entities in the navigation. See https://go.microsoft.com/fwlink/?linkid=2131316 for more information.&#xD;
+info: Microsoft.EntityFrameworkCore.Update[30100]&#xD;
+      Saved 2 entities to in-memory store.&#xD;
+warn: Microsoft.AspNetCore.HttpsPolicy.HttpsRedirectionMiddleware[3]&#xD;
+      Failed to determine the https port for redirect.&#xD;
+info: Microsoft.Hosting.Lifetime[0]&#xD;
+      Application is shutting down...&#xD;
+info: Microsoft.Hosting.Lifetime[0]&#xD;
+      Application started. Press Ctrl+C to shut down.&#xD;
+info: Microsoft.Hosting.Lifetime[0]&#xD;
+      Hosting environment: Testing&#xD;
+info: Microsoft.Hosting.Lifetime[0]&#xD;
+      Content root path: D:\Projects\Migration\ClaudeCode\AIDLC\Test Plugin Manual\School Management System\src\SchoolSync.Api&#xD;
+warn: Microsoft.EntityFrameworkCore.Model.Validation[10622]&#xD;
+      Entity 'AcademicYear' has a global query filter defined and is the required end of a relationship with the entity 'Enrollment'. This may lead to unexpected results when the required entity is filtered out. Either configure the navigation as optional, or define matching query filters for both entities in the navigation. See https://go.microsoft.com/fwlink/?linkid=2131316 for more information.&#xD;
+warn: Microsoft.EntityFrameworkCore.Model.Validation[10622]&#xD;
+      Entity 'Room' has a global query filter defined and is the required end of a relationship with the entity 'Meeting'. This may lead to unexpected results when the required entity is filtered out. Either configure the navigation as optional, or define matching query filters for both entities in the navigation. See https://go.microsoft.com/fwlink/?linkid=2131316 for more information.&#xD;
+warn: Microsoft.EntityFrameworkCore.Model.Validation[10622]&#xD;
+      Entity 'UserAccount' has a global query filter defined and is the required end of a relationship with the entity 'Message'. This may lead to unexpected results when the required entity is filtered out. Either configure the navigation as optional, or define matching query filters for both entities in the navigation. See https://go.microsoft.com/fwlink/?linkid=2131316 for more information.&#xD;
+warn: Microsoft.EntityFrameworkCore.Model.Validation[10622]&#xD;
+      Entity 'Student' has a global query filter defined and is the required end of a relationship with the entity 'ParentLinkCode'. This may lead to unexpected results when the required entity is filtered out. Either configure the navigation as optional, or define matching query filters for both entities in the navigation. See https://go.microsoft.com/fwlink/?linkid=2131316 for more information.&#xD;
+warn: Microsoft.EntityFrameworkCore.Model.Validation[10622]&#xD;
+      Entity 'UserAccount' has a global query filter defined and is the required end of a relationship with the entity 'ParentStudentLink'. This may lead to unexpected results when the required entity is filtered out. Either configure the navigation as optional, or define matching query filters for both entities in the navigation. See https://go.microsoft.com/fwlink/?linkid=2131316 for more information.&#xD;
+warn: Microsoft.EntityFrameworkCore.Model.Validation[10622]&#xD;
+      Entity 'UserAccount' has a global query filter defined and is the required end of a relationship with the entity 'RefreshToken'. This may lead to unexpected results when the required entity is filtered out. Either configure the navigation as optional, or define matching query filters for both entities in the navigation. See https://go.microsoft.com/fwlink/?linkid=2131316 for more information.&#xD;
+warn: Microsoft.EntityFrameworkCore.Model.Validation[10622]&#xD;
+      Entity 'Class' has a global query filter defined and is the required end of a relationship with the entity 'SubjectTeacherClassMapping'. This may lead to unexpected results when the required entity is filtered out. Either configure the navigation as optional, or define matching query filters for both entities in the navigation. See https://go.microsoft.com/fwlink/?linkid=2131316 for more information.&#xD;
+warn: Microsoft.EntityFrameworkCore.Model.Validation[10622]&#xD;
+      Entity 'AcademicYear' has a global query filter defined and is the required end of a relationship with the entity 'Term'. This may lead to unexpected results when the required entity is filtered out. Either configure the navigation as optional, or define matching query filters for both entities in the navigation. See https://go.microsoft.com/fwlink/?linkid=2131316 for more information.&#xD;
+info: Microsoft.EntityFrameworkCore.Update[30100]&#xD;
+      Saved 2 entities to in-memory store.&#xD;
+warn: Microsoft.AspNetCore.HttpsPolicy.HttpsRedirectionMiddleware[3]&#xD;
+      Failed to determine the https port for redirect.&#xD;
+info: Microsoft.EntityFrameworkCore.Update[30100]&#xD;
+      Saved 1 entities to in-memory store.&#xD;
+info: Microsoft.EntityFrameworkCore.Update[30100]&#xD;
+      Saved 1 entities to in-memory store.&#xD;
+info: Microsoft.Hosting.Lifetime[0]&#xD;
+      Application is shutting down...&#xD;
+[xUnit.net 00:00:08.19]   Finished:    SchoolSync.IntegrationTests&#xD;
+</StdOut>
+    </Output>
+  </ResultSummary>
+</TestRun>

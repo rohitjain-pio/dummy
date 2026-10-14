@@ -1,0 +1,99 @@
+@import "tailwindcss";
+
+/*
+ * design-tokens.md is the single source of visual truth. Every token below carries its design-token
+ * name; components use ONLY these utilities (bg-primary, text-text-secondary, rounded-lg,
+ * shadow-card, text-h2 …) — never a literal hex/px in a component (tech design §4, ui-spec header).
+ * Tailwind's own default palette is switched off (`--color-*: initial`) so an off-token colour such
+ * as `amber-500` cannot even be written by accident (design-tokens.md §1a binding instruction).
+ */
+@theme {
+  --color-*: initial;
+  --color-white: #FFFFFF;
+  --color-transparent: transparent;
+
+  /* §1 Color */
+  --color-primary: #2740EA;                 /* color-primary */
+  --color-primary-hover: #1F31D7;           /* color-primary-hover */
+  --color-primary-subtle-bg: #EEF4FF;       /* color-primary-subtle-bg */
+  --color-primary-subtle-bg-strong: #DBE6FF;/* color-primary-subtle-bg-strong */
+  --color-primary-subtle-text: #203078;     /* color-primary-subtle-text */
+  --color-surface: #FFFFFF;                 /* color-surface */
+  --color-background: #F7F8FA;              /* color-background */
+  --color-border: #DDE1E9;                  /* color-border */
+  --color-border-subtle: #EEF0F4;           /* color-border-subtle */
+  --color-text-primary: #141922;            /* color-text-primary (also the dark-surface tone, ui-design-final.md §0) */
+  --color-text-secondary: #646E86;          /* color-text-secondary */
+  --color-text-tertiary: #8F98AD;           /* color-text-tertiary — decorative/large text only (3.0:1) */
+  --color-text-quaternary: #C2C8D6;         /* color-text-quaternary */
+  --color-success: #059669;                 /* color-success */
+  --color-success-subtle-bg: #ECFDF5;       /* color-success-subtle-bg (emerald-50) */
+  --color-success-subtle-text: #047857;     /* emerald-700 text pair named in §1 */
+  --color-error: #E11D48;                   /* color-error */
+  --color-error-subtle-bg: #FFF1F2;         /* rose-50 light pair for inline error banners */
+  --color-error-subtle-text: #BE123C;       /* color-error-subtle-text (rose-700; §1b AA correction) */
+  --color-info: #0284C7;                    /* color-info */
+  --color-info-subtle-bg: #F0F9FF;          /* color-info-subtle-bg (sky-50; §1b AA correction) */
+  --color-info-subtle-text: #0369A1;        /* color-info-subtle-text (sky-700; §1b AA correction) */
+  --color-neutral-subtle-text: #141922;     /* color-neutral-subtle-text (§1c; 15.4:1 on border-subtle) */
+  /* §1a AA correction — Late pill */
+  --color-warning-bg: #FFFBEB;              /* color-warning-bg (amber-50) */
+  --color-warning-text: #92400E;            /* color-warning-text (amber-800; 7.9:1 on warning-bg) */
+
+  /* §2 Typography */
+  --font-sans: Inter, ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+  --text-display: clamp(2.75rem, 4vw, 3.5rem);
+  --text-display--line-height: 1.04;
+  --text-display--letter-spacing: -0.025em;
+  --text-display--font-weight: 800;
+  --text-h1: clamp(1.875rem, 2.6vw, 2.25rem);
+  --text-h1--line-height: 1.15;
+  --text-h1--letter-spacing: -0.02em;
+  --text-h1--font-weight: 800;
+  --text-h2: 1.5rem;
+  --text-h2--line-height: 1.3;
+  --text-h2--font-weight: 700;
+  --text-body-lg: 1.0625rem;
+  --text-body-lg--line-height: 1.65;
+  --text-body: 1rem;
+  --text-body--line-height: 1.5;
+  --text-body-sm: 0.875rem;
+  --text-body-sm--line-height: 1.5;
+  --text-caption: 0.75rem;
+  --text-caption--line-height: 1.4;
+  --text-micro-label: 0.6875rem;
+  --text-micro-label--line-height: 1.3;
+  --text-micro-label--letter-spacing: 0.08em;
+  --text-micro-label--font-weight: 600;
+
+  /* §3 Spacing — one 4px base scale (space-1 = 4px … space-16 = 64px) */
+  --spacing: 0.25rem;
+
+  /* §4 Radii & elevation */
+  --radius-sm: 0.375rem;
+  --radius-md: 0.5rem;
+  --radius-lg: 0.75rem;
+  --radius-xl: 1rem;
+  --radius-full: 9999px;
+  --shadow-card: 0 1px 2px rgba(20,25,34,.04), 0 4px 16px rgba(20,25,34,.06);
+  --shadow-glow-primary: 0 6px 20px -6px rgba(39,64,234,.55);
+  --shadow-glow-nav: 0 4px 14px -4px rgba(39,64,234,.7);
+  --shadow-glow-dark: 0 8px 24px -8px rgba(0,0,0,.4);
+
+  /* §5 Breakpoints */
+  --breakpoint-sm: 40rem;
+  --breakpoint-md: 48rem;
+  --breakpoint-lg: 64rem;
+  --breakpoint-xl: 80rem;
+
+  /* Q-213 (confirmed at P6 start): structural token added at build time */
+  --spacing-sidenav: 16rem;                 /* layout-sidenav-width (utility: w-sidenav) */
+}
+
+@layer base {
+  html { font-family: var(--font-sans); color: var(--color-text-primary); background: var(--color-background); }
+  :focus-visible { outline: 2px solid var(--color-primary); outline-offset: 2px; }
+  .sr-only { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0,0,0,0); white-space: nowrap; border: 0; }
+  @media (prefers-reduced-motion: reduce) { *, *::before, *::after { animation-duration: .01ms !important; transition-duration: .01ms !important; } }
+}

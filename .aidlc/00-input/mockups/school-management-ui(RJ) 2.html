@@ -1,0 +1,1613 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>SchoolSync — School Management System</title>
+<!-- Tailwind utilities compiled for this page and inlined: the file is fully self-contained and needs no network. -->
+<style>
+*,:after,:before{--tw-border-spacing-x:0;--tw-border-spacing-y:0;--tw-translate-x:0;--tw-translate-y:0;--tw-rotate:0;--tw-skew-x:0;--tw-skew-y:0;--tw-scale-x:1;--tw-scale-y:1;--tw-pan-x: ;--tw-pan-y: ;--tw-pinch-zoom: ;--tw-scroll-snap-strictness:proximity;--tw-gradient-from-position: ;--tw-gradient-via-position: ;--tw-gradient-to-position: ;--tw-ordinal: ;--tw-slashed-zero: ;--tw-numeric-figure: ;--tw-numeric-spacing: ;--tw-numeric-fraction: ;--tw-ring-inset: ;--tw-ring-offset-width:0px;--tw-ring-offset-color:#fff;--tw-ring-color:rgba(59,130,246,.5);--tw-ring-offset-shadow:0 0 #0000;--tw-ring-shadow:0 0 #0000;--tw-shadow:0 0 #0000;--tw-shadow-colored:0 0 #0000;--tw-blur: ;--tw-brightness: ;--tw-contrast: ;--tw-grayscale: ;--tw-hue-rotate: ;--tw-invert: ;--tw-saturate: ;--tw-sepia: ;--tw-drop-shadow: ;--tw-backdrop-blur: ;--tw-backdrop-brightness: ;--tw-backdrop-contrast: ;--tw-backdrop-grayscale: ;--tw-backdrop-hue-rotate: ;--tw-backdrop-invert: ;--tw-backdrop-opacity: ;--tw-backdrop-saturate: ;--tw-backdrop-sepia: ;--tw-contain-size: ;--tw-contain-layout: ;--tw-contain-paint: ;--tw-contain-style: }::backdrop{--tw-border-spacing-x:0;--tw-border-spacing-y:0;--tw-translate-x:0;--tw-translate-y:0;--tw-rotate:0;--tw-skew-x:0;--tw-skew-y:0;--tw-scale-x:1;--tw-scale-y:1;--tw-pan-x: ;--tw-pan-y: ;--tw-pinch-zoom: ;--tw-scroll-snap-strictness:proximity;--tw-gradient-from-position: ;--tw-gradient-via-position: ;--tw-gradient-to-position: ;--tw-ordinal: ;--tw-slashed-zero: ;--tw-numeric-figure: ;--tw-numeric-spacing: ;--tw-numeric-fraction: ;--tw-ring-inset: ;--tw-ring-offset-width:0px;--tw-ring-offset-color:#fff;--tw-ring-color:rgba(59,130,246,.5);--tw-ring-offset-shadow:0 0 #0000;--tw-ring-shadow:0 0 #0000;--tw-shadow:0 0 #0000;--tw-shadow-colored:0 0 #0000;--tw-blur: ;--tw-brightness: ;--tw-contrast: ;--tw-grayscale: ;--tw-hue-rotate: ;--tw-invert: ;--tw-saturate: ;--tw-sepia: ;--tw-drop-shadow: ;--tw-backdrop-blur: ;--tw-backdrop-brightness: ;--tw-backdrop-contrast: ;--tw-backdrop-grayscale: ;--tw-backdrop-hue-rotate: ;--tw-backdrop-invert: ;--tw-backdrop-opacity: ;--tw-backdrop-saturate: ;--tw-backdrop-sepia: ;--tw-contain-size: ;--tw-contain-layout: ;--tw-contain-paint: ;--tw-contain-style: }/*! tailwindcss v3.4.17 | MIT License | https://tailwindcss.com*/*,:after,:before{box-sizing:border-box;border:0 solid #e5e7eb}:after,:before{--tw-content:""}:host,html{line-height:1.5;-webkit-text-size-adjust:100%;-moz-tab-size:4;-o-tab-size:4;tab-size:4;font-family:Inter,ui-sans-serif,system-ui,-apple-system,Segoe UI,Roboto,sans-serif;font-feature-settings:normal;font-variation-settings:normal;-webkit-tap-highlight-color:transparent}body{margin:0;line-height:inherit}hr{height:0;color:inherit;border-top-width:1px}abbr:where([title]){-webkit-text-decoration:underline dotted;text-decoration:underline dotted}h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight:inherit}a{color:inherit;text-decoration:inherit}b,strong{font-weight:bolder}code,kbd,pre,samp{font-family:ui-monospace,SFMono-Regular,Menlo,Monaco,Consolas,Liberation Mono,Courier New,monospace;font-feature-settings:normal;font-variation-settings:normal;font-size:1em}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sub{bottom:-.25em}sup{top:-.5em}table{text-indent:0;border-color:inherit;border-collapse:collapse}button,input,optgroup,select,textarea{font-family:inherit;font-feature-settings:inherit;font-variation-settings:inherit;font-size:100%;font-weight:inherit;line-height:inherit;letter-spacing:inherit;color:inherit;margin:0;padding:0}button,select{text-transform:none}button,input:where([type=button]),input:where([type=reset]),input:where([type=submit]){-webkit-appearance:button;background-color:transparent;background-image:none}:-moz-focusring{outline:auto}:-moz-ui-invalid{box-shadow:none}progress{vertical-align:baseline}::-webkit-inner-spin-button,::-webkit-outer-spin-button{height:auto}[type=search]{-webkit-appearance:textfield;outline-offset:-2px}::-webkit-search-decoration{-webkit-appearance:none}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}summary{display:list-item}blockquote,dd,dl,figure,h1,h2,h3,h4,h5,h6,hr,p,pre{margin:0}fieldset{margin:0}fieldset,legend{padding:0}menu,ol,ul{list-style:none;margin:0;padding:0}dialog{padding:0}textarea{resize:vertical}input::-moz-placeholder,textarea::-moz-placeholder{opacity:1;color:#9ca3af}input::placeholder,textarea::placeholder{opacity:1;color:#9ca3af}[role=button],button{cursor:pointer}:disabled{cursor:default}audio,canvas,embed,iframe,img,object,svg,video{display:block;vertical-align:middle}img,video{max-width:100%;height:auto}[hidden]:where(:not([hidden=until-found])){display:none}.container{width:100%}@media (min-width:640px){.container{max-width:640px}}@media (min-width:768px){.container{max-width:768px}}@media (min-width:1024px){.container{max-width:1024px}}@media (min-width:1280px){.container{max-width:1280px}}@media (min-width:1536px){.container{max-width:1536px}}.visible{visibility:visible}.fixed{position:fixed}.absolute{position:absolute}.relative{position:relative}.sticky{position:sticky}.inset-0{inset:0}.inset-y-0{top:0;bottom:0}.-bottom-0{bottom:0}.-bottom-0\.5{bottom:-.125rem}.-bottom-5{bottom:-1.25rem}.-right-0{right:0}.-right-0\.5{right:-.125rem}.-top-3{top:-.75rem}.bottom-0{bottom:0}.bottom-3{bottom:.75rem}.bottom-6{bottom:1.5rem}.left-0{left:0}.left-1{left:.25rem}.left-1\/2{left:50%}.left-3{left:.75rem}.left-6{left:1.5rem}.right-0{right:0}.right-2{right:.5rem}.right-3{right:.75rem}.right-6{right:1.5rem}.top-0{top:0}.top-2{top:.5rem}.top-3{top:.75rem}.z-10{z-index:10}.z-20{z-index:20}.z-30{z-index:30}.z-40{z-index:40}.z-50{z-index:50}.z-\[60\]{z-index:60}.-mx-6{margin-left:-1.5rem;margin-right:-1.5rem}.mx-auto{margin-left:auto;margin-right:auto}.-mb-6{margin-bottom:-1.5rem}.-mt-12{margin-top:-3rem}.-mt-9{margin-top:-2.25rem}.mb-1{margin-bottom:.25rem}.mb-2{margin-bottom:.5rem}.mb-6{margin-bottom:1.5rem}.mb-8{margin-bottom:2rem}.ml-1{margin-left:.25rem}.ml-auto{margin-left:auto}.mr-2{margin-right:.5rem}.mt-0{margin-top:0}.mt-0\.5{margin-top:.125rem}.mt-1{margin-top:.25rem}.mt-1\.5{margin-top:.375rem}.mt-10{margin-top:2.5rem}.mt-12{margin-top:3rem}.mt-14{margin-top:3.5rem}.mt-2{margin-top:.5rem}.mt-2\.5{margin-top:.625rem}.mt-20{margin-top:5rem}.mt-24{margin-top:6rem}.mt-3{margin-top:.75rem}.mt-4{margin-top:1rem}.mt-5{margin-top:1.25rem}.mt-6{margin-top:1.5rem}.mt-7{margin-top:1.75rem}.mt-8{margin-top:2rem}.block{display:block}.inline-block{display:inline-block}.inline{display:inline}.flex{display:flex}.inline-flex{display:inline-flex}.table{display:table}.grid{display:grid}.hidden{display:none}.aspect-video{aspect-ratio:16/9}.size-12{width:3rem;height:3rem}.h-1{height:.25rem}.h-1\.5{height:.375rem}.h-10{height:2.5rem}.h-11{height:2.75rem}.h-12{height:3rem}.h-16{height:4rem}.h-2{height:.5rem}.h-2\.5{height:.625rem}.h-20{height:5rem}.h-24{height:6rem}.h-28{height:7rem}.h-3{height:.75rem}.h-32{height:8rem}.h-40{height:10rem}.h-44{height:11rem}.h-5{height:1.25rem}.h-56{height:14rem}.h-6{height:1.5rem}.h-7{height:1.75rem}.h-8{height:2rem}.h-9{height:2.25rem}.h-\[72px\]{height:72px}.h-auto{height:auto}.h-full{height:100%}.max-h-60{max-height:15rem}.max-h-80{max-height:20rem}.max-h-\[88vh\]{max-height:88vh}.min-h-screen{min-height:100vh}.w-1{width:.25rem}.w-1\.5{width:.375rem}.w-10{width:2.5rem}.w-11{width:2.75rem}.w-12{width:3rem}.w-16{width:4rem}.w-2{width:.5rem}.w-2\.5{width:.625rem}.w-20{width:5rem}.w-24{width:6rem}.w-3{width:.75rem}.w-44{width:11rem}.w-5{width:1.25rem}.w-56{width:14rem}.w-60{width:15rem}.w-64{width:16rem}.w-72{width:18rem}.w-8{width:2rem}.w-9{width:2.25rem}.w-full{width:100%}.w-px{width:1px}.min-w-0{min-width:0}.min-w-\[130px\]{min-width:130px}.min-w-\[640px\]{min-width:640px}.min-w-\[720px\]{min-width:720px}.min-w-\[860px\]{min-width:860px}.min-w-\[900px\]{min-width:900px}.max-w-2xl{max-width:42rem}.max-w-3xl{max-width:48rem}.max-w-7xl{max-width:80rem}.max-w-\[34rem\]{max-width:34rem}.max-w-lg{max-width:32rem}.max-w-md{max-width:28rem}.flex-1{flex:1 1 0%}.shrink-0{flex-shrink:0}.basis-40{flex-basis:10rem}.-translate-x-1{--tw-translate-x:-0.25rem}.-translate-x-1,.-translate-x-1\/2{transform:translate(var(--tw-translate-x),var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))}.-translate-x-1\/2{--tw-translate-x:-50%}.-translate-x-full{--tw-translate-x:-100%}.-translate-x-full,.transform{transform:translate(var(--tw-translate-x),var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))}.grid-cols-2{grid-template-columns:repeat(2,minmax(0,1fr))}.grid-cols-3{grid-template-columns:repeat(3,minmax(0,1fr))}.flex-row-reverse{flex-direction:row-reverse}.flex-col{flex-direction:column}.flex-wrap{flex-wrap:wrap}.place-items-center{place-items:center}.content-start{align-content:flex-start}.items-start{align-items:flex-start}.items-end{align-items:flex-end}.items-center{align-items:center}.items-baseline{align-items:baseline}.justify-end{justify-content:flex-end}.justify-center{justify-content:center}.justify-between{justify-content:space-between}.gap-0{gap:0}.gap-0\.5{gap:.125rem}.gap-1{gap:.25rem}.gap-1\.5{gap:.375rem}.gap-10{gap:2.5rem}.gap-2{gap:.5rem}.gap-2\.5{gap:.625rem}.gap-3{gap:.75rem}.gap-4{gap:1rem}.gap-5{gap:1.25rem}.gap-6{gap:1.5rem}.gap-8{gap:2rem}.gap-y-12{row-gap:3rem}.-space-x-2>:not([hidden])~:not([hidden]){--tw-space-x-reverse:0;margin-right:calc(-.5rem*var(--tw-space-x-reverse));margin-left:calc(-.5rem*(1 - var(--tw-space-x-reverse)))}.space-y-1>:not([hidden])~:not([hidden]){--tw-space-y-reverse:0;margin-top:calc(.25rem*(1 - var(--tw-space-y-reverse)));margin-bottom:calc(.25rem*var(--tw-space-y-reverse))}.space-y-2>:not([hidden])~:not([hidden]){--tw-space-y-reverse:0;margin-top:calc(.5rem*(1 - var(--tw-space-y-reverse)));margin-bottom:calc(.5rem*var(--tw-space-y-reverse))}.space-y-2\.5>:not([hidden])~:not([hidden]){--tw-space-y-reverse:0;margin-top:calc(.625rem*(1 - var(--tw-space-y-reverse)));margin-bottom:calc(.625rem*var(--tw-space-y-reverse))}.space-y-3>:not([hidden])~:not([hidden]){--tw-space-y-reverse:0;margin-top:calc(.75rem*(1 - var(--tw-space-y-reverse)));margin-bottom:calc(.75rem*var(--tw-space-y-reverse))}.space-y-4>:not([hidden])~:not([hidden]){--tw-space-y-reverse:0;margin-top:calc(1rem*(1 - var(--tw-space-y-reverse)));margin-bottom:calc(1rem*var(--tw-space-y-reverse))}.space-y-5>:not([hidden])~:not([hidden]){--tw-space-y-reverse:0;margin-top:calc(1.25rem*(1 - var(--tw-space-y-reverse)));margin-bottom:calc(1.25rem*var(--tw-space-y-reverse))}.divide-y>:not([hidden])~:not([hidden]){--tw-divide-y-reverse:0;border-top-width:calc(1px*(1 - var(--tw-divide-y-reverse)));border-bottom-width:calc(1px*var(--tw-divide-y-reverse))}.divide-ink-100>:not([hidden])~:not([hidden]){--tw-divide-opacity:1;border-color:rgb(238 240 244/var(--tw-divide-opacity,1))}.overflow-hidden{overflow:hidden}.overflow-x-auto{overflow-x:auto}.overflow-y-auto{overflow-y:auto}.scroll-smooth{scroll-behavior:smooth}.truncate{overflow:hidden;text-overflow:ellipsis}.truncate,.whitespace-nowrap{white-space:nowrap}.rounded{border-radius:.25rem}.rounded-2xl{border-radius:1rem}.rounded-full{border-radius:9999px}.rounded-lg{border-radius:.5rem}.rounded-md{border-radius:.375rem}.rounded-sm{border-radius:.125rem}.rounded-xl{border-radius:.75rem}.rounded-tl-sm{border-top-left-radius:.125rem}.rounded-tr-sm{border-top-right-radius:.125rem}.border{border-width:1px}.border-2{border-width:2px}.border-y{border-top-width:1px}.border-b,.border-y{border-bottom-width:1px}.border-l{border-left-width:1px}.border-t{border-top-width:1px}.border-dashed{border-style:dashed}.border-ink-100{--tw-border-opacity:1;border-color:rgb(238 240 244/var(--tw-border-opacity,1))}.border-ink-200{--tw-border-opacity:1;border-color:rgb(221 225 233/var(--tw-border-opacity,1))}.border-ink-200\/70{border-color:rgba(221,225,233,.7)}.border-ink-300{--tw-border-opacity:1;border-color:rgb(194 200 214/var(--tw-border-opacity,1))}.border-ink-700{--tw-border-opacity:1;border-color:rgb(55 64 80/var(--tw-border-opacity,1))}.border-ink-800{--tw-border-opacity:1;border-color:rgb(35 42 54/var(--tw-border-opacity,1))}.border-primary-100{--tw-border-opacity:1;border-color:rgb(219 230 255/var(--tw-border-opacity,1))}.border-primary-200{--tw-border-opacity:1;border-color:rgb(190 208 255/var(--tw-border-opacity,1))}.border-primary-500{--tw-border-opacity:1;border-color:rgb(59 91 246/var(--tw-border-opacity,1))}.border-rose-200{--tw-border-opacity:1;border-color:rgb(254 205 211/var(--tw-border-opacity,1))}.border-white{--tw-border-opacity:1;border-color:rgb(255 255 255/var(--tw-border-opacity,1))}.bg-amber-50{--tw-bg-opacity:1;background-color:rgb(255 251 235/var(--tw-bg-opacity,1))}.bg-amber-500{--tw-bg-opacity:1;background-color:rgb(245 158 11/var(--tw-bg-opacity,1))}.bg-emerald-50{--tw-bg-opacity:1;background-color:rgb(236 253 245/var(--tw-bg-opacity,1))}.bg-emerald-500{--tw-bg-opacity:1;background-color:rgb(16 185 129/var(--tw-bg-opacity,1))}.bg-emerald-500\/15{background-color:rgba(16,185,129,.15)}.bg-emerald-600{--tw-bg-opacity:1;background-color:rgb(5 150 105/var(--tw-bg-opacity,1))}.bg-ink-100{--tw-bg-opacity:1;background-color:rgb(238 240 244/var(--tw-bg-opacity,1))}.bg-ink-200{--tw-bg-opacity:1;background-color:rgb(221 225 233/var(--tw-bg-opacity,1))}.bg-ink-50{--tw-bg-opacity:1;background-color:rgb(247 248 250/var(--tw-bg-opacity,1))}.bg-ink-800{--tw-bg-opacity:1;background-color:rgb(35 42 54/var(--tw-bg-opacity,1))}.bg-ink-900{--tw-bg-opacity:1;background-color:rgb(20 25 34/var(--tw-bg-opacity,1))}.bg-ink-900\/50{background-color:rgba(20,25,34,.5)}.bg-ink-900\/80{background-color:rgba(20,25,34,.8)}.bg-primary-100{--tw-bg-opacity:1;background-color:rgb(219 230 255/var(--tw-bg-opacity,1))}.bg-primary-50{--tw-bg-opacity:1;background-color:rgb(238 244 255/var(--tw-bg-opacity,1))}.bg-primary-50\/40{background-color:rgba(238,244,255,.4)}.bg-primary-500{--tw-bg-opacity:1;background-color:rgb(59 91 246/var(--tw-bg-opacity,1))}.bg-primary-600{--tw-bg-opacity:1;background-color:rgb(39 64 234/var(--tw-bg-opacity,1))}.bg-primary-700{--tw-bg-opacity:1;background-color:rgb(31 49 215/var(--tw-bg-opacity,1))}.bg-rose-50{--tw-bg-opacity:1;background-color:rgb(255 241 242/var(--tw-bg-opacity,1))}.bg-rose-500{--tw-bg-opacity:1;background-color:rgb(244 63 94/var(--tw-bg-opacity,1))}.bg-rose-500\/90{background-color:rgba(244,63,94,.9)}.bg-rose-600{--tw-bg-opacity:1;background-color:rgb(225 29 72/var(--tw-bg-opacity,1))}.bg-sky-50{--tw-bg-opacity:1;background-color:rgb(240 249 255/var(--tw-bg-opacity,1))}.bg-sky-600{--tw-bg-opacity:1;background-color:rgb(2 132 199/var(--tw-bg-opacity,1))}.bg-transparent{background-color:transparent}.bg-white{--tw-bg-opacity:1;background-color:rgb(255 255 255/var(--tw-bg-opacity,1))}.bg-white\/20{background-color:hsla(0,0%,100%,.2)}.bg-white\/90{background-color:hsla(0,0%,100%,.9)}.bg-gradient-to-b{background-image:linear-gradient(to bottom,var(--tw-gradient-stops))}.bg-gradient-to-r{background-image:linear-gradient(to right,var(--tw-gradient-stops))}.from-primary-50{--tw-gradient-from:#eef4ff var(--tw-gradient-from-position);--tw-gradient-to:rgba(238,244,255,0) var(--tw-gradient-to-position);--tw-gradient-stops:var(--tw-gradient-from),var(--tw-gradient-to)}.from-primary-500{--tw-gradient-from:#3b5bf6 var(--tw-gradient-from-position);--tw-gradient-to:rgba(59,91,246,0) var(--tw-gradient-to-position);--tw-gradient-stops:var(--tw-gradient-from),var(--tw-gradient-to)}.to-primary-700{--tw-gradient-to:#1f31d7 var(--tw-gradient-to-position)}.to-white{--tw-gradient-to:#fff var(--tw-gradient-to-position)}.object-cover{-o-object-fit:cover;object-fit:cover}.p-1{padding:.25rem}.p-2{padding:.5rem}.p-3{padding:.75rem}.p-4{padding:1rem}.p-5{padding:1.25rem}.p-6{padding:1.5rem}.p-7{padding:1.75rem}.p-8{padding:2rem}.px-1{padding-left:.25rem;padding-right:.25rem}.px-1\.5{padding-left:.375rem;padding-right:.375rem}.px-2{padding-left:.5rem;padding-right:.5rem}.px-2\.5{padding-left:.625rem;padding-right:.625rem}.px-3{padding-left:.75rem;padding-right:.75rem}.px-3\.5{padding-left:.875rem;padding-right:.875rem}.px-4{padding-left:1rem;padding-right:1rem}.px-5{padding-left:1.25rem;padding-right:1.25rem}.px-6{padding-left:1.5rem;padding-right:1.5rem}.px-7{padding-left:1.75rem;padding-right:1.75rem}.py-0{padding-top:0;padding-bottom:0}.py-0\.5{padding-top:.125rem;padding-bottom:.125rem}.py-1{padding-top:.25rem;padding-bottom:.25rem}.py-1\.5{padding-top:.375rem;padding-bottom:.375rem}.py-12{padding-top:3rem;padding-bottom:3rem}.py-14{padding-top:3.5rem;padding-bottom:3.5rem}.py-2{padding-top:.5rem;padding-bottom:.5rem}.py-2\.5{padding-top:.625rem;padding-bottom:.625rem}.py-20{padding-top:5rem;padding-bottom:5rem}.py-24{padding-top:6rem;padding-bottom:6rem}.py-3{padding-top:.75rem;padding-bottom:.75rem}.py-3\.5{padding-top:.875rem;padding-bottom:.875rem}.py-4{padding-top:1rem;padding-bottom:1rem}.py-5{padding-top:1.25rem;padding-bottom:1.25rem}.py-6{padding-top:1.5rem;padding-bottom:1.5rem}.py-8{padding-top:2rem;padding-bottom:2rem}.pb-1{padding-bottom:.25rem}.pb-2{padding-bottom:.5rem}.pb-20{padding-bottom:5rem}.pb-4{padding-bottom:1rem}.pb-5{padding-bottom:1.25rem}.pb-6{padding-bottom:1.5rem}.pb-7{padding-bottom:1.75rem}.pl-1{padding-left:.25rem}.pr-2{padding-right:.5rem}.pr-2\.5{padding-right:.625rem}.pt-1{padding-top:.25rem}.pt-14{padding-top:3.5rem}.pt-2{padding-top:.5rem}.pt-3{padding-top:.75rem}.pt-4{padding-top:1rem}.pt-6{padding-top:1.5rem}.pt-8{padding-top:2rem}.text-left{text-align:left}.text-center{text-align:center}.text-right{text-align:right}.font-mono{font-family:ui-monospace,SFMono-Regular,Menlo,Monaco,Consolas,Liberation Mono,Courier New,monospace}.text-2xl{font-size:1.5rem;line-height:2rem}.text-3xl{font-size:1.875rem;line-height:2.25rem}.text-4xl{font-size:2.25rem;line-height:2.5rem}.text-6xl{font-size:3.75rem;line-height:1}.text-\[10px\]{font-size:10px}.text-\[11px\]{font-size:11px}.text-\[15px\]{font-size:15px}.text-\[22px\]{font-size:22px}.text-lg{font-size:1.125rem;line-height:1.75rem}.text-sm{font-size:.875rem;line-height:1.25rem}.text-xl{font-size:1.25rem;line-height:1.75rem}.text-xs{font-size:.75rem;line-height:1rem}.font-bold{font-weight:700}.font-extrabold{font-weight:800}.font-medium{font-weight:500}.font-semibold{font-weight:600}.uppercase{text-transform:uppercase}.italic{font-style:italic}.tabular-nums{--tw-numeric-spacing:tabular-nums;font-variant-numeric:var(--tw-ordinal) var(--tw-slashed-zero) var(--tw-numeric-figure) var(--tw-numeric-spacing) var(--tw-numeric-fraction)}.leading-none{line-height:1}.leading-relaxed{line-height:1.625}.leading-tight{line-height:1.25}.tracking-\[-\.01em\]{letter-spacing:-.01em}.tracking-\[\.01em\]{letter-spacing:.01em}.tracking-tight{letter-spacing:-.025em}.tracking-wide{letter-spacing:.025em}.tracking-wider{letter-spacing:.05em}.text-amber-600{--tw-text-opacity:1;color:rgb(217 119 6/var(--tw-text-opacity,1))}.text-amber-700{--tw-text-opacity:1;color:rgb(180 83 9/var(--tw-text-opacity,1))}.text-emerald-400{--tw-text-opacity:1;color:rgb(52 211 153/var(--tw-text-opacity,1))}.text-emerald-500{--tw-text-opacity:1;color:rgb(16 185 129/var(--tw-text-opacity,1))}.text-emerald-600{--tw-text-opacity:1;color:rgb(5 150 105/var(--tw-text-opacity,1))}.text-emerald-700{--tw-text-opacity:1;color:rgb(4 120 87/var(--tw-text-opacity,1))}.text-ink-300{--tw-text-opacity:1;color:rgb(194 200 214/var(--tw-text-opacity,1))}.text-ink-400{--tw-text-opacity:1;color:rgb(143 152 173/var(--tw-text-opacity,1))}.text-ink-500{--tw-text-opacity:1;color:rgb(100 110 134/var(--tw-text-opacity,1))}.text-ink-600{--tw-text-opacity:1;color:rgb(74 84 104/var(--tw-text-opacity,1))}.text-ink-700{--tw-text-opacity:1;color:rgb(55 64 80/var(--tw-text-opacity,1))}.text-ink-800{--tw-text-opacity:1;color:rgb(35 42 54/var(--tw-text-opacity,1))}.text-ink-900{--tw-text-opacity:1;color:rgb(20 25 34/var(--tw-text-opacity,1))}.text-primary-100{--tw-text-opacity:1;color:rgb(219 230 255/var(--tw-text-opacity,1))}.text-primary-500{--tw-text-opacity:1;color:rgb(59 91 246/var(--tw-text-opacity,1))}.text-primary-600{--tw-text-opacity:1;color:rgb(39 64 234/var(--tw-text-opacity,1))}.text-primary-700{--tw-text-opacity:1;color:rgb(31 49 215/var(--tw-text-opacity,1))}.text-primary-800{--tw-text-opacity:1;color:rgb(32 43 174/var(--tw-text-opacity,1))}.text-rose-500{--tw-text-opacity:1;color:rgb(244 63 94/var(--tw-text-opacity,1))}.text-rose-600{--tw-text-opacity:1;color:rgb(225 29 72/var(--tw-text-opacity,1))}.text-rose-700{--tw-text-opacity:1;color:rgb(190 18 60/var(--tw-text-opacity,1))}.text-rose-800{--tw-text-opacity:1;color:rgb(159 18 57/var(--tw-text-opacity,1))}.text-sky-600{--tw-text-opacity:1;color:rgb(2 132 199/var(--tw-text-opacity,1))}.text-sky-700{--tw-text-opacity:1;color:rgb(3 105 161/var(--tw-text-opacity,1))}.text-white{--tw-text-opacity:1;color:rgb(255 255 255/var(--tw-text-opacity,1))}.shadow-card{--tw-shadow:0 1px 2px rgba(20,25,34,.04),0 4px 16px rgba(20,25,34,.06);--tw-shadow-colored:0 1px 2px var(--tw-shadow-color),0 4px 16px var(--tw-shadow-color)}.shadow-card,.shadow-lg{box-shadow:var(--tw-ring-offset-shadow,0 0 #0000),var(--tw-ring-shadow,0 0 #0000),var(--tw-shadow)}.shadow-lg{--tw-shadow:0 10px 15px -3px rgba(0,0,0,.1),0 4px 6px -4px rgba(0,0,0,.1);--tw-shadow-colored:0 10px 15px -3px var(--tw-shadow-color),0 4px 6px -4px var(--tw-shadow-color)}.shadow-pop{--tw-shadow:0 20px 60px rgba(20,25,34,.18);--tw-shadow-colored:0 20px 60px var(--tw-shadow-color)}.shadow-pop,.shadow-sm{box-shadow:var(--tw-ring-offset-shadow,0 0 #0000),var(--tw-ring-shadow,0 0 #0000),var(--tw-shadow)}.shadow-sm{--tw-shadow:0 1px 2px 0 rgba(0,0,0,.05);--tw-shadow-colored:0 1px 2px 0 var(--tw-shadow-color)}.outline-none{outline:2px solid transparent;outline-offset:2px}.ring-2{--tw-ring-offset-shadow:var(--tw-ring-inset) 0 0 0 var(--tw-ring-offset-width) var(--tw-ring-offset-color);--tw-ring-shadow:var(--tw-ring-inset) 0 0 0 calc(2px + var(--tw-ring-offset-width)) var(--tw-ring-color)}.ring-2,.ring-4{box-shadow:var(--tw-ring-offset-shadow),var(--tw-ring-shadow),var(--tw-shadow,0 0 #0000)}.ring-4{--tw-ring-offset-shadow:var(--tw-ring-inset) 0 0 0 var(--tw-ring-offset-width) var(--tw-ring-offset-color);--tw-ring-shadow:var(--tw-ring-inset) 0 0 0 calc(4px + var(--tw-ring-offset-width)) var(--tw-ring-color)}.ring-ink-700{--tw-ring-opacity:1;--tw-ring-color:rgb(55 64 80/var(--tw-ring-opacity,1))}.ring-primary-100{--tw-ring-opacity:1;--tw-ring-color:rgb(219 230 255/var(--tw-ring-opacity,1))}.ring-white{--tw-ring-opacity:1;--tw-ring-color:rgb(255 255 255/var(--tw-ring-opacity,1))}.filter{filter:var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow)}.backdrop-blur{--tw-backdrop-blur:blur(8px)}.backdrop-blur,.backdrop-blur-sm{-webkit-backdrop-filter:var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia);backdrop-filter:var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia)}.backdrop-blur-sm{--tw-backdrop-blur:blur(4px)}.transition{transition-property:color,background-color,border-color,text-decoration-color,fill,stroke,opacity,box-shadow,transform,filter,-webkit-backdrop-filter;transition-property:color,background-color,border-color,text-decoration-color,fill,stroke,opacity,box-shadow,transform,filter,backdrop-filter;transition-property:color,background-color,border-color,text-decoration-color,fill,stroke,opacity,box-shadow,transform,filter,backdrop-filter,-webkit-backdrop-filter;transition-timing-function:cubic-bezier(.4,0,.2,1);transition-duration:.15s}.transition-shadow{transition-property:box-shadow;transition-timing-function:cubic-bezier(.4,0,.2,1);transition-duration:.15s}.transition-transform{transition-property:transform;transition-timing-function:cubic-bezier(.4,0,.2,1);transition-duration:.15s}.placeholder\:text-ink-400::-moz-placeholder{--tw-text-opacity:1;color:rgb(143 152 173/var(--tw-text-opacity,1))}.placeholder\:text-ink-400::placeholder{--tw-text-opacity:1;color:rgb(143 152 173/var(--tw-text-opacity,1))}.placeholder\:text-ink-500::-moz-placeholder{--tw-text-opacity:1;color:rgb(100 110 134/var(--tw-text-opacity,1))}.placeholder\:text-ink-500::placeholder{--tw-text-opacity:1;color:rgb(100 110 134/var(--tw-text-opacity,1))}.hover\:border-primary-300:hover{--tw-border-opacity:1;border-color:rgb(147 176 255/var(--tw-border-opacity,1))}.hover\:bg-ink-100:hover{--tw-bg-opacity:1;background-color:rgb(238 240 244/var(--tw-bg-opacity,1))}.hover\:bg-ink-200:hover{--tw-bg-opacity:1;background-color:rgb(221 225 233/var(--tw-bg-opacity,1))}.hover\:bg-ink-50:hover{--tw-bg-opacity:1;background-color:rgb(247 248 250/var(--tw-bg-opacity,1))}.hover\:bg-ink-50\/60:hover{background-color:rgba(247,248,250,.6)}.hover\:bg-ink-800:hover{--tw-bg-opacity:1;background-color:rgb(35 42 54/var(--tw-bg-opacity,1))}.hover\:bg-primary-50:hover{--tw-bg-opacity:1;background-color:rgb(238 244 255/var(--tw-bg-opacity,1))}.hover\:bg-primary-700:hover{--tw-bg-opacity:1;background-color:rgb(31 49 215/var(--tw-bg-opacity,1))}.hover\:bg-rose-50:hover{--tw-bg-opacity:1;background-color:rgb(255 241 242/var(--tw-bg-opacity,1))}.hover\:bg-rose-700:hover{--tw-bg-opacity:1;background-color:rgb(190 18 60/var(--tw-bg-opacity,1))}.hover\:text-primary-600:hover{--tw-text-opacity:1;color:rgb(39 64 234/var(--tw-text-opacity,1))}.hover\:text-rose-600:hover{--tw-text-opacity:1;color:rgb(225 29 72/var(--tw-text-opacity,1))}.hover\:text-white:hover{--tw-text-opacity:1;color:rgb(255 255 255/var(--tw-text-opacity,1))}.hover\:shadow-pop:hover{--tw-shadow:0 20px 60px rgba(20,25,34,.18);--tw-shadow-colored:0 20px 60px var(--tw-shadow-color);box-shadow:var(--tw-ring-offset-shadow,0 0 #0000),var(--tw-ring-shadow,0 0 #0000),var(--tw-shadow)}.focus\:border-primary-400:focus{--tw-border-opacity:1;border-color:rgb(96 132 252/var(--tw-border-opacity,1))}.focus\:border-primary-500:focus{--tw-border-opacity:1;border-color:rgb(59 91 246/var(--tw-border-opacity,1))}.focus\:ring-2:focus{--tw-ring-offset-shadow:var(--tw-ring-inset) 0 0 0 var(--tw-ring-offset-width) var(--tw-ring-offset-color);--tw-ring-shadow:var(--tw-ring-inset) 0 0 0 calc(2px + var(--tw-ring-offset-width)) var(--tw-ring-color);box-shadow:var(--tw-ring-offset-shadow),var(--tw-ring-shadow),var(--tw-shadow,0 0 #0000)}.focus\:ring-primary-200:focus{--tw-ring-opacity:1;--tw-ring-color:rgb(190 208 255/var(--tw-ring-opacity,1))}@media (min-width:640px){.sm\:col-span-2{grid-column:span 2/span 2}.sm\:block{display:block}.sm\:inline-flex{display:inline-flex}.sm\:grid-cols-2{grid-template-columns:repeat(2,minmax(0,1fr))}.sm\:grid-cols-3{grid-template-columns:repeat(3,minmax(0,1fr))}.sm\:grid-cols-4{grid-template-columns:repeat(4,minmax(0,1fr))}}@media (min-width:768px){.md\:col-span-1{grid-column:span 1/span 1}.md\:flex{display:flex}.md\:grid-cols-2{grid-template-columns:repeat(2,minmax(0,1fr))}.md\:grid-cols-3{grid-template-columns:repeat(3,minmax(0,1fr))}.md\:grid-cols-4{grid-template-columns:repeat(4,minmax(0,1fr))}}@media (min-width:1024px){.lg\:static{position:static}.lg\:col-span-2{grid-column:span 2/span 2}.lg\:col-span-3{grid-column:span 3/span 3}.lg\:-mt-4{margin-top:-1rem}.lg\:block{display:block}.lg\:flex{display:flex}.lg\:hidden{display:none}.lg\:translate-x-0{--tw-translate-x:0px;transform:translate(var(--tw-translate-x),var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))}.lg\:grid-cols-2{grid-template-columns:repeat(2,minmax(0,1fr))}.lg\:grid-cols-3{grid-template-columns:repeat(3,minmax(0,1fr))}.lg\:grid-cols-4{grid-template-columns:repeat(4,minmax(0,1fr))}.lg\:grid-cols-5{grid-template-columns:repeat(5,minmax(0,1fr))}.lg\:gap-x-16{-moz-column-gap:4rem;column-gap:4rem}.lg\:px-8{padding-left:2rem;padding-right:2rem}.lg\:py-10{padding-top:2.5rem;padding-bottom:2.5rem}.lg\:pb-4{padding-bottom:1rem}.lg\:pt-6{padding-top:1.5rem}}@media (min-width:1280px){.xl\:grid-cols-3{grid-template-columns:repeat(3,minmax(0,1fr))}.xl\:grid-cols-4{grid-template-columns:repeat(4,minmax(0,1fr))}}
+</style>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" onerror="this.remove()">
+<style>
+  body{font-family:Inter,ui-sans-serif,system-ui,sans-serif;-webkit-font-smoothing:antialiased}
+  ::-webkit-scrollbar{width:10px;height:10px}::-webkit-scrollbar-thumb{background:#c2c8d6;border-radius:9px;border:3px solid #fff}
+  .fade-in{animation:fi .22s ease both}@keyframes fi{from{opacity:0;transform:translateY(6px)}to{opacity:1;transform:none}}
+  /* ── Layout rail: one 1280px container, one 32px left edge everywhere ── */
+  .shell{max-width:1280px;margin-inline:auto;padding-inline:24px}
+  @media(min-width:1024px){.shell{padding-inline:32px}}
+  .py-22{padding-top:88px;padding-bottom:88px}
+  /* ── Type scale ── */
+  .hero-title{font-size:clamp(2.75rem,4vw,3.5rem);line-height:1.04;letter-spacing:-.025em}
+  .section-title{font-size:clamp(1.875rem,2.6vw,2.25rem);line-height:1.15;letter-spacing:-.02em}
+  .lead{font-size:17px;line-height:1.65;max-width:34rem}
+  .micro-label{font-size:11px;font-weight:600;letter-spacing:.08em;text-transform:uppercase}
+  /* ── App shell rail + app type scale ── */
+  .shell-app{max-width:1440px;margin-inline:auto;padding-inline:24px}
+  @media(min-width:1024px){.shell-app{padding-inline:32px}}
+  .page-title{font-size:28px;line-height:1.2;letter-spacing:-.02em}
+  .page-sub{font-size:15px;line-height:1.5}
+  .card-title{font-size:16px;line-height:1.4;font-weight:700}
+  .stat-value{font-size:30px;line-height:1;letter-spacing:-.02em;font-weight:800}
+  /* 40px control height across every toolbar */
+  .ctl{height:40px;display:inline-flex;align-items:center;border-radius:8px;font-size:14px}
+  /* Declarations kept here so they compile deterministically offline */
+  .hero-grid{grid-template-columns:minmax(0,1fr)}
+  @media(min-width:1024px){.hero-grid{grid-template-columns:minmax(0,48fr) minmax(0,52fr)}}
+  .glow-primary{box-shadow:0 6px 20px -6px rgba(39,64,234,.55)}
+  .glow-dark{box-shadow:0 8px 24px -8px rgba(0,0,0,.4)}
+  .glow-nav{box-shadow:0 4px 14px -4px rgba(39,64,234,.7)}
+  .pop-in{animation:pi .18s cubic-bezier(.2,.8,.3,1) both}@keyframes pi{from{opacity:0;transform:translateY(10px) scale(.98)}to{opacity:1;transform:none}}
+  [hidden]{display:none!important}
+</style>
+</head>
+<body class="bg-ink-50 text-ink-800">
+
+<!-- ═══════════ PUBLIC SHELL ═══════════ -->
+<div id="publicShell" class="min-h-screen flex flex-col">
+  <header class="sticky top-0 z-30 bg-white/90 backdrop-blur border-b border-ink-200">
+    <div class="shell h-[72px] flex items-center justify-between relative">
+      <a href="#/" class="flex items-center gap-2.5 relative z-10">
+        <div class="h-9 w-9 rounded-xl bg-primary-600 grid place-items-center text-white font-extrabold">S</div>
+        <span class="text-lg font-extrabold tracking-tight text-ink-900">SchoolSync</span>
+      </a>
+      <nav class="hidden lg:flex items-center gap-1 absolute left-1/2 -translate-x-1/2" id="publicNav"></nav>
+      <div class="flex items-center gap-3 relative z-10">
+        <a href="#/dashboard" class="hidden sm:inline-flex text-sm font-medium text-ink-600 hover:text-primary-600 px-3 py-2">Dashboard</a>
+        <span class="hidden sm:block h-5 w-px bg-ink-200"></span>
+        <button onclick="openAuth('login')" class="rounded-lg bg-primary-600 hover:bg-primary-700 text-white text-sm font-semibold px-4 py-2.5">Login / Register</button>
+        <button onclick="togglePublicNav()" aria-label="Menu" class="lg:hidden h-10 w-10 rounded-lg border border-ink-200 grid place-items-center text-lg text-ink-600 hover:bg-ink-50">☰</button>
+      </div>
+    </div>
+    <div id="publicNavMobile" hidden class="lg:hidden border-t border-ink-200 bg-white shadow-card"></div>
+  </header>
+
+  <main class="flex-1">
+    <!-- HOME -->
+    <section data-public="/" class="fade-in">
+      <div class="relative overflow-hidden bg-gradient-to-b from-primary-50 to-white border-b border-ink-200">
+        <div class="shell pt-14 pb-20 grid hero-grid gap-y-12 lg:gap-x-16 items-start">
+          <div class="lg:pt-6">
+            <span class="inline-flex items-center gap-2 rounded-full bg-primary-100 text-primary-700 text-xs font-semibold px-3 py-1.5 tracking-[.01em]">
+              <span class="h-1.5 w-1.5 rounded-full bg-primary-600"></span>New Features Available</span>
+            <h1 class="mt-5 hero-title font-extrabold text-ink-900">Streamline Your <span class="text-primary-600">School Management</span></h1>
+            <p class="mt-5 lead text-ink-500">Comprehensive school management system that simplifies administration, enhances communication, and improves student outcomes with modern technology.</p>
+            <div class="mt-8 flex flex-wrap gap-3">
+              <a href="#/pricing" class="rounded-lg bg-primary-600 hover:bg-primary-700 text-white font-semibold px-6 py-3.5 glow-primary">Start Free Trial</a>
+              <a href="#/contact" class="rounded-lg bg-white border border-ink-200 hover:border-primary-300 font-semibold px-6 py-3.5">Watch Demo</a>
+            </div>
+            <p class="mt-4 text-sm text-ink-400">Free 30-day trial · No credit card required</p>
+            <div class="mt-10 pt-6 border-t border-ink-200/70 grid grid-cols-2 sm:grid-cols-4 gap-4 max-w-[34rem]">
+              <div><p class="text-lg font-extrabold text-ink-900 leading-none">15,000+</p><p class="mt-1.5 text-xs text-ink-400">Students Managed</p></div>
+              <div><p class="text-lg font-extrabold text-ink-900 leading-none">10+</p><p class="mt-1.5 text-xs text-ink-400">Schools Trust Us</p></div>
+              <div><p class="text-lg font-extrabold text-ink-900 leading-none">99.9%</p><p class="mt-1.5 text-xs text-ink-400">Uptime Guarantee</p></div>
+              <div><p class="text-lg font-extrabold text-ink-900 leading-none">24/7</p><p class="mt-1.5 text-xs text-ink-400">Support Available</p></div>
+            </div>
+          </div>
+          <div class="bg-white rounded-2xl shadow-card border border-ink-200 p-6">
+            <div class="flex items-center justify-between">
+              <p class="micro-label text-ink-400">Platform at a glance</p>
+              <span class="inline-flex items-center gap-1.5 text-[11px] font-semibold text-emerald-600"><span class="h-1.5 w-1.5 rounded-full bg-emerald-500"></span>Live</span>
+            </div>
+            <div class="mt-4 grid grid-cols-3 gap-3" id="publicStats"></div>
+            <div class="mt-4 rounded-xl border border-ink-200 p-4">
+              <div class="flex items-center justify-between"><p class="micro-label text-ink-400">Enrolment growth</p><span class="text-xs font-semibold text-emerald-600">+18% YoY</span></div>
+              <div id="heroChart" class="mt-3"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="shell py-24">
+        <div class="text-center max-w-2xl mx-auto">
+          <h2 class="section-title font-extrabold text-ink-900">Everything You Need to Manage Your School</h2>
+          <p class="mt-4 lead text-ink-500 mx-auto">Our comprehensive platform provides all the tools you need to streamline operations and focus on what matters most — education.</p>
+        </div>
+        <div class="mt-14 grid sm:grid-cols-2 lg:grid-cols-4 gap-6" id="homeFeatures"></div>
+      </div>
+      <div class="bg-white border-y border-ink-200">
+        <div class="shell py-24">
+          <h2 class="section-title font-extrabold text-center text-ink-900">Trusted by Educators Worldwide</h2>
+          <div class="mt-12 grid md:grid-cols-3 gap-6" id="testimonials"></div>
+        </div>
+      </div>
+      <div class="bg-primary-700">
+        <div class="max-w-2xl mx-auto px-6 lg:px-8 py-22 text-center">
+          <h2 class="section-title font-extrabold text-white">Ready to Transform Your School Management?</h2>
+          <p class="mt-4 lead text-primary-100 mx-auto">Join hundreds of schools already modernising their operations with SchoolSync.</p>
+          <a href="#/pricing" class="mt-8 inline-block rounded-lg bg-white text-primary-700 font-bold px-7 py-3.5 glow-dark">Start Your Free Trial</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section data-public="/about" hidden class="fade-in">
+      <div class="shell py-24">
+        <h1 class="hero-title font-extrabold text-ink-900 max-w-3xl">Empowering Education Through Innovation</h1>
+        <p class="mt-5 lead text-ink-500 max-w-2xl">We build technology that gives schools back their time — so educators can spend it where it counts.</p>
+        <div id="aboutArt" class="mt-10 rounded-2xl overflow-hidden border border-ink-200 shadow-card"></div>
+        <div class="mt-14 grid md:grid-cols-2 gap-6">
+          <div class="bg-white rounded-2xl border border-ink-200 shadow-card p-8">
+            <h2 class="text-2xl font-bold text-ink-900">Our Mission</h2>
+            <p class="mt-3 text-ink-500 leading-relaxed">To simplify school administration with a single, secure platform that unifies student records, staff management, attendance and communication.</p>
+          </div>
+          <div class="bg-white rounded-2xl border border-ink-200 shadow-card p-8">
+            <h2 class="text-2xl font-bold text-ink-900">Our Vision</h2>
+            <p class="mt-3 text-ink-500 leading-relaxed">A world where every institution — regardless of size — runs on modern, accessible, data-informed tools.</p>
+          </div>
+        </div>
+        <h2 class="mt-20 section-title font-extrabold text-ink-900 text-center">Our Core Values</h2>
+        <div class="mt-10 grid md:grid-cols-3 gap-6" id="aboutValues"></div>
+        <h2 class="mt-20 section-title font-extrabold text-ink-900 text-center">Meet Our Leadership Team</h2>
+        <div class="mt-10 grid sm:grid-cols-3 gap-6" id="aboutTeam"></div>
+      </div>
+    </section>
+
+    <!-- PRICING -->
+    <section data-public="/pricing" hidden class="fade-in">
+      <div class="shell py-24">
+        <div class="text-center max-w-3xl mx-auto">
+          <h1 class="hero-title font-extrabold text-ink-900">Simple, Transparent Pricing</h1>
+          <p class="mt-4 lead text-ink-500 mx-auto">Choose the perfect plan for your school. Start with a free 30-day trial, no credit card required. Upgrade or downgrade at any time.</p>
+          <div class="mt-7 inline-flex rounded-xl bg-white border border-ink-200 p-1">
+            <button onclick="setBilling('monthly')" id="billMonthly" class="rounded-lg px-5 py-2 text-sm font-semibold bg-primary-600 text-white">Monthly</button>
+            <button onclick="setBilling('yearly')" id="billYearly" class="rounded-lg px-5 py-2 text-sm font-semibold text-ink-500">Yearly (Save 20%)</button>
+          </div>
+        </div>
+        <div id="pricingArt" class="mt-10 rounded-2xl overflow-hidden border border-ink-200 shadow-card"></div>
+        <div class="mt-14 grid lg:grid-cols-3 gap-6 items-start" id="planCards"></div>
+        <h2 class="mt-24 section-title font-extrabold text-center text-ink-900">Compare Features</h2>
+        <p class="mt-3 text-center text-ink-500">See exactly what's included in each plan to make the best choice for your school.</p>
+        <div class="mt-8 bg-white rounded-2xl border border-ink-200 shadow-card overflow-x-auto">
+          <table class="w-full text-sm min-w-[640px]">
+            <thead class="bg-ink-50 border-b border-ink-200 text-ink-500">
+              <tr><th class="text-left font-semibold px-6 py-4">Features</th><th class="font-semibold px-6 py-4">Basic</th><th class="font-semibold px-6 py-4">Professional</th><th class="font-semibold px-6 py-4">Enterprise</th></tr>
+            </thead>
+            <tbody id="compareBody" class="divide-y divide-ink-100"></tbody>
+          </table>
+        </div>
+        <h2 class="mt-24 section-title font-extrabold text-center text-ink-900">Frequently Asked Questions</h2>
+        <div class="mt-8 max-w-3xl mx-auto space-y-3" id="pricingFaq"></div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section data-public="/contact" hidden class="fade-in">
+      <div class="shell py-24">
+        <div class="text-center max-w-3xl mx-auto">
+          <h1 class="hero-title font-extrabold text-ink-900">Get in Touch</h1>
+          <p class="mt-4 lead text-ink-500 mx-auto">Ready to transform your school's management system? We're here to help you get started and answer any questions you might have.</p>
+        </div>
+        <div class="mt-12 grid sm:grid-cols-2 lg:grid-cols-4 gap-6" id="contactCards"></div>
+        <div class="mt-14 grid lg:grid-cols-5 gap-6">
+          <div class="lg:col-span-3 bg-white rounded-2xl border border-ink-200 shadow-card p-8">
+            <h2 class="text-2xl font-bold text-ink-900">Send us a message</h2>
+            <form class="mt-6 grid sm:grid-cols-2 gap-5" onsubmit="event.preventDefault();toast('Message sent — our team will respond within 24 hours.');this.reset()">
+              <div><label class="text-sm font-semibold text-ink-700">Full Name *</label><input required class="mt-1.5 w-full rounded-lg border border-ink-200 px-3.5 py-2.5 text-sm focus:ring-2 focus:ring-primary-200 focus:border-primary-400 outline-none" placeholder="Jane Doe"></div>
+              <div><label class="text-sm font-semibold text-ink-700">Email Address *</label><input required type="email" class="mt-1.5 w-full rounded-lg border border-ink-200 px-3.5 py-2.5 text-sm focus:ring-2 focus:ring-primary-200 focus:border-primary-400 outline-none" placeholder="jane@school.edu"></div>
+              <div><label class="text-sm font-semibold text-ink-700">School / Institution</label><input class="mt-1.5 w-full rounded-lg border border-ink-200 px-3.5 py-2.5 text-sm focus:ring-2 focus:ring-primary-200 focus:border-primary-400 outline-none" placeholder="Greenwood International School"></div>
+              <div><label class="text-sm font-semibold text-ink-700">Number of Students</label>
+                <select class="mt-1.5 w-full rounded-lg border border-ink-200 px-3.5 py-2.5 text-sm bg-white outline-none focus:ring-2 focus:ring-primary-200">
+                  <option>Select range</option><option>1-50 students</option><option>51-200 students</option><option>201-500 students</option><option>501-1000 students</option><option>1000+ students</option>
+                </select></div>
+              <div class="sm:col-span-2"><label class="text-sm font-semibold text-ink-700">Message *</label><textarea required rows="5" class="mt-1.5 w-full rounded-lg border border-ink-200 px-3.5 py-2.5 text-sm focus:ring-2 focus:ring-primary-200 focus:border-primary-400 outline-none" placeholder="Tell us about your school and what you're looking for..."></textarea></div>
+              <div class="sm:col-span-2"><button class="rounded-lg bg-primary-600 hover:bg-primary-700 text-white font-semibold px-6 py-3">Send Message</button></div>
+            </form>
+          </div>
+          <div class="lg:col-span-2 space-y-4">
+            <div class="bg-white rounded-2xl border border-ink-200 shadow-card p-7">
+              <h3 class="text-lg font-bold text-ink-900">Let's Start a Conversation</h3>
+              <div class="mt-5 space-y-5 text-sm">
+                <div><p class="font-semibold text-ink-800">Quick Response</p><p class="text-ink-500 mt-1">We typically respond to all inquiries within 24 hours during business days.</p></div>
+                <div><p class="font-semibold text-ink-800">Free Consultation</p><p class="text-ink-500 mt-1">Schedule a free 30-minute consultation to discuss your school's specific needs.</p></div>
+                <div><p class="font-semibold text-ink-800">Custom Demo</p><p class="text-ink-500 mt-1">Get a personalized demo tailored to your institution's requirements.</p></div>
+              </div>
+            </div>
+            <div class="rounded-2xl border border-ink-200 shadow-card overflow-hidden bg-white">
+              <div id="contactMap"></div>
+              <div class="p-5"><p class="font-semibold text-ink-900 text-sm">AVR Tech, Business Corner</p><p class="text-sm text-ink-500 mt-1">VT Road, Mansarover, Jaipur, Rajasthan</p></div>
+            </div>
+            <div class="bg-primary-600 rounded-2xl p-7 text-white">
+              <p class="font-bold">Prefer to call?</p><p class="mt-2 text-2xl font-extrabold">+91 70147 91203</p><p class="text-primary-100 text-sm mt-1">Available Everyday, 10AM–6PM IST</p>
+            </div>
+          </div>
+        </div>
+        <h2 class="mt-20 section-title font-extrabold text-center text-ink-900">Quick Answers</h2>
+        <p class="mt-3 text-center text-ink-500">Common questions we receive from schools and educators.</p>
+        <div class="mt-8 max-w-3xl mx-auto space-y-3" id="contactFaq"></div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="bg-ink-900 text-ink-300">
+    <div class="shell py-14 grid md:grid-cols-4 gap-10">
+      <div class="md:col-span-1">
+        <div class="flex items-center gap-2.5"><div class="h-9 w-9 rounded-xl bg-primary-600 grid place-items-center text-white font-extrabold">S</div><span class="text-lg font-extrabold text-white">SchoolSync</span></div>
+        <p class="mt-4 text-sm leading-relaxed">Transforming education through innovative school management solutions. Empowering schools to focus on what matters most — student success.</p>
+        <p class="mt-4 text-sm">avrtech25@outlook.com<br>+91 70147 91203<br>AVR Tech, Business Corner, VT Road,<br>Mansarover, Jaipur, Rajasthan.</p>
+      </div>
+      <div><p class="text-white font-semibold">Product</p><ul class="mt-4 space-y-2.5 text-sm"><li><a href="#/" class="hover:text-white">Features</a></li><li><a href="#/pricing" class="hover:text-white">Pricing</a></li><li><a href="#/contact" class="hover:text-white">Demo</a></li><li><a href="#/" class="hover:text-white">API Documentation</a></li></ul></div>
+      <div><p class="text-white font-semibold">Company</p><ul class="mt-4 space-y-2.5 text-sm"><li><a href="#/about" class="hover:text-white">About Us</a></li><li><a href="#/" class="hover:text-white">Careers</a></li><li><a href="#/" class="hover:text-white">Press</a></li><li><a href="#/" class="hover:text-white">Partners</a></li></ul></div>
+      <div>
+        <p class="text-white font-semibold">Support</p><ul class="mt-4 space-y-2.5 text-sm"><li><a href="#/contact" class="hover:text-white">Contact</a></li><li><a href="#/" class="hover:text-white">Help Center</a></li><li><a href="#/" class="hover:text-white">Privacy Policy</a></li><li><a href="#/" class="hover:text-white">Terms of Service</a></li></ul>
+        <p class="text-white font-semibold mt-7">Stay Updated</p>
+        <form class="mt-3 flex flex-wrap gap-2" onsubmit="event.preventDefault();toast('Subscribed to product updates.');this.reset()">
+          <input required type="email" placeholder="Enter your email" class="flex-1 min-w-0 basis-40 rounded-lg bg-ink-800 border border-ink-700 px-3 py-2 text-sm text-white placeholder:text-ink-500 outline-none focus:border-primary-500">
+          <button class="shrink-0 whitespace-nowrap rounded-lg bg-primary-600 hover:bg-primary-700 text-white text-sm font-semibold px-4 py-2">Subscribe</button>
+        </form>
+      </div>
+    </div>
+    <div class="border-t border-ink-800"><div class="shell py-6 flex flex-wrap gap-4 justify-between text-sm"><p>© 2026 SchoolSync. All rights reserved.</p><div class="flex gap-6"><a href="#/" class="hover:text-white">Privacy</a><a href="#/" class="hover:text-white">Terms</a><a href="#/" class="hover:text-white">Cookies</a></div></div></div>
+  </footer>
+</div>
+
+<!-- ═══════════ DASHBOARD SHELL ═══════════ -->
+<div id="appShell" hidden class="min-h-screen flex bg-ink-50">
+  <aside id="sidebar" class="fixed lg:static inset-y-0 left-0 z-40 w-64 bg-ink-900 text-ink-300 flex flex-col -translate-x-full lg:translate-x-0 transition-transform">
+    <a href="#/" class="h-[72px] px-5 flex items-center gap-2.5 border-b border-ink-800 shrink-0">
+      <div class="h-9 w-9 rounded-xl bg-primary-600 grid place-items-center text-white font-extrabold">S</div>
+      <span class="text-lg font-extrabold text-white">SchoolSync</span>
+    </a>
+    <nav class="flex-1 overflow-y-auto px-4 py-5 space-y-1" id="sideNav"></nav>
+    <div class="px-4 py-4 border-t border-ink-800">
+      <button onclick="logout()" class="w-full flex items-center gap-3 rounded-lg px-3 h-10 text-sm font-medium hover:bg-ink-800 hover:text-white">
+        <span>⎋</span> Log out
+      </button>
+    </div>
+  </aside>
+  <div id="sidebarBackdrop" hidden onclick="toggleSidebar()" class="fixed inset-0 bg-ink-900/50 z-30 lg:hidden"></div>
+
+  <div class="flex-1 min-w-0 flex flex-col">
+    <header class="sticky top-0 z-20 bg-white border-b border-ink-200">
+      <div class="shell-app h-[72px] flex items-center gap-4">
+      <button onclick="toggleSidebar()" class="lg:hidden text-ink-500 text-xl">☰</button>
+      <div class="min-w-0">
+        <h1 id="crumbTitle" class="text-[15px] font-bold text-ink-900 truncate leading-tight">Dashboard</h1>
+        <p id="crumbPath" class="micro-label text-ink-400 truncate mt-1">Home</p>
+      </div>
+      <div class="ml-auto flex items-center gap-3">
+        <div class="hidden md:flex items-center gap-2 rounded-lg bg-ink-50 border border-ink-200 px-3 py-2">
+          <span class="text-ink-400 text-sm">⌕</span>
+          <input placeholder="Search anything…" class="bg-transparent text-sm outline-none w-44 placeholder:text-ink-400">
+        </div>
+        <button class="relative h-10 w-10 rounded-lg hover:bg-ink-50 grid place-items-center text-lg" onclick="toast('3 unread notifications')">🔔<span class="absolute top-2 right-2 h-2 w-2 rounded-full bg-rose-500"></span></button>
+        <div class="relative">
+          <button onclick="toggleProfile()" class="flex items-center gap-2.5 rounded-lg hover:bg-ink-50 pl-1 pr-2.5 py-1.5">
+            <div class="h-8 w-8 rounded-full bg-primary-600 text-white grid place-items-center text-sm font-bold" id="avatarInitials">AD</div>
+            <div class="hidden sm:block text-left leading-tight"><div class="text-sm font-semibold text-ink-800" id="profileName">Admin</div><div class="text-[11px] text-ink-400" id="profileRole">Administrator</div></div>
+            <span class="text-ink-400 text-xs">▾</span>
+          </button>
+          <div id="profileMenu" hidden class="absolute right-0 mt-2 w-72 bg-white rounded-xl border border-ink-200 shadow-pop p-2 pop-in">
+            <div class="px-3 py-3 border-b border-ink-100">
+              <p class="text-sm font-bold text-ink-900" id="pmName">Admin</p>
+              <p class="text-xs text-ink-400" id="pmEmail">admin@greenwood.edu</p>
+              <p class="text-xs text-ink-500 mt-2">Greenwood International School</p>
+              <span class="mt-2 inline-block rounded-md bg-primary-50 text-primary-700 text-[11px] font-semibold px-2 py-0.5" id="pmRole">Admin</span>
+            </div>
+            <p class="px-3 pt-3 pb-1 text-[11px] font-semibold uppercase tracking-wider text-ink-400">Switch role view</p>
+            <div class="px-2 pb-2 grid grid-cols-2 gap-1.5" id="roleSwitcher"></div>
+            <div class="border-t border-ink-100 pt-1">
+              <a href="#/dashboard/settings" onclick="toggleProfile()" class="block rounded-lg px-3 py-2 text-sm hover:bg-ink-50">Account settings</a>
+              <button onclick="logout()" class="w-full text-left rounded-lg px-3 py-2 text-sm text-rose-600 hover:bg-rose-50">Log out</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      </div>
+    </header>
+    <main id="appMain" class="flex-1 w-full shell-app py-8 lg:py-10"></main>
+  </div>
+</div>
+
+<!-- ═══════════ STANDALONE SCREENS ═══════════ -->
+<div id="soloShell" hidden class="min-h-screen"><div id="soloMain"></div></div>
+
+<!-- Modal host + toasts -->
+<div id="modalHost" hidden class="fixed inset-0 z-50 grid place-items-center p-4">
+  <div class="absolute inset-0 bg-ink-900/50 backdrop-blur-sm" onclick="closeModal()"></div>
+  <div id="modalBox" class="relative bg-white rounded-2xl shadow-pop w-full max-w-lg max-h-[88vh] overflow-y-auto pop-in"></div>
+</div>
+<div id="toastHost" class="fixed bottom-6 right-6 z-[60] space-y-2"></div>
+
+<script>
+/* ══════════════════════════ DATA ══════════════════════════ */
+const DB = {
+  school: { id:'sc-1', name:'Greenwood International School', registrationNumber:'REG-2019-0451', email:'office@greenwood.edu', phone:'+91 98765 43210', address:'12 Rosewood Avenue', city:'Pune', state:'Maharashtra', pinCode:411001, plan:'Professional', subscriptionDate:'2024-06-01' },
+  user: { name:'Admin', email:'admin@greenwood.edu', role:'Admin' },
+  roles: ['SuperAdmin','Admin','Principal','SchoolIncharge','Teacher','Student','Parent'],
+  teachers: [
+    {id:'t1',name:'Dr. Sarah Smith',email:'sarah.smith@greenwood.edu',phone:'9876500001',gender:'Female',address:'21 Hill View, Pune',joiningDate:'2019-06-10',subject:'Mathematics',status:'Present'},
+    {id:'t2',name:'Prof. John Johnson',email:'john.johnson@greenwood.edu',phone:'9876500002',gender:'Male',address:'8 Lake Road, Pune',joiningDate:'2020-01-05',subject:'Physics',status:'Present'},
+    {id:'t3',name:'Ms. Emily Davis',email:'emily.davis@greenwood.edu',phone:'9876500003',gender:'Female',address:'55 Park Street, Pune',joiningDate:'2021-07-19',subject:'English Literature',status:'Present'},
+    {id:'t4',name:'Dr. Rajiv Wilson',email:'rajiv.wilson@greenwood.edu',phone:'9876500004',gender:'Male',address:'3 Orchard Lane, Pune',joiningDate:'2018-04-02',subject:'Chemistry',status:'Absent'},
+    {id:'t5',name:'Mrs. Neha Kulkarni',email:'neha.kulkarni@greenwood.edu',phone:'9876500005',gender:'Female',address:'19 Sunrise Colony, Pune',joiningDate:'2022-06-15',subject:'Biology',status:'Present'},
+    {id:'t6',name:'Mr. Arun Deshpande',email:'arun.deshpande@greenwood.edu',phone:'9876500006',gender:'Male',address:'7 Fort Road, Pune',joiningDate:'2017-08-21',subject:'History',status:'Present'}
+  ],
+  classes: [
+    {id:'c1',name:'Grade 8',section:'A',classTeacherId:'t1',room:'A-101'},
+    {id:'c2',name:'Grade 9',section:'B',classTeacherId:'t2',room:'B-203'},
+    {id:'c3',name:'Grade 10',section:'A',classTeacherId:'t3',room:'C-105'},
+    {id:'c4',name:'Grade 10',section:'B',classTeacherId:'t4',room:'D-301'},
+    {id:'c5',name:'Grade 7',section:'C',classTeacherId:'t5',room:'A-104'}
+  ],
+  students: [
+    {id:'s1',srNumber:'SR-1001',rollNumber:1,firstName:'Aarav',lastName:'Mehta',email:'aarav.mehta@greenwood.edu',dob:'2010-03-14',gender:'Male',classId:'c1',status:'Present',father:'Rohit Mehta',mother:'Sneha Mehta',guardianPhone:'9812000001',guardianEmail:'rohit.mehta@mail.com'},
+    {id:'s2',srNumber:'SR-1002',rollNumber:2,firstName:'Diya',lastName:'Sharma',email:'diya.sharma@greenwood.edu',dob:'2010-08-02',gender:'Female',classId:'c1',status:'Present',father:'Anil Sharma',mother:'Ritu Sharma',guardianPhone:'9812000002',guardianEmail:'anil.sharma@mail.com'},
+    {id:'s3',srNumber:'SR-1003',rollNumber:3,firstName:'Kabir',lastName:'Rao',email:'kabir.rao@greenwood.edu',dob:'2009-11-25',gender:'Male',classId:'c2',status:'Absent',father:'Vikram Rao',mother:'Meera Rao',guardianPhone:'9812000003',guardianEmail:'vikram.rao@mail.com'},
+    {id:'s4',srNumber:'SR-1004',rollNumber:4,firstName:'Ananya',lastName:'Iyer',email:'ananya.iyer@greenwood.edu',dob:'2009-05-30',gender:'Female',classId:'c2',status:'Present',father:'Suresh Iyer',mother:'Lakshmi Iyer',guardianPhone:'9812000004',guardianEmail:'suresh.iyer@mail.com'},
+    {id:'s5',srNumber:'SR-1005',rollNumber:5,firstName:'Vihaan',lastName:'Kapoor',email:'vihaan.kapoor@greenwood.edu',dob:'2008-09-12',gender:'Male',classId:'c3',status:'Present',father:'Manish Kapoor',mother:'Pooja Kapoor',guardianPhone:'9812000005',guardianEmail:'manish.kapoor@mail.com'},
+    {id:'s6',srNumber:'SR-1006',rollNumber:6,firstName:'Ishita',lastName:'Nair',email:'ishita.nair@greenwood.edu',dob:'2008-12-04',gender:'Female',classId:'c3',status:'Late',father:'Prakash Nair',mother:'Divya Nair',guardianPhone:'9812000006',guardianEmail:'prakash.nair@mail.com'},
+    {id:'s7',srNumber:'SR-1007',rollNumber:7,firstName:'Arjun',lastName:'Patil',email:'arjun.patil@greenwood.edu',dob:'2008-02-19',gender:'Male',classId:'c4',status:'Present',father:'Sandeep Patil',mother:'Kavita Patil',guardianPhone:'9812000007',guardianEmail:'sandeep.patil@mail.com'},
+    {id:'s8',srNumber:'SR-1008',rollNumber:8,firstName:'Meera',lastName:'Joshi',email:'meera.joshi@greenwood.edu',dob:'2011-06-08',gender:'Female',classId:'c5',status:'Present',father:'Nilesh Joshi',mother:'Asha Joshi',guardianPhone:'9812000008',guardianEmail:'nilesh.joshi@mail.com'},
+    {id:'s9',srNumber:'SR-1009',rollNumber:9,firstName:'Rehan',lastName:'Khan',email:'rehan.khan@greenwood.edu',dob:'2011-01-17',gender:'Male',classId:'c5',status:'Leave',father:'Imran Khan',mother:'Sara Khan',guardianPhone:'9812000009',guardianEmail:'imran.khan@mail.com'}
+  ],
+  subjects: ['Mathematics','Physics','English Literature','Chemistry','Biology','History','Geography','Computer Science'],
+  announcements: [
+    {id:'a1',title:'Annual Sports Day',detail:'The annual sports day will be held on 15 October at the main ground. All classes are expected to assemble by 08:30.',date:'2026-10-01',announcedBy:'Principal'},
+    {id:'a2',title:'Parent-Teacher Meeting',detail:'PTM is scheduled for Saturday from 09:00 to 13:00. Class teachers will share individual slots by Thursday.',date:'2026-09-20',announcedBy:'Admin'},
+    {id:'a3',title:'Mid-Term Examination Schedule Published',detail:'The mid-term examination timetable for Grades 7 to 10 is now available in the Schedule module.',date:'2026-09-12',announcedBy:'Dr. Sarah Smith'},
+    {id:'a4',title:'Library Week',detail:'Library week begins Monday with a book fair, reading circles and an inter-class quiz.',date:'2026-09-05',announcedBy:'Ms. Emily Davis'}
+  ],
+  rooms: [
+    {id:'r1',name:'Staff Room',description:'Daily staff coordination',createdBy:'Admin',participants:8},
+    {id:'r2',name:'Grade 10 Doubt Session',description:'Mathematics doubt clearing',createdBy:'Dr. Sarah Smith',participants:23},
+    {id:'r3',name:'PTM Briefing',description:'Parent-teacher meeting preparation',createdBy:'Principal',participants:12}
+  ],
+  messages: [
+    {user:'Dr. Sarah Smith',text:'Good morning everyone — the roster for tomorrow is confirmed.',time:'09:04',me:false},
+    {user:'Ms. Emily Davis',text:'Noted. I will take the Grade 10 A session.',time:'09:06',me:false},
+    {user:'Admin',text:'Thanks both. I have published the announcement.',time:'09:08',me:true},
+    {user:'Prof. John Johnson',text:'Can we move the briefing to 14:00?',time:'09:12',me:false}
+  ],
+  schedule: {
+    slots:['09:00 AM','10:30 AM','12:00 PM','02:00 PM'],
+    days:['Monday','Tuesday','Wednesday','Thursday','Friday'],
+    grid:{
+      '09:00 AM':[['Math 101','A-101','Dr. Smith'],['Physics','B-203','Prof. Johnson'],['English','C-105','Ms. Davis'],['Math 101','A-101','Dr. Smith'],['Chemistry','D-301','Dr. Wilson']],
+      '10:30 AM':[['Physics','B-203','Prof. Johnson'],['English','C-105','Ms. Davis'],['Math 101','A-101','Dr. Smith'],['Chemistry','D-301','Dr. Wilson'],['Physics','B-203','Prof. Johnson']],
+      '12:00 PM':[['Biology','E-102','Mrs. Kulkarni'],['History','F-201','Mr. Deshpande'],['Chemistry','D-301','Dr. Wilson'],['English','C-105','Ms. Davis'],['Biology','E-102','Mrs. Kulkarni']],
+      '02:00 PM':[['History','F-201','Mr. Deshpande'],['Math 101','A-101','Dr. Smith'],['Biology','E-102','Mrs. Kulkarni'],['Physics','B-203','Prof. Johnson'],['History','F-201','Mr. Deshpande']]
+    }
+  }
+};
+
+/* ══════════════════════════ NAVIGATION MODEL ══════════════════════════ */
+const NAV = [
+  {name:'Dashboard',    path:'/dashboard',               icon:'▦', roles:['SuperAdmin','Admin','Principal','SchoolIncharge','Teacher','Student','Parent']},
+  {name:'Classes',      path:'/dashboard/classes',       icon:'▤', roles:['SuperAdmin','Admin','Principal','SchoolIncharge']},
+  {name:'Teachers',     path:'/dashboard/teachers',      icon:'✦', roles:['SuperAdmin','Admin','Principal','SchoolIncharge']},
+  {name:'Students',     path:'/dashboard/students',      icon:'⚇', roles:['SuperAdmin','Admin','Principal','SchoolIncharge','Teacher']},
+  {name:'Attendance',   path:'/dashboard/attendance',    icon:'✓', roles:['SuperAdmin','Admin','Principal','SchoolIncharge','Teacher']},
+  {name:'Announcements',path:'/dashboard/announcements', icon:'◈', roles:['SuperAdmin','Admin','Principal','SchoolIncharge','Teacher','Student','Parent']},
+  {name:'Meetings',     path:'/dashboard/meeting',       icon:'◉', roles:['SuperAdmin','Admin','Principal','SchoolIncharge','Teacher','Student','Parent']},
+  {name:'Settings',     path:'/dashboard/settings',      icon:'⚙', roles:['SuperAdmin','Admin','Principal','SchoolIncharge','Teacher','Student','Parent']},
+  {name:'Schedule',     path:'/dashboard/schedule',      icon:'▧', roles:['SuperAdmin','Admin','Principal','SchoolIncharge','Teacher'], badge:'soon'},
+  {name:'Reports',      path:'/dashboard/reports',       icon:'◍', roles:['SuperAdmin','Admin','Principal','SchoolIncharge'], badge:'soon'},
+  {name:'Payment',      path:'/dashboard/payment',       icon:'₹', roles:['SuperAdmin','Admin','Principal','SchoolIncharge'], badge:'soon'},
+  {name:'Leave',        path:'/dashboard/leave',         icon:'⎋', roles:['SuperAdmin','Admin','Principal','SchoolIncharge','Teacher'], badge:'soon'}
+];
+const PUBLIC_NAV = [{n:'Home',p:'/'},{n:'About Us',p:'/about'},{n:'Pricing',p:'/pricing'},{n:'Contact',p:'/contact'}];
+
+/* ══════════════════════════ HELPERS ══════════════════════════ */
+const $ = (s,r=document)=>r.querySelector(s);
+const $$ = (s,r=document)=>[...r.querySelectorAll(s)];
+const esc = s => String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+const tName = id => (DB.teachers.find(t=>t.id===id)||{}).name || 'Unassigned';
+const cName = id => { const c=DB.classes.find(c=>c.id===id); return c? `${c.name} ${c.section}` : '—'; };
+const initials = n => n.split(' ').filter(Boolean).slice(0,2).map(w=>w[0]).join('').toUpperCase();
+const fmtDate = d => new Date(d).toLocaleDateString('en-GB',{day:'2-digit',month:'short',year:'numeric'});
+/* Currency: Indian Rupee with lakh/crore grouping */
+const inr = v => '₹' + Number(v).toLocaleString('en-IN');
+const inrShort = v => v>=1e7 ? '₹'+(v/1e7).toFixed(2).replace(/\.00$/,'')+' Cr'
+                    : v>=1e5 ? '₹'+(v/1e5).toFixed(2).replace(/\.00$/,'')+' L'
+                    : inr(v);
+let STATE = { role:'Admin', billing:'monthly', attendanceClass:'c1', attendance:{}, roomId:'r1', filters:{} };
+
+function toast(msg,kind='ok'){
+  const el=document.createElement('div');
+  el.className=`pop-in rounded-xl px-4 py-3 text-sm font-medium shadow-pop border ${kind==='ok'?'bg-white border-ink-200 text-ink-800':'bg-rose-50 border-rose-200 text-rose-700'}`;
+  el.innerHTML=`<span class="mr-2">${kind==='ok'?'✓':'!'}</span>${esc(msg)}`;
+  $('#toastHost').appendChild(el); setTimeout(()=>{el.style.opacity='0';el.style.transition='opacity .3s';setTimeout(()=>el.remove(),300)},2600);
+}
+function openModal(html,size='max-w-lg'){ const b=$('#modalBox'); b.className=`relative bg-white rounded-2xl shadow-pop w-full ${size} max-h-[88vh] overflow-y-auto pop-in`; b.innerHTML=html; $('#modalHost').hidden=false; document.body.style.overflow='hidden'; }
+function closeModal(){ $('#modalHost').hidden=true; document.body.style.overflow=''; }
+document.addEventListener('keydown',e=>{ if(e.key==='Escape'){ closeModal(); $('#profileMenu').hidden=true; } });
+function toggleSidebar(){ const s=$('#sidebar'),b=$('#sidebarBackdrop'); const open=s.classList.contains('-translate-x-full'); s.classList.toggle('-translate-x-full',!open); b.hidden=!open; }
+function toggleProfile(){ $('#profileMenu').hidden = !$('#profileMenu').hidden; }
+function logout(){ toast('Signed out of SchoolSync'); location.hash='#/'; }
+function can(path){ const item=NAV.find(n=>n.path===path); return !item || item.roles.includes(STATE.role); }
+function setRole(r){ STATE.role=r; $('#profileMenu').hidden=true; renderSideNav(); renderProfile(); toast(`Viewing as ${r}`); route(); }
+
+const modalHeader = (title,sub='') => `
+  <div class="sticky top-0 bg-white px-6 pt-6 pb-5 border-b border-ink-100 flex items-start justify-between gap-4">
+    <div><h3 class="text-xl font-bold tracking-[-.01em] text-ink-900">${esc(title)}</h3>${sub?`<p class="text-sm text-ink-500 mt-1">${esc(sub)}</p>`:''}</div>
+    <button onclick="closeModal()" class="h-8 w-8 rounded-lg hover:bg-ink-100 text-ink-400 shrink-0">✕</button>
+  </div>`;
+const modalFooter = (primary,fn) => `
+  <div class="sticky bottom-0 bg-white px-6 py-5 border-t border-ink-100 flex justify-end gap-2">
+    <button type="button" onclick="closeModal()" class="rounded-lg border border-ink-200 px-4 py-2.5 text-sm font-semibold hover:bg-ink-50">Cancel</button>
+    <button type="submit" class="rounded-lg bg-primary-600 hover:bg-primary-700 text-white px-4 py-2.5 text-sm font-semibold">${esc(primary)}</button>
+  </div>`;
+const field = (label,inner) => `<div><label class="text-sm font-semibold text-ink-700">${label}</label><div class="mt-1.5">${inner}</div></div>`;
+const inputCls = 'w-full rounded-lg border border-ink-200 px-3.5 py-2.5 text-sm outline-none focus:ring-2 focus:ring-primary-200 focus:border-primary-400';
+const pill = (txt,tone) => `<span class="inline-flex items-center rounded-full px-2.5 py-0.5 text-xs font-semibold ${tone}">${esc(txt)}</span>`;
+const statusPill = s => pill(s,{Present:'bg-emerald-50 text-emerald-700',Absent:'bg-rose-50 text-rose-700',Late:'bg-amber-50 text-amber-700',Leave:'bg-sky-50 text-sky-700'}[s]||'bg-ink-100 text-ink-600');
+/* ── Imagery: deterministic SVG portraits / photos, no external assets ── */
+const AV_PALETTE = [['#3b5bf6','#6084fc'],['#0ea5e9','#38bdf8'],['#10b981','#34d399'],['#f59e0b','#fbbf24'],['#8b5cf6','#a78bfa'],['#ec4899','#f472b6'],['#14b8a6','#2dd4bf'],['#ef4444','#f87171']];
+const hashOf = s => { let h=0; for(let i=0;i<s.length;i++) h=(h*31+s.charCodeAt(i))>>>0; return h; };
+const svgUri = svg => 'data:image/svg+xml;utf8,'+encodeURIComponent(svg);
+
+/* Illustrated portrait — face, hair and clothing derived from the name */
+function portrait(name,size=96){
+  const h=hashOf(name), [c1,c2]=AV_PALETTE[h%AV_PALETTE.length];
+  const skin=['#f2d3b8','#e3b593','#c98e63','#8d5a3b','#f7e0cb'][h%5];
+  const hair=['#2b2118','#4a3325','#6b4423','#151515','#7a5c3e'][(h>>3)%5];
+  const long=(h>>5)%2===1, glasses=(h>>7)%3===0;
+  return svgUri(`<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" width="${size}" height="${size}">
+<defs><linearGradient id="b" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="${c1}"/><stop offset="1" stop-color="${c2}"/></linearGradient></defs>
+<rect width="100" height="100" fill="url(#b)"/>
+<circle cx="50" cy="92" r="34" fill="#ffffff" opacity=".92"/>
+${long?`<path d="M22 52c0-20 12-32 28-32s28 12 28 32v22H22z" fill="${hair}"/>`:''}
+<rect x="38" y="48" width="24" height="16" rx="8" fill="${skin}"/>
+<circle cx="50" cy="40" r="17" fill="${skin}"/>
+<path d="M33 38c0-11 8-18 17-18s17 7 17 18c0 2-1 3-2 2-3-4-9-7-15-7s-12 3-15 7c-1 1-2 0-2-2z" fill="${hair}"/>
+${glasses?`<g fill="none" stroke="#232a36" stroke-width="1.6"><circle cx="43.5" cy="40" r="5"/><circle cx="56.5" cy="40" r="5"/><path d="M48.5 40h3"/></g>`:`<g fill="#232a36"><circle cx="44" cy="40" r="1.8"/><circle cx="56" cy="40" r="1.8"/></g>`}
+<path d="M45 47q5 4 10 0" stroke="#b4705a" stroke-width="1.6" fill="none" stroke-linecap="round"/>
+<path d="M50 62c14 0 24 9 26 22H24c2-13 12-22 26-22z" fill="${c1}"/>
+<path d="M43 62l7 9 7-9 4 2-11 14-11-14z" fill="#ffffff" opacity=".9"/></svg>`);
+}
+const avatarImg = (name,cls='h-9 w-9') =>
+  `<img src="${portrait(name)}" alt="${esc(name)}" class="${cls} rounded-full object-cover ring-2 ring-white shadow-sm bg-ink-100">`;
+
+/* Scenic cover images for feature and hero cards */
+function scene(seed,w=640,h=360){
+  const h0=hashOf(seed), [c1,c2]=AV_PALETTE[h0%AV_PALETTE.length];
+  return svgUri(`<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 ${w} ${h}" width="${w}" height="${h}">
+<defs><linearGradient id="s" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="${c1}"/><stop offset="1" stop-color="${c2}"/></linearGradient>
+<linearGradient id="g" x1="0" y1="1" x2="0" y2="0"><stop offset="0" stop-color="#ffffff" stop-opacity=".35"/><stop offset="1" stop-color="#ffffff" stop-opacity="0"/></linearGradient></defs>
+<rect width="${w}" height="${h}" fill="url(#s)"/>
+<circle cx="${w*0.82}" cy="${h*0.22}" r="${h*0.22}" fill="#fff" opacity=".16"/>
+<circle cx="${w*0.18}" cy="${h*0.8}" r="${h*0.3}" fill="#fff" opacity=".1"/>
+<path d="M0 ${h*0.72} L${w*0.2} ${h*0.5} L${w*0.4} ${h*0.66} L${w*0.62} ${h*0.38} L${w*0.82} ${h*0.58} L${w} ${h*0.44} V${h} H0 Z" fill="url(#g)"/>
+<g fill="#fff" opacity=".85">
+<rect x="${w*0.08}" y="${h*0.46}" width="${w*0.16}" height="${h*0.34}" rx="6"/>
+<rect x="${w*0.28}" y="${h*0.34}" width="${w*0.2}" height="${h*0.46}" rx="6"/>
+<rect x="${w*0.52}" y="${h*0.5}" width="${w*0.14}" height="${h*0.3}" rx="6"/>
+</g>
+<g fill="${c1}" opacity=".55">
+<rect x="${w*0.11}" y="${h*0.52}" width="${w*0.04}" height="${h*0.06}" rx="2"/><rect x="${w*0.175}" y="${h*0.52}" width="${w*0.04}" height="${h*0.06}" rx="2"/>
+<rect x="${w*0.31}" y="${h*0.42}" width="${w*0.05}" height="${h*0.07}" rx="2"/><rect x="${w*0.39}" y="${h*0.42}" width="${w*0.05}" height="${h*0.07}" rx="2"/>
+</g></svg>`);
+}
+
+/* ── Charts: pure inline SVG, theme-consistent ── */
+const CH = ['#3b5bf6','#10b981','#f59e0b','#0ea5e9','#8b5cf6','#ec4899','#14b8a6','#ef4444'];
+/* Accepts one series (array of numbers) or several ({name,values,color,fill}) —
+   multi-series renders in a single SVG so there is no overlay and no dead space. */
+function areaChart(series,labels,{w=680,h=220,color='#3b5bf6',fill=true,max}={}){
+  const sets = (typeof series[0]==='object')
+    ? series.map((s,i)=>({name:s.name||'',values:s.values,color:s.color||CH[i],fill:s.fill!==false}))
+    : [{name:'',values:series,color,fill}];
+  const pad={l:34,r:12,t:14,b:26}, iw=w-pad.l-pad.r, ih=h-pad.t-pad.b;
+  const all=sets.flatMap(s=>s.values);
+  const hi=max||Math.max(...all)*1.12, lo=0, n=sets[0].values.length;
+  const X=i=>pad.l+(iw*i/(n-1||1)), Y=v=>pad.t+ih-((v-lo)/(hi-lo))*ih;
+  const grid=[0,.25,.5,.75,1].map(f=>`<line x1="${pad.l}" x2="${w-pad.r}" y1="${pad.t+ih*f}" y2="${pad.t+ih*f}" stroke="#eef0f4"/>
+    <text x="${pad.l-8}" y="${pad.t+ih*f+4}" text-anchor="end" font-size="10" fill="#8f98ad">${Math.round(hi*(1-f))}</text>`).join('');
+  const uid=Math.random().toString(36).slice(2,7);
+  const body=sets.map((s,si)=>{
+    const pts=s.values.map((v,i)=>`${X(i)},${Y(v)}`).join(' ');
+    const area=`${pad.l},${pad.t+ih} ${pts} ${X(n-1)},${pad.t+ih}`;
+    return `${s.fill?`<polygon points="${area}" fill="url(#ag${uid}${si})"/>`:''}
+      <polyline points="${pts}" fill="none" stroke="${s.color}" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+      ${s.values.map((v,i)=>`<circle cx="${X(i)}" cy="${Y(v)}" r="4" fill="#fff" stroke="${s.color}" stroke-width="2.5"><title>${s.name?s.name+' · ':''}${labels[i]||''}: ${v}</title></circle>`).join('')}`;
+  }).join('');
+  return `<svg viewBox="0 0 ${w} ${h}" class="w-full h-auto" role="img">
+    <defs>${sets.map((s,si)=>`<linearGradient id="ag${uid}${si}" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="${s.color}" stop-opacity=".28"/><stop offset="1" stop-color="${s.color}" stop-opacity="0"/></linearGradient>`).join('')}</defs>
+    ${grid}${body}
+    ${labels.map((l,i)=>`<text x="${X(i)}" y="${h-8}" text-anchor="middle" font-size="10" fill="#8f98ad">${l}</text>`).join('')}
+  </svg>`;
+}
+function barChart(data,{w=680,h=220,colors=CH,horizontal=false}={}){
+  const max=Math.max(...data.map(d=>d[1]))*1.15||1;
+  if(horizontal){
+    const rowH=Math.min(38,(h-10)/data.length);
+    return `<svg viewBox="0 0 ${w} ${data.length*rowH+8}" class="w-full h-auto">
+      ${data.map((d,i)=>{const bw=(w-150)*(d[1]/max);return `
+        <text x="0" y="${i*rowH+rowH/2+4}" font-size="11" fill="#4a5468">${esc(d[0])}</text>
+        <rect x="120" y="${i*rowH+rowH/2-9}" width="${w-150}" height="18" rx="9" fill="#eef0f4"/>
+        <rect x="120" y="${i*rowH+rowH/2-9}" width="${Math.max(bw,4)}" height="18" rx="9" fill="${colors[i%colors.length]}"><title>${esc(d[0])}: ${d[1]}</title></rect>
+        <text x="${w-24}" y="${i*rowH+rowH/2+4}" text-anchor="end" font-size="11" font-weight="600" fill="#232a36">${d[1]}</text>`}).join('')}
+    </svg>`;
+  }
+  const pad={l:34,r:8,t:12,b:26}, iw=w-pad.l-pad.r, ih=h-pad.t-pad.b, bw=iw/data.length*0.58;
+  return `<svg viewBox="0 0 ${w} ${h}" class="w-full h-auto">
+    ${[0,.5,1].map(f=>`<line x1="${pad.l}" x2="${w-pad.r}" y1="${pad.t+ih*f}" y2="${pad.t+ih*f}" stroke="#eef0f4"/>
+      <text x="${pad.l-8}" y="${pad.t+ih*f+4}" text-anchor="end" font-size="10" fill="#8f98ad">${Math.round(max*(1-f))}</text>`).join('')}
+    ${data.map((d,i)=>{const x=pad.l+iw*i/data.length+(iw/data.length-bw)/2, bh=(d[1]/max)*ih;
+      return `<rect x="${x}" y="${pad.t+ih-bh}" width="${bw}" height="${bh}" rx="6" fill="${colors[i%colors.length]}"><title>${esc(d[0])}: ${d[1]}</title></rect>
+        <text x="${x+bw/2}" y="${pad.t+ih-bh-6}" text-anchor="middle" font-size="10" font-weight="600" fill="#4a5468">${d[1]}</text>
+        <text x="${x+bw/2}" y="${h-8}" text-anchor="middle" font-size="10" fill="#8f98ad">${esc(d[0])}</text>`}).join('')}
+  </svg>`;
+}
+function donut(data,{size=180,thickness=26,center='',fmt=v=>v}={}){
+  const total=data.reduce((s,d)=>s+d[1],0)||1, r=(size-thickness)/2, c=2*Math.PI*r; let off=0;
+  const arcs=data.map((d,i)=>{const len=c*(d[1]/total); const el=`<circle cx="${size/2}" cy="${size/2}" r="${r}" fill="none"
+      stroke="${d[2]||CH[i%CH.length]}" stroke-width="${thickness}" stroke-dasharray="${len} ${c-len}"
+      stroke-dashoffset="${-off}" transform="rotate(-90 ${size/2} ${size/2})" stroke-linecap="butt"><title>${esc(d[0])}: ${fmt(d[1])}</title></circle>`;
+    off+=len; return el;}).join('');
+  return `<div class="flex items-center gap-6 flex-wrap">
+    <div class="relative shrink-0" style="width:${size}px;height:${size}px">
+      <svg viewBox="0 0 ${size} ${size}" class="w-full h-full"><circle cx="${size/2}" cy="${size/2}" r="${r}" fill="none" stroke="#eef0f4" stroke-width="${thickness}"/>${arcs}</svg>
+      ${center?`<div class="absolute inset-0 grid place-items-center text-center"><div><p class="text-2xl font-extrabold text-ink-900 leading-none">${center[0]}</p><p class="text-[11px] text-ink-400 mt-1">${center[1]}</p></div></div>`:''}
+    </div>
+    <div class="space-y-2.5 min-w-[130px]">
+      ${data.map((d,i)=>`<div class="flex items-center gap-2.5 text-sm"><span class="h-3 w-3 rounded-sm shrink-0" style="background:${d[2]||CH[i%CH.length]}"></span>
+        <span class="text-ink-600 flex-1">${esc(d[0])}</span><span class="font-semibold text-ink-900 tabular-nums">${fmt(d[1])}</span></div>`).join('')}
+    </div></div>`;
+}
+function sparkline(series,color='#3b5bf6',w=110,h=32){
+  const hi=Math.max(...series),lo=Math.min(...series),rg=(hi-lo)||1;
+  const pts=series.map((v,i)=>`${(w*i/(series.length-1)).toFixed(1)},${(h-2-((v-lo)/rg)*(h-6)).toFixed(1)}`).join(' ');
+  return `<svg viewBox="0 0 ${w} ${h}" class="w-full h-8"><polyline points="${pts}" fill="none" stroke="${color}" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>`;
+}
+function gauge(pct,label,color='#3b5bf6',size=120){
+  const r=size/2-12, c=Math.PI*r;
+  return `<div class="text-center"><svg viewBox="0 0 ${size} ${size*0.62}" class="w-full h-auto" style="max-width:${size}px">
+    <path d="M12 ${size/2} A ${r} ${r} 0 0 1 ${size-12} ${size/2}" fill="none" stroke="#eef0f4" stroke-width="12" stroke-linecap="round"/>
+    <path d="M12 ${size/2} A ${r} ${r} 0 0 1 ${size-12} ${size/2}" fill="none" stroke="${color}" stroke-width="12" stroke-linecap="round"
+      stroke-dasharray="${c*pct/100} ${c}"/>
+    <text x="${size/2}" y="${size/2-6}" text-anchor="middle" font-size="20" font-weight="800" fill="#141922">${pct}%</text></svg>
+    <p class="text-xs text-ink-500 mt-1">${esc(label)}</p></div>`;
+}
+function mapArt(w=560,h=220){
+  return svgUri(`<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 ${w} ${h}" width="${w}" height="${h}">
+<rect width="${w}" height="${h}" fill="#eef2f7"/>
+<g stroke="#dbe3ee" stroke-width="10" fill="none">
+<path d="M-10 60 H${w+10}"/><path d="M-10 150 H${w+10}"/><path d="M120 -10 V${h+10}"/><path d="M330 -10 V${h+10}"/><path d="M460 -10 V${h+10}"/></g>
+<g stroke="#ffffff" stroke-width="3" fill="none"><path d="M-10 60 H${w+10}"/><path d="M-10 150 H${w+10}"/><path d="M120 -10 V${h+10}"/><path d="M330 -10 V${h+10}"/><path d="M460 -10 V${h+10}"/></g>
+<g fill="#dfe7f1"><rect x="20" y="80" width="80" height="50" rx="5"/><rect x="150" y="20" width="150" height="25" rx="5"/>
+<rect x="150" y="80" width="70" height="50" rx="5"/><rect x="250" y="80" width="60" height="50" rx="5"/>
+<rect x="360" y="20" width="80" height="25" rx="5"/><rect x="360" y="170" width="80" height="40" rx="5"/><rect x="490" y="80" width="60" height="50" rx="5"/></g>
+<g fill="#c9e6cf"><rect x="20" y="170" width="80" height="40" rx="6"/><rect x="490" y="170" width="60" height="40" rx="6"/></g>
+<path d="M330 105 l-90 45" stroke="#3b5bf6" stroke-width="4" stroke-dasharray="8 6" fill="none" stroke-linecap="round"/>
+<g transform="translate(330 105)"><circle r="22" fill="#3b5bf6" opacity=".18"/>
+<path d="M0 -20c-7.7 0-14 6.3-14 14 0 10.5 14 26 14 26s14-15.5 14-26c0-7.7-6.3-14-14-14z" fill="#3b5bf6"/><circle cy="-6" r="5" fill="#fff"/></g>
+<rect x="14" y="${h-34}" width="150" height="22" rx="11" fill="#fff" opacity=".92"/>
+<text x="28" y="${h-19}" font-size="12" font-family="Inter,sans-serif" fill="#4a5468">AVR Tech · Jaipur</text></svg>`);
+}
+const legendDot = (c,t) => `<span class="inline-flex items-center gap-1.5 text-xs text-ink-500"><span class="h-2.5 w-2.5 rounded-full" style="background:${c}"></span>${t}</span>`;
+
+const iconBtn = (glyph,title,onclick,tone='text-ink-400 hover:text-primary-600 hover:bg-primary-50') =>
+  `<button title="${title}" onclick="${onclick}" class="h-8 w-8 rounded-lg grid place-items-center ${tone}">${glyph}</button>`;
+const pageHead = (title,sub,action='') => `
+  <div class="flex flex-wrap items-end justify-between gap-4 mb-8">
+    <div><h2 class="page-title font-extrabold text-ink-900">${esc(title)}</h2><p class="page-sub text-ink-500 mt-1.5">${esc(sub)}</p></div>
+    <div class="flex flex-wrap items-center gap-2">${action}</div>
+  </div>`;
+const card = (inner,cls='') => `<div class="bg-white rounded-2xl border border-ink-200 shadow-card ${cls}">${inner}</div>`;
+const emptyState = (title,sub,btn='') => `<div class="text-center py-20"><div class="mx-auto h-16 w-16 rounded-2xl bg-ink-100 grid place-items-center text-2xl">◌</div><p class="mt-4 font-bold text-ink-900">${esc(title)}</p><p class="text-ink-500 text-sm mt-1">${esc(sub)}</p>${btn}</div>`;
+const comingSoon = (title,blurb,tiles,groups) => `
+  <div class="rounded-2xl overflow-hidden border border-ink-200 shadow-card mb-6">
+    <img src="${scene(title,1200,300)}" alt="${esc(title)}" class="w-full h-44 object-cover">
+  </div>
+  <div class="text-center py-12">
+    <div class="mx-auto h-20 w-20 rounded-2xl bg-primary-50 text-primary-600 grid place-items-center text-3xl">◷</div>
+    <h2 class="mt-6 text-3xl font-extrabold text-ink-900">${esc(title)}</h2>
+    <p class="mt-3 text-ink-500 max-w-2xl mx-auto text-lg">${esc(blurb)}</p>
+    <span class="mt-6 inline-block rounded-full bg-primary-600 text-white text-xs font-bold px-4 py-1.5 tracking-wide">COMING SOON</span>
+  </div>
+  <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
+    ${tiles.map(t=>`<div class="rounded-2xl border-2 border-dashed border-primary-200 bg-primary-50/40 p-6"><p class="font-bold text-primary-700">${esc(t[0])}</p><p class="text-sm text-ink-500 mt-2">${esc(t[1])}</p></div>`).join('')}
+  </div>
+  ${card(`<div class="p-6"><p class="card-title text-ink-900">Upcoming Features</p>
+    <div class="mt-5 grid md:grid-cols-2 gap-8">
+      ${groups.map(g=>`<div><p class="font-semibold text-ink-800">${esc(g[0])}</p><ul class="mt-3 space-y-2 text-sm text-ink-500">${g[1].map(i=>`<li class="flex gap-2"><span class="text-primary-500">•</span>${esc(i)}</li>`).join('')}</ul></div>`).join('')}
+    </div></div>`,'mt-6')}`;
+
+/* ══════════════════════════ PUBLIC CONTENT ══════════════════════════ */
+function togglePublicNav(force){
+  const el=$('#publicNavMobile');
+  el.hidden = (force===undefined) ? !el.hidden : !force;
+}
+function renderPublicChrome(){
+  $('#publicNav').innerHTML = PUBLIC_NAV.map(i=>`<a href="#${i.p}" data-pnav="${i.p}" class="text-sm font-medium px-3.5 py-2 rounded-lg hover:bg-ink-50">${i.n}</a>`).join('');
+  $('#publicNavMobile').innerHTML = `<div class="shell py-3 flex flex-col">
+    ${PUBLIC_NAV.map(i=>`<a href="#${i.p}" data-pnav-m="${i.p}" class="rounded-lg px-3 h-11 flex items-center text-sm font-medium hover:bg-ink-50">${i.n}</a>`).join('')}
+    <a href="#/dashboard" class="rounded-lg px-3 h-11 flex items-center text-sm font-medium hover:bg-ink-50">Dashboard</a>
+  </div>`;
+  $('#heroChart').innerHTML = areaChart([820,940,1080,1210,1395,1560,1720,1860],['Q1','Q2','Q3','Q4','Q1','Q2','Q3','Q4'],{w:520,h:186});
+  $('#publicStats').innerHTML = [['Total Schools','24','+12%',[14,16,18,19,21,22,24]],['Total Students','12,394','+5%',[9.1,10,10.8,11.3,11.9,12.1,12.4]],['Total Teachers','1,823','+2.1%',[1.4,1.5,1.6,1.65,1.72,1.78,1.82]]]
+    .map((s,i)=>`<div class="rounded-xl border border-ink-200 px-3.5 py-4">
+      <p class="micro-label text-ink-400 truncate">${s[0]}</p>
+      <div class="mt-2 flex items-baseline gap-1.5"><p class="text-[22px] font-extrabold tracking-[-.01em] text-ink-900 leading-none">${s[1]}</p>
+        <span class="text-[11px] font-semibold text-emerald-600">${s[2]}</span></div>
+      <div class="mt-2.5 h-7">${sparkline(s[3],CH[i],110,28)}</div></div>`).join('');
+  $('#homeFeatures').innerHTML = [
+    ['⚇','Student Management','Complete student profiles, enrolment records, class placement and guardian details in one place.'],
+    ['▤','Course Management','Organise classes, sections and subject allocation across the whole institution.'],
+    ['◍','Analytics & Reports','Real-time dashboards and exportable reports on attendance, performance and engagement.'],
+    ['⛨','Secure & Reliable','Role-based access control keeps every record visible only to the people who should see it.'],
+    ['₹','Accounts Management','Fee and salary workflows designed for school finance teams.'],
+    ['◈','Announcements & Events','Publish notices to staff, students and families with a full institutional record.'],
+    ['✓','Attendance Tracking','Mark a full class register in seconds and track presence day by day.'],
+    ['▧','Class Schedule','Publish weekly timetables and examination schedules to everyone who needs them.']
+  ].map(f=>`<div class="bg-white rounded-2xl border border-ink-200 shadow-card overflow-hidden hover:shadow-pop transition-shadow">
+      <img src="${scene(f[1],480,220)}" alt="${f[1]}" class="w-full h-28 object-cover">
+      <div class="p-6 -mt-9 relative">
+        <div class="h-11 w-11 rounded-xl bg-white shadow-card text-primary-600 grid place-items-center text-xl">${f[0]}</div>
+        <p class="mt-4 font-bold text-ink-900">${f[1]}</p><p class="mt-2 text-sm text-ink-500 leading-relaxed">${f[2]}</p></div></div>`).join('');
+  $('#testimonials').innerHTML = [
+    ['“Attendance that used to take our staff an hour now takes minutes.”','Anita Verma','Principal, Greenwood International'],
+    ['“Every record finally lives in one place — our admin team got their week back.”','Sameer Khan','School In-charge, St. Xavier High'],
+    ['“Announcements reach every parent instantly and stay on record.”','Leela Menon','Administrator, Sunrise Academy']
+  ].map(t=>`<div class="bg-ink-50 rounded-2xl border border-ink-200 p-7"><p class="text-ink-700 italic leading-relaxed">${t[0]}</p>
+      <div class="mt-5 flex items-center gap-3">${avatarImg(t[1],'h-11 w-11')}
+      <div><p class="font-semibold text-ink-900 text-sm">${t[1]}</p><p class="text-xs text-ink-400">${t[2]}</p></div></div></div>`).join('');
+  $('#aboutValues').innerHTML = [
+    ['◎','Student-Centered','Every decision starts with what serves learners and the people who teach them.'],
+    ['⌘','Accessible Education','Powerful tools that work for the smallest school and the largest district alike.'],
+    ['✧','Innovation','We keep modernising so schools never have to settle for yesterday\'s process.']
+  ].map(v=>`<div class="bg-white rounded-2xl border border-ink-200 shadow-card p-7 text-center"><div class="mx-auto h-12 w-12 rounded-xl bg-primary-50 text-primary-600 grid place-items-center text-xl">${v[0]}</div><p class="mt-4 font-bold text-ink-900">${v[1]}</p><p class="mt-2 text-sm text-ink-500">${v[2]}</p></div>`).join('');
+  $('#aboutTeam').innerHTML = [
+    ['Rohit Jain','Chief Executive Officer','Sets the product vision and leads the company through its next phase of growth.'],
+    ['Vinisha Rathod','Head of Product','Shapes the roadmap around what schools actually need every day.'],
+    ['Anand Sharma','Head of Engineering','Builds the secure, reliable platform that institutions run on.']
+  ].map(m=>`<div class="bg-white rounded-2xl border border-ink-200 shadow-card overflow-hidden text-center">
+      <div class="h-24 bg-gradient-to-r from-primary-500 to-primary-700"></div>
+      <div class="px-7 pb-7 -mt-12">
+        <img src="${portrait(m[0],144)}" alt="${m[0]}" class="mx-auto h-24 w-24 rounded-full object-cover ring-4 ring-white shadow-card bg-ink-100">
+        <p class="mt-4 font-bold text-ink-900">${m[0]}</p><p class="text-sm text-primary-600 font-medium">${m[1]}</p>
+        <p class="mt-3 text-sm text-ink-500 leading-relaxed">${m[2]}</p></div></div>`).join('');
+  $('#contactCards').innerHTML = [
+    ['✉','Email Us','avrtech25@outlook.com<br>work.rohitjain@outlook.com'],
+    ['☎','Call Us','+91 70147 91203<br>+91 91712 12231'],
+    ['⌂','Visit Us','AVR Tech, Business Corner<br>VT Road, Mansarover, Jaipur'],
+    ['◷','Business Hours','Everyday: 10AM – 6PM<br>Support: 24/7']
+  ].map(c=>`<div class="bg-white rounded-2xl border border-ink-200 shadow-card p-6"><div class="h-11 w-11 rounded-xl bg-primary-50 text-primary-600 grid place-items-center text-xl">${c[0]}</div><p class="mt-4 font-bold text-ink-900">${c[1]}</p><p class="mt-2 text-sm text-ink-500 leading-relaxed">${c[2]}</p></div>`).join('');
+  $('#contactMap').innerHTML = `<img src="${mapArt()}" alt="Office location map" class="w-full h-44 object-cover">`;
+  $('#pricingArt').innerHTML = `<img src="${scene('pricing-plans',1200,260)}" alt="Plans and value" class="w-full h-40 object-cover">`;
+  $('#aboutArt').innerHTML = `<img src="${scene('about-mission',1200,320)}" alt="Our campus and team" class="w-full h-56 object-cover">`;
+  const faq = (arr,host) => $(host).innerHTML = arr.map((f,i)=>`
+    <div class="bg-white rounded-xl border border-ink-200 overflow-hidden">
+      <button onclick="this.nextElementSibling.hidden=!this.nextElementSibling.hidden" class="w-full text-left px-6 py-4 font-semibold text-ink-900 flex justify-between gap-4">${f[0]}<span class="text-ink-400">▾</span></button>
+      <div ${i===0?'':'hidden'} class="px-6 pb-5 text-sm text-ink-500 leading-relaxed">${f[1]}</div></div>`).join('');
+  faq([
+    ['Can I change plans anytime?','Yes, you can upgrade or downgrade your plan at any time. Changes take effect immediately, and we prorate any billing differences.'],
+    ['Is there a free trial?','Absolutely. We offer a 30-day free trial with full access to all Professional features. No credit card required to start.'],
+    ['What kind of support do you provide?','Email support for Basic plans, priority support for Professional plans, and dedicated support with phone access for Enterprise customers.']
+  ],'#pricingFaq');
+  faq([
+    ['How long does implementation take?','Most schools are up and running within 1–2 weeks. We provide full onboarding support and training for your staff.'],
+    ['Can you import our existing data?','Yes. We can import student records, grades and other data from most common school management systems, and our team handles the migration.'],
+    ['Do you offer training for our staff?','We provide comprehensive training sessions, video tutorials and ongoing support so your team feels confident using SchoolSync.']
+  ],'#contactFaq');
+  renderPlans();
+}
+const PLANS = [
+  {name:'Basic',m:2499,y:23990,desc:'Perfect for small schools getting started with digital management.',cta:'Start Free Trial',features:['Up to 200 students','Basic student profiles','Grade management','Email support','5GB storage']},
+  {name:'Professional',m:6999,y:67190,popular:true,desc:'Comprehensive solution for growing educational institutions.',cta:'Start Free Trial',features:['Up to 1,000 students','Advanced analytics','Parent portal access','Priority support','50GB storage','Custom reports','API access']},
+  {name:'Enterprise',m:null,y:null,desc:'Tailored solutions for large school districts and universities.',cta:'Contact Sales',features:['Unlimited students','Advanced integrations','Dedicated support','Custom training','Unlimited storage','White-label options','SLA guarantee']}
+];
+const COMPARE = [
+  ['Attendance Tracking',1,1,1],['Class Schedule',1,1,1],['Course Management',1,1,1],['Multi-device Compatibility',1,1,1],
+  ['Secure & Reliable Infrastructure',1,1,1],['Student Management',1,1,1],['Accounts Management',0,1,1],['Advanced Analytics',0,1,1],
+  ['Announcements & Events',1,1,1],['Parent Portal',0,1,1],['Reports',0,1,1],['Role-based Access Control',1,1,1],
+  ['Dedicated Support',0,0,1],['Custom Integrations',0,0,1]
+];
+function setBilling(b){ STATE.billing=b;
+  $('#billMonthly').className=`rounded-lg px-5 py-2 text-sm font-semibold ${b==='monthly'?'bg-primary-600 text-white':'text-ink-500'}`;
+  $('#billYearly').className=`rounded-lg px-5 py-2 text-sm font-semibold ${b==='yearly'?'bg-primary-600 text-white':'text-ink-500'}`;
+  renderPlans(); }
+function renderPlans(){
+  $('#planCards').innerHTML = PLANS.map(p=>{
+    const price = p.m===null?'Custom':(STATE.billing==='monthly'?inr(p.m):inr(p.y));
+    const per = p.m===null?'pricing':(STATE.billing==='monthly'?'per month':'per year');
+    return `<div class="relative bg-white rounded-2xl border ${p.popular?'border-primary-500 ring-2 ring-primary-100 lg:-mt-4 lg:pb-4':'border-ink-200'} shadow-card p-8">
+      ${p.popular?'<span class="absolute -top-3 left-1/2 -translate-x-1/2 rounded-full bg-primary-600 text-white text-xs font-bold px-3 py-1">Most Popular</span>':''}
+      <p class="card-title text-lg text-ink-900">${p.name}</p>
+      <p class="mt-3"><span class="text-4xl font-extrabold text-ink-900">${price}</span><span class="text-ink-400 text-sm ml-1">${per}</span></p>
+      <p class="mt-4 text-sm text-ink-500 leading-relaxed">${p.desc}</p>
+      <ul class="mt-6 space-y-3 text-sm">${p.features.map(f=>`<li class="flex gap-2.5"><span class="text-emerald-500 font-bold">✓</span><span class="text-ink-600">${f}</span></li>`).join('')}</ul>
+      <button onclick="toast('${p.cta==='Contact Sales'?'Our team will contact you shortly.':'Free 30-day trial started.'}')" class="mt-7 w-full rounded-lg ${p.popular?'bg-primary-600 hover:bg-primary-700 text-white':'border border-ink-200 hover:bg-ink-50 text-ink-800'} font-semibold py-3">${p.cta}</button>
+    </div>`}).join('');
+  $('#compareBody').innerHTML = COMPARE.map(r=>`<tr class="hover:bg-ink-50/60"><td class="px-6 py-3.5 font-medium text-ink-700">${r[0]}</td>
+    ${[1,2,3].map(i=>`<td class="px-6 py-3.5 text-center">${r[i]?'<span class="text-emerald-500 font-bold">✓</span>':'<span class="text-ink-300">—</span>'}</td>`).join('')}</tr>`).join('');
+}
+
+/* ══════════════════════════ AUTH MODALS ══════════════════════════ */
+function openAuth(mode){
+  if(mode==='login'){
+    openModal(`${modalHeader('Login','Sign in to your SchoolSync workspace')}
+      <form class="p-6 space-y-4" onsubmit="event.preventDefault();closeModal();toast('Signed in as Admin');location.hash='#/dashboard'">
+        ${field('Username *',`<input required class="${inputCls}" placeholder="admin@school.com" value="admin@school.com">`)}
+        ${field('Password *',`<input required type="password" class="${inputCls}" placeholder="••••••••" value="Password@123">`)}
+        <div class="flex items-center justify-between text-sm">
+          <label class="flex items-center gap-2 text-ink-600"><input type="checkbox" class="rounded border-ink-300"> Remember me</label>
+          <a href="#/" onclick="closeModal()" class="text-primary-600 font-semibold">Forgot password?</a>
+        </div>
+        <button class="w-full rounded-lg bg-primary-600 hover:bg-primary-700 text-white font-semibold py-3">Login</button>
+        <p class="text-center text-sm text-ink-500">Don't have an account? <button type="button" onclick="openAuth('register')" class="text-primary-600 font-semibold">Register</button></p>
+      </form>`,'max-w-md');
+  } else {
+    openModal(`${modalHeader('Register','Create your account against your institution')}
+      <form class="p-6 space-y-4" onsubmit="event.preventDefault();closeModal();toast('Registration successful — you can now sign in.')">
+        ${field('Username *',`<input required class="${inputCls}" placeholder="jane.doe">`)}
+        ${field('Email *',`<input required type="email" class="${inputCls}" placeholder="jane@school.edu">`)}
+        ${field('Password *',`<input required type="password" class="${inputCls}" placeholder="••••••••">`)}
+        ${field('Role *',`<select required class="${inputCls} bg-white"><option value="">Select Role</option>${DB.roles.map(r=>`<option>${r}</option>`).join('')}</select>`)}
+        ${field('School *',`<input required class="${inputCls}" list="schoolList" placeholder="Search and select school">
+          <datalist id="schoolList"><option>Greenwood International School</option><option>St. Xavier High School</option><option>Sunrise Academy</option><option>Riverdale Public School</option></datalist>`)}
+        <button class="w-full rounded-lg bg-primary-600 hover:bg-primary-700 text-white font-semibold py-3">Register</button>
+        <p class="text-center text-sm text-ink-500">Already have an account? <button type="button" onclick="openAuth('login')" class="text-primary-600 font-semibold">Login</button></p>
+      </form>`,'max-w-md');
+  }
+}
+
+/* ══════════════════════════ DASHBOARD CHROME ══════════════════════════ */
+function renderSideNav(){
+  $('#sideNav').innerHTML = NAV.filter(i=>i.roles.includes(STATE.role)).map(i=>{
+    const active = location.hash.replace('#','')===i.path;
+    return `<a href="#${i.path}" class="flex items-center gap-3 rounded-lg px-3 h-10 text-sm font-medium ${active?'bg-primary-600 text-white glow-nav':'hover:bg-ink-800 hover:text-white'}">
+      <span class="w-5 text-center">${i.icon}</span><span class="flex-1">${i.name}</span>
+      ${i.badge?`<span class="rounded-md ${active?'bg-white/20 text-white':'bg-ink-800 text-ink-400'} text-[10px] font-bold px-1.5 py-0.5 uppercase">${i.badge}</span>`:''}</a>`;
+  }).join('');
+}
+function renderProfile(){
+  const n = STATE.role==='Admin'?'Admin':STATE.role;
+  $('#profileName').textContent=n; $('#pmName').textContent=n; $('#pmRole').textContent=STATE.role;
+  $('#profileRole').textContent = {SuperAdmin:'Platform Operator',Admin:'Administrator',Principal:'Principal',SchoolIncharge:'School In-charge',Teacher:'Teaching Staff',Student:'Student',Parent:'Parent / Guardian'}[STATE.role]||STATE.role;
+  $('#avatarInitials').textContent = initials(n);
+  $('#pmEmail').textContent = STATE.role.toLowerCase()+'@greenwood.edu';
+  $('#roleSwitcher').innerHTML = DB.roles.map(r=>`<button onclick="setRole('${r}')" class="rounded-lg px-2.5 py-1.5 text-xs font-semibold ${r===STATE.role?'bg-primary-600 text-white':'bg-ink-50 hover:bg-ink-100 text-ink-600'}">${r}</button>`).join('');
+}
+
+/* ══════════════════════════ DASHBOARD PAGES ══════════════════════════ */
+function pageHome(){
+  const today = new Date().toLocaleDateString('en-US',{weekday:'long',year:'numeric',month:'long',day:'numeric'});
+  const stats = [
+    ['Total Teachers', DB.teachers.length, '↑ 3 this term','bg-primary-50 text-primary-600','#3b5bf6',[3,4,4,5,5,6,6]],
+    ['Present Teachers', DB.teachers.filter(t=>t.status==='Present').length, '96% attendance','bg-emerald-50 text-emerald-600','#10b981',[4,5,5,4,6,5,5]],
+    ['Total Students', DB.students.length, '↑ 12 this term','bg-sky-50 text-sky-600','#0ea5e9',[5,6,7,7,8,9,9]],
+    ['Present Students', DB.students.filter(s=>s.status==='Present').length, '92% attendance','bg-amber-50 text-amber-600','#f59e0b',[5,6,6,7,6,7,6]]
+  ];
+  const byStatus = ['Present','Absent','Late','Leave'].map((s,i)=>[s,DB.students.filter(x=>x.status===s).length,['#10b981','#ef4444','#f59e0b','#0ea5e9'][i]]);
+  const byGender = ['Male','Female','Other'].map(g=>[g,DB.students.filter(s=>s.gender===g).length]).filter(d=>d[1]);
+  return `
+  <div class="flex flex-wrap items-end justify-between gap-4 mb-8">
+    <div><h2 class="page-title font-extrabold text-ink-900">Welcome back!</h2>
+      <p class="page-sub text-ink-500 mt-1.5">Today's date: ${today} · Here's what's happening at your school today.</p></div>
+    <div class="flex flex-wrap items-center gap-2">
+      <a href="#/dashboard/attendance" class="ctl bg-primary-600 hover:bg-primary-700 text-white font-semibold px-4">Take Attendance</a>
+      <button onclick="modalAnnouncement()" class="ctl border border-ink-200 bg-white font-semibold px-4 hover:bg-ink-50">New Announcement</button>
+    </div>
+  </div>
+  <div class="grid sm:grid-cols-2 xl:grid-cols-4 gap-6">
+    ${stats.map(s=>`<div class="bg-white rounded-2xl border border-ink-200 shadow-card p-6">
+      <div class="flex items-start justify-between gap-3"><p class="micro-label text-ink-400">${s[0]}</p><div class="h-9 w-9 rounded-lg ${s[3]} grid place-items-center shrink-0">◆</div></div>
+      <div class="mt-4 flex items-baseline gap-2"><p class="stat-value text-ink-900">${s[1]}</p><span class="text-xs font-semibold text-ink-400">${s[2]}</span></div>
+      <div class="mt-4 h-8">${sparkline(s[5],s[4])}</div></div>`).join('')}
+  </div>
+  <div class="mt-6 grid lg:grid-cols-3 gap-6">
+    ${card(`<div class="p-6 h-full flex flex-col">
+      <div class="flex items-center justify-between flex-wrap gap-3"><p class="card-title text-ink-900">Attendance Trend</p>
+        <div class="flex gap-4">${legendDot('#3b5bf6','Students')}${legendDot('#10b981','Teachers')}</div></div>
+      <div class="mt-5 flex-1 flex items-center">${areaChart([
+        {name:'Students',values:[88,93,91,96,89,94,92],color:'#3b5bf6'},
+        {name:'Teachers',values:[95,97,94,98,96,97,96],color:'#10b981',fill:false}
+      ],['Mon','Tue','Wed','Thu','Fri','Mon','Tue'],{w:700,h:250,max:110})}</div></div>`,'lg:col-span-2')}
+    ${card(`<div class="p-6"><p class="card-title text-ink-900">Today's Attendance</p>
+      <div class="mt-6">${donut(byStatus,{size:170,center:[Math.round(byStatus[0][1]/DB.students.length*100)+'%','Present']})}</div></div>`)}
+  </div>
+  <div class="mt-6 grid lg:grid-cols-3 gap-6">
+    ${card(`<div class="p-6"><p class="card-title text-ink-900">Students per Class</p>
+      <div class="mt-5">${barChart(DB.classes.map(c=>[c.name.replace('Grade ','G')+c.section, DB.students.filter(s=>s.classId===c.id).length]),{w:660,h:210})}</div></div>`,'lg:col-span-2')}
+    ${card(`<div class="p-6"><p class="card-title text-ink-900">Gender Split</p>
+      <div class="mt-6">${donut(byGender,{size:150,thickness:22,center:[DB.students.length,'Students']})}</div></div>`)}
+  </div>
+  <div class="mt-6 grid lg:grid-cols-3 gap-6">
+    ${card(`<div class="p-6"><p class="card-title text-ink-900">Recent Activities</p>
+      <div class="mt-5 space-y-4">${[['New student enrolled','2 minutes ago'],['Class assignment submitted','5 minutes ago'],['Teacher schedule updated','15 minutes ago'],['Announcement published','1 hour ago']]
+        .map(a=>`<div class="flex gap-3"><div class="h-2 w-2 rounded-full bg-primary-500 mt-1.5"></div><div><p class="text-sm font-medium text-ink-800">${a[0]}</p><p class="text-xs text-ink-400">${a[1]}</p></div></div>`).join('')}</div></div>`)}
+    ${card(`<div class="p-6"><p class="card-title text-ink-900">Upcoming Events</p>
+      <div class="mt-5 space-y-3">${[['Parent-Teacher Meeting','Tomorrow, 2:00 PM'],['Science Fair','Friday, 10:00 AM'],['Exam Week','Next Monday'],['Annual Sports Day','15 October']]
+        .map(e=>`<div class="rounded-xl bg-ink-50 p-4"><p class="text-sm font-semibold text-ink-800">${e[0]}</p><p class="text-xs text-ink-400 mt-0.5">${e[1]}</p></div>`).join('')}</div></div>`)}
+    ${card(`<div class="p-6"><p class="card-title text-ink-900">Upcoming Features</p>
+      <div class="mt-5 space-y-3">${[['Bio Matrix Attendance','Automated attendance with biometric data'],['Class & Exam Schedule','Advanced scheduling with notifications']]
+        .map(f=>`<div class="rounded-xl border-2 border-dashed border-primary-200 bg-primary-50/40 p-4"><div class="flex items-center justify-between"><p class="text-sm font-bold text-primary-700">${f[0]}</p><span class="text-[10px] font-bold uppercase text-primary-500">Upcoming</span></div><p class="text-xs text-ink-500 mt-1">${f[1]}</p></div>`).join('')}</div></div>`)}
+  </div>`;
+}
+
+function pageClasses(){
+  return pageHead('Classes','Manage all your classes and schedules',
+    `<button onclick="modalClass('add')" class="ctl bg-primary-600 hover:bg-primary-700 text-white font-semibold px-4">+ Add New Class</button>`) +
+  `<div class="grid sm:grid-cols-2 xl:grid-cols-3 gap-6">
+    ${DB.classes.map(c=>{const n=DB.students.filter(s=>s.classId===c.id).length; const pres=DB.students.filter(s=>s.classId===c.id&&s.status==='Present').length;
+      const rate = n? Math.round(pres/n*100)+'%' : 'N/A';
+      return `<div class="bg-white rounded-2xl border border-ink-200 shadow-card overflow-hidden hover:shadow-pop transition-shadow">
+        <img src="${scene(c.name+c.section,480,180)}" alt="${c.name} ${c.section}" class="w-full h-24 object-cover">
+        <div class="p-6">
+        <div class="flex items-start justify-between">
+          <div class="flex items-center gap-3">${avatarImg(tName(c.classTeacherId),'h-11 w-11')}
+            <div><p class="card-title text-lg text-ink-900">${c.name} ${c.section}</p><p class="text-xs text-ink-400 mt-0.5">Room ${c.room}</p></div></div>
+          <div class="flex gap-0.5">
+            ${iconBtn('👁','View','modalClass(\'view\',\''+c.id+'\')')}
+            ${iconBtn('✎','Edit','modalClass(\'edit\',\''+c.id+'\')')}
+            ${iconBtn('🗑','Delete','modalClass(\'delete\',\''+c.id+'\')','text-ink-400 hover:text-rose-600 hover:bg-rose-50')}
+          </div>
+        </div>
+        <div class="mt-5 space-y-2.5 text-sm">
+          <div class="flex justify-between"><span class="text-ink-500">Class Teacher:</span><span class="font-semibold text-ink-800">${tName(c.classTeacherId)}</span></div>
+          <div class="flex justify-between"><span class="text-ink-500">Total Students:</span><span class="font-semibold text-ink-800">${n}</span></div>
+          <div class="flex justify-between"><span class="text-ink-500">Attendance:</span><span class="font-semibold text-emerald-600">${rate}</span></div>
+          <div class="pt-1">${sparkline([86,91,88,94,90,96,n?Math.round(pres/n*100):90],'#10b981')}</div>
+        </div>
+        <div class="mt-5 flex gap-2">
+          <button onclick="STATE.attendanceClass='${c.id}';location.hash='#/dashboard/attendance'" class="flex-1 rounded-lg bg-ink-50 hover:bg-ink-100 text-sm font-semibold py-2.5">Take Attendance</button>
+          <button onclick="STATE.filters.class='${c.id}';location.hash='#/dashboard/students'" class="flex-1 rounded-lg border border-ink-200 hover:bg-ink-50 text-sm font-semibold py-2.5">View Roster</button>
+        </div></div></div>`}).join('')}
+  </div>`;
+}
+
+function pageTeachers(){
+  const q=(STATE.filters.tq||'').toLowerCase(), sub=STATE.filters.tsub||'';
+  const rows = DB.teachers.filter(t=>(!q||t.name.toLowerCase().includes(q)||t.email.toLowerCase().includes(q))&&(!sub||t.subject===sub));
+  const subjCount = DB.subjects.map(s=>[s,DB.teachers.filter(t=>t.subject===s).length]).filter(d=>d[1]);
+  return pageHead('Teachers','Manage your teaching staff',
+    `<button onclick="modalTeacher('add')" class="ctl bg-primary-600 hover:bg-primary-700 text-white font-semibold px-4">+ Add New Teacher</button>`) +
+  `<div class="grid lg:grid-cols-3 gap-6 mb-6">
+    ${card(`<div class="p-6"><p class="card-title text-ink-900">Staff by Subject</p>
+      <div class="mt-5">${barChart(subjCount,{w:660,h:Math.max(subjCount.length*38,120),horizontal:true})}</div></div>`,'lg:col-span-2')}
+    ${card(`<div class="p-6"><p class="card-title text-ink-900">Staff Presence Today</p>
+      <div class="mt-6">${donut(['Present','Absent'].map((k,i)=>[k,DB.teachers.filter(t=>t.status===k).length,['#10b981','#ef4444'][i]]),
+        {size:150,thickness:22,center:[DB.teachers.length,'Staff']})}</div></div>`)}
+  </div>` +
+  card(`
+    <div class="px-6 py-5 border-b border-ink-100 flex flex-wrap items-center gap-3 justify-between">
+      <p class="card-title text-ink-900">Teacher Directory</p>
+      <div class="flex flex-wrap gap-2">
+        <input value="${esc(STATE.filters.tq||'')}" oninput="STATE.filters.tq=this.value;renderApp(true)" placeholder="Search teachers…" class="ctl border border-ink-200 px-3.5 w-56 outline-none focus:ring-2 focus:ring-primary-200">
+        <select onchange="STATE.filters.tsub=this.value;renderApp()" class="ctl border border-ink-200 px-3.5 bg-white outline-none">
+          <option value="">All Subjects</option>${DB.subjects.map(s=>`<option ${s===sub?'selected':''}>${s}</option>`).join('')}</select>
+        <button onclick="toast('Directory exported to CSV')" class="ctl border border-ink-200 px-3.5 font-semibold hover:bg-ink-50">Export</button>
+      </div>
+    </div>
+    <div class="overflow-x-auto">
+      <table class="w-full text-sm min-w-[860px]">
+        <thead class="bg-ink-50 text-ink-500 border-b border-ink-200">
+          <tr>${['Sr.No.','Name','Subject','Phone','Gender','Address','Status','Actions'].map(h=>`<th class="text-left micro-label px-6 py-3">${h}</th>`).join('')}</tr></thead>
+        <tbody class="divide-y divide-ink-100">
+          ${rows.length? rows.map((t,i)=>`<tr class="hover:bg-ink-50/60">
+            <td class="px-6 py-4 text-ink-400">${i+1}</td>
+            <td class="px-6 py-4"><div class="flex items-center gap-3">${avatarImg(t.name,'h-9 w-9')}
+              <div><p class="font-semibold text-ink-900">${esc(t.name)}</p><p class="text-xs text-ink-400">${esc(t.email)}</p></div></div></td>
+            <td class="px-6 py-4 text-ink-600">${esc(t.subject)}</td>
+            <td class="px-6 py-4 text-ink-600">${esc(t.phone)}</td>
+            <td class="px-6 py-4 text-ink-600">${esc(t.gender)}</td>
+            <td class="px-6 py-4 text-ink-600">${esc(t.address)}</td>
+            <td class="px-6 py-4">${statusPill(t.status)}</td>
+            <td class="px-6 py-4"><div class="flex gap-0.5">
+              ${iconBtn('👁','View','modalTeacher(\'view\',\''+t.id+'\')')}
+              ${iconBtn('✎','Edit','modalTeacher(\'edit\',\''+t.id+'\')')}
+              ${iconBtn('🗑','Delete','modalTeacher(\'delete\',\''+t.id+'\')','text-ink-400 hover:text-rose-600 hover:bg-rose-50')}
+            </div></td></tr>`).join('')
+          : `<tr><td colspan="8">${emptyState('No teachers found','Adjust your search or filters to see more results.')}</td></tr>`}
+        </tbody></table></div>
+    <div class="px-6 py-5 border-t border-ink-100 flex flex-wrap items-center justify-between gap-3 text-sm text-ink-500">
+      <p>Showing ${rows.length} of ${DB.teachers.length} teachers</p>
+      <div class="flex gap-1"><button class="rounded-lg border border-ink-200 px-3 py-2 hover:bg-ink-50">Previous</button>
+        <button class="rounded-lg bg-primary-600 text-white px-3 py-2">1</button>
+        <button class="rounded-lg border border-ink-200 px-3 py-2 hover:bg-ink-50">Next</button></div>
+    </div>`);
+}
+
+function pageStudents(){
+  const q=(STATE.filters.sq||'').toLowerCase(), cls=STATE.filters.class||'';
+  const rows = DB.students.filter(s=>(!q||`${s.firstName} ${s.lastName} ${s.email} ${s.srNumber}`.toLowerCase().includes(q))&&(!cls||s.classId===cls));
+  const canEdit = ['SuperAdmin','Admin','Principal','SchoolIncharge'].includes(STATE.role);
+  return pageHead('Students','Manage student records and enrolment',
+    canEdit?`<button onclick="modalStudent('add')" class="ctl bg-primary-600 hover:bg-primary-700 text-white font-semibold px-4">+ Add Student</button>`:'') +
+  `<div class="grid lg:grid-cols-3 gap-6 mb-6">
+    ${card(`<div class="p-6"><p class="card-title text-ink-900">Enrolment by Class</p>
+      <div class="mt-5">${barChart(DB.classes.map(c=>[c.name.replace('Grade ','G')+c.section,DB.students.filter(s=>s.classId===c.id).length]),{w:660,h:200})}</div></div>`,'lg:col-span-2')}
+    ${card(`<div class="p-6"><p class="card-title text-ink-900">Status Breakdown</p>
+      <div class="mt-6">${donut(['Present','Absent','Late','Leave'].map((k,i)=>[k,DB.students.filter(s=>s.status===k).length,['#10b981','#ef4444','#f59e0b','#0ea5e9'][i]]).filter(d=>d[1]),
+        {size:150,thickness:22,center:[DB.students.length,'Students']})}</div></div>`)}
+  </div>` +
+  card(`
+    <div class="px-6 py-5 border-b border-ink-100 flex flex-wrap items-center gap-3 justify-between">
+      <p class="card-title text-ink-900">Student List</p>
+      <div class="flex flex-wrap gap-2">
+        <input value="${esc(STATE.filters.sq||'')}" oninput="STATE.filters.sq=this.value;renderApp(true)" placeholder="Search students…" class="ctl border border-ink-200 px-3.5 w-56 outline-none focus:ring-2 focus:ring-primary-200">
+        <select onchange="STATE.filters.class=this.value;renderApp()" class="ctl border border-ink-200 px-3.5 bg-white outline-none">
+          <option value="">All Classes</option>${DB.classes.map(c=>`<option value="${c.id}" ${c.id===cls?'selected':''}>${c.name} ${c.section}</option>`).join('')}</select>
+        <button onclick="toast('Student list exported to CSV')" class="ctl border border-ink-200 px-3.5 font-semibold hover:bg-ink-50">Export</button>
+      </div>
+    </div>
+    <div class="overflow-x-auto">
+      <table class="w-full text-sm min-w-[900px]">
+        <thead class="bg-ink-50 text-ink-500 border-b border-ink-200">
+          <tr>${['Sr.No.','SR Number','Roll Number','Student','Class','DOB','Gender','Status','Actions'].map(h=>`<th class="text-left micro-label px-6 py-3">${h}</th>`).join('')}</tr></thead>
+        <tbody class="divide-y divide-ink-100">
+          ${rows.length? rows.map((s,i)=>`<tr class="hover:bg-ink-50/60">
+            <td class="px-6 py-4 text-ink-400">${i+1}</td>
+            <td class="px-6 py-4 font-mono text-xs text-ink-500">${esc(s.srNumber)}</td>
+            <td class="px-6 py-4 text-ink-600">${s.rollNumber}</td>
+            <td class="px-6 py-4"><div class="flex items-center gap-3">${avatarImg(s.firstName+' '+s.lastName,'h-9 w-9')}
+              <div><p class="font-semibold text-ink-900">${esc(s.firstName)} ${esc(s.lastName)}</p><p class="text-xs text-ink-400">${esc(s.email)}</p></div></div></td>
+            <td class="px-6 py-4 text-ink-600">${cName(s.classId)}</td>
+            <td class="px-6 py-4 text-ink-600">${fmtDate(s.dob)}</td>
+            <td class="px-6 py-4 text-ink-600">${esc(s.gender)}</td>
+            <td class="px-6 py-4">${statusPill(s.status)}</td>
+            <td class="px-6 py-4"><div class="flex gap-0.5">
+              ${iconBtn('👁','View','modalStudent(\'view\',\''+s.id+'\')')}
+              ${canEdit?iconBtn('✎','Edit','modalStudent(\'edit\',\''+s.id+'\')'):''}
+              ${canEdit?iconBtn('🗑','Delete','modalStudent(\'delete\',\''+s.id+'\')','text-ink-400 hover:text-rose-600 hover:bg-rose-50'):''}
+            </div></td></tr>`).join('')
+          : `<tr><td colspan="9">${emptyState('No students found','Adjust your search or filters to see more results.')}</td></tr>`}
+        </tbody></table></div>
+    <div class="px-6 py-5 border-t border-ink-100 flex flex-wrap items-center justify-between gap-3 text-sm text-ink-500">
+      <p>Showing ${rows.length} of ${DB.students.length} students</p>
+      <div class="flex gap-1"><button class="rounded-lg border border-ink-200 px-3 py-2 hover:bg-ink-50">Previous</button>
+        <button class="rounded-lg bg-primary-600 text-white px-3 py-2">1</button>
+        <button class="rounded-lg border border-ink-200 px-3 py-2 hover:bg-ink-50">Next</button></div>
+    </div>`);
+}
+
+function pageAttendance(){
+  const cls = STATE.attendanceClass;
+  const roster = DB.students.filter(s=>s.classId===cls);
+  const today = new Date().toLocaleDateString('en-GB');
+  return pageHead('Attendance','Records for this class',
+    `<div class="flex gap-2">
+      <select onchange="STATE.attendanceClass=this.value;renderApp()" class="ctl border border-ink-200 px-3.5 bg-white font-medium outline-none">
+        ${DB.classes.map(c=>`<option value="${c.id}" ${c.id===cls?'selected':''}>${c.name} ${c.section}</option>`).join('')}</select>
+      <input type="date" class="ctl border border-ink-200 px-3.5 bg-white outline-none">
+      <button onclick="modalFillAttendance()" class="ctl bg-primary-600 hover:bg-primary-700 text-white font-semibold px-4">Fill Attendance</button>
+    </div>`) +
+  `<div class="grid sm:grid-cols-4 gap-6 mb-6">
+    ${[['Roster',roster.length,'bg-ink-50 text-ink-600'],['Present',roster.filter(s=>s.status==='Present').length,'bg-emerald-50 text-emerald-700'],
+       ['Absent',roster.filter(s=>s.status==='Absent').length,'bg-rose-50 text-rose-700'],['Late / Leave',roster.filter(s=>['Late','Leave'].includes(s.status)).length,'bg-amber-50 text-amber-700']]
+      .map(s=>`<div class="rounded-2xl border border-ink-200 bg-white shadow-card p-6"><p class="micro-label text-ink-400">${s[0]}</p><p class="mt-3 stat-value text-ink-900">${s[1]}</p></div>`).join('')}
+  </div>
+  <div class="grid lg:grid-cols-3 gap-6 mb-6">
+    ${card(`<div class="p-6"><p class="card-title text-ink-900">Attendance Over Time</p><p class="text-xs text-ink-400 mt-0.5">${cName(cls)} · last 10 school days</p>
+      <div class="mt-5">${areaChart([92,88,95,90,97,93,96,91,94,98],['D1','D2','D3','D4','D5','D6','D7','D8','D9','D10'],{w:700,h:210,max:110})}</div></div>`,'lg:col-span-2')}
+    ${card(`<div class="p-6"><p class="card-title text-ink-900">Today's Breakdown</p>
+      <div class="mt-6">${donut(['Present','Absent','Late','Leave'].map((k,i)=>[k,roster.filter(s=>s.status===k).length,['#10b981','#ef4444','#f59e0b','#0ea5e9'][i]]),
+        {size:150,thickness:22,center:[roster.length,'Learners']})}</div></div>`)}
+  </div>` +
+  card(`<div class="px-6 py-5 border-b border-ink-100 flex items-center justify-between gap-4">
+      <p class="card-title text-ink-900">Attendance Table — ${cName(cls)}</p>
+      <button onclick="toast('Attendance register exported')" class="ctl border border-ink-200 px-3.5 font-semibold hover:bg-ink-50">Export</button></div>
+    <div class="overflow-x-auto"><table class="w-full text-sm min-w-[640px]">
+      <thead class="bg-ink-50 text-ink-500 border-b border-ink-200"><tr>${['Sr. No.','Roll No.','Full Name','Date','Status'].map(h=>`<th class="text-left micro-label px-6 py-3">${h}</th>`).join('')}</tr></thead>
+      <tbody class="divide-y divide-ink-100">
+        ${roster.length? roster.map((s,i)=>`<tr class="hover:bg-ink-50/60">
+          <td class="px-6 py-4 text-ink-400">${i+1}</td><td class="px-6 py-4 text-ink-600">${s.rollNumber}</td>
+          <td class="px-6 py-4 font-semibold text-ink-900">${esc(s.firstName)} ${esc(s.lastName)}</td>
+          <td class="px-6 py-4 text-ink-600">${today}</td><td class="px-6 py-4">${statusPill(s.status)}</td></tr>`).join('')
+        : `<tr><td colspan="5">${emptyState('No students found','This class has no students enrolled yet.')}</td></tr>`}
+      </tbody></table></div>`);
+}
+
+function pageAnnouncements(){
+  const q=(STATE.filters.aq||'').toLowerCase();
+  const rows = DB.announcements.filter(a=>!q||`${a.title} ${a.detail}`.toLowerCase().includes(q));
+  const canPost = ['SuperAdmin','Admin','Principal','SchoolIncharge','Teacher'].includes(STATE.role);
+  return pageHead('Announcements','Stay updated with school news and events',
+    `<div class="flex gap-2">
+      <input value="${esc(STATE.filters.aq||'')}" oninput="STATE.filters.aq=this.value;renderApp(true)" placeholder="Search announcements…" class="ctl border border-ink-200 bg-white px-3.5 w-60 outline-none focus:ring-2 focus:ring-primary-200">
+      ${canPost?`<button onclick="modalAnnouncement()" class="ctl bg-primary-600 hover:bg-primary-700 text-white font-semibold px-4">+ New Announcement</button>`:''}
+    </div>`) +
+  `<div class="grid lg:grid-cols-2 gap-6">
+    ${rows.length? rows.map(a=>`<div class="bg-white rounded-2xl border border-ink-200 shadow-card overflow-hidden hover:shadow-pop transition-shadow">
+      <img src="${scene(a.title,640,220)}" alt="${esc(a.title)}" class="w-full h-32 object-cover">
+      <div class="p-6">
+      <div class="flex items-start justify-between gap-4">
+        <div class="min-w-0 flex items-start gap-3">${avatarImg(a.announcedBy,'h-10 w-10')}
+          <div><p class="card-title text-lg text-ink-900">${esc(a.title)}</p>
+          <div class="mt-1 flex items-center gap-2 text-xs text-ink-400"><span>${esc(a.announcedBy)}</span><span>·</span><span>${fmtDate(a.date)}</span></div></div></div>
+        ${canPost?`<div class="flex gap-0.5 shrink-0">
+          ${iconBtn('👁','View','modalViewAnnouncement(\''+a.id+'\')')}
+          ${iconBtn('✎','Edit','modalAnnouncement(\''+a.id+'\')')}
+          ${iconBtn('🗑','Delete','confirmDelete(\'announcement\',\''+a.id+'\',\''+esc(a.title)+'\')','text-ink-400 hover:text-rose-600 hover:bg-rose-50')}
+        </div>`:''}
+      </div>
+      <p class="mt-4 text-sm text-ink-500 leading-relaxed">${esc(a.detail)}</p>
+      <button onclick="modalViewAnnouncement('${a.id}')" class="mt-5 text-sm font-semibold text-primary-600">Read more →</button>
+    </div></div>`).join('')
+    : `<div class="lg:col-span-2">${card(emptyState('No announcements found','Nothing matches your search right now.'))}</div>`}
+  </div>`;
+}
+
+function pageMeetings(){
+  return pageHead('Meeting Rooms','Collaborate with staff, students and families in real time',
+    `<button onclick="modalRoom('add')" class="ctl bg-primary-600 hover:bg-primary-700 text-white font-semibold px-4">+ Create Room</button>`) +
+  `<div class="grid sm:grid-cols-2 xl:grid-cols-3 gap-6">
+    ${DB.rooms.map(r=>`<div class="bg-white rounded-2xl border border-ink-200 shadow-card overflow-hidden hover:shadow-pop transition-shadow">
+      <div class="relative h-28"><img src="${scene(r.name,480,220)}" alt="${esc(r.name)}" class="w-full h-full object-cover">
+        <div class="absolute top-3 right-3">${iconBtn('🗑','Delete room','modalRoom(\'delete\',\''+r.id+'\')','bg-white/90 text-ink-500 hover:text-rose-600')}</div>
+        <div class="absolute -bottom-5 left-6 flex -space-x-2">
+          ${['Dr. Sarah Smith','Prof. John Johnson','Ms. Emily Davis'].map(n=>avatarImg(n,'h-10 w-10')).join('')}
+          <span class="h-10 w-10 rounded-full bg-ink-900 text-white text-xs font-bold grid place-items-center ring-2 ring-white">+${Math.max(r.participants-3,0)}</span>
+        </div></div>
+      <div class="p-6 pt-8">
+      <div class="flex items-start justify-between">
+        <div><p class="card-title text-ink-900">${esc(r.name)}</p><p class="text-xs text-ink-400">by ${esc(r.createdBy)}</p></div>
+      </div>
+      <p class="mt-4 text-sm text-ink-500">${esc(r.description)}</p>
+      <div class="mt-4 flex items-center gap-4 text-xs text-ink-400">
+        <span class="inline-flex items-center gap-1.5">🔒 Passcode protected</span>
+        <span class="inline-flex items-center gap-1.5">👥 ${r.participants} participants</span>
+      </div>
+      <div class="mt-5 grid grid-cols-3 gap-2">
+        <button onclick="modalRoom('join','${r.id}')" class="rounded-lg bg-ink-50 hover:bg-ink-100 text-sm font-semibold py-2.5">Join</button>
+        <button onclick="STATE.roomId='${r.id}';location.hash='#/chat/${r.id}'" class="rounded-lg border border-ink-200 hover:bg-ink-50 text-sm font-semibold py-2.5">Chat</button>
+        <button onclick="STATE.roomId='${r.id}';location.hash='#/video-call/${r.id}'" class="rounded-lg border border-ink-200 hover:bg-ink-50 text-sm font-semibold py-2.5">Video</button>
+      </div></div></div>`).join('')}
+  </div>`;
+}
+
+function pageSchedule(){
+  const {slots,days,grid}=DB.schedule;
+  return pageHead('Schedule','View and manage class and examination schedules',
+    `<div class="flex gap-2"><select class="ctl border border-ink-200 bg-white px-3.5 outline-none">${DB.classes.map(c=>`<option>${c.name} ${c.section}</option>`).join('')}</select>
+      <button onclick="toast('Schedule entry form opened')" class="ctl bg-primary-600 hover:bg-primary-700 text-white font-semibold px-4">+ Add Schedule</button></div>`) +
+  `<div class="grid lg:grid-cols-3 gap-6 mb-6">
+    ${card(`<div class="p-6"><p class="card-title text-ink-900">Teaching Load by Staff</p><p class="text-xs text-ink-400 mt-0.5">Periods scheduled this week</p>
+      <div class="mt-5">${barChart([['Dr. Smith',8],['Prof. Johnson',7],['Ms. Davis',6],['Dr. Wilson',5],['Mrs. Kulkarni',4],['Mr. Deshpande',4]],{w:660,h:230,horizontal:true})}</div></div>`,'lg:col-span-2')}
+    ${card(`<div class="p-6"><p class="card-title text-ink-900">Periods by Subject</p>
+      <div class="mt-6">${donut([['Mathematics',6],['Physics',5],['English',4],['Chemistry',3],['Biology',3],['History',3]],{size:150,thickness:22,center:[24,'Periods']})}</div></div>`)}
+  </div>` +
+  card(`<div class="px-6 py-5 border-b border-ink-100"><p class="card-title text-ink-900">Weekly Schedule</p></div>
+    <div class="overflow-x-auto"><table class="w-full text-sm min-w-[900px]">
+      <thead class="bg-ink-50 text-ink-500 border-b border-ink-200"><tr><th class="text-left micro-label px-6 py-3">Time</th>
+        ${days.map(d=>`<th class="text-left micro-label px-6 py-3">${d}</th>`).join('')}</tr></thead>
+      <tbody class="divide-y divide-ink-100">
+        ${slots.map(t=>`<tr><td class="px-6 py-4 font-semibold text-ink-800 whitespace-nowrap">◷ ${t}</td>
+          ${grid[t].map(c=>`<td class="px-4 py-3"><div class="rounded-xl bg-primary-50 border border-primary-100 p-3">
+            <p class="text-sm font-semibold text-primary-800">${c[0]}</p><p class="text-xs text-ink-500 mt-0.5">${c[1]}</p><p class="text-xs text-ink-400">${c[2]}</p></div></td>`).join('')}
+        </tr>`).join('')}
+      </tbody></table></div>`);
+}
+
+function pageReports(){
+  const reports = [
+    ['Student Performance','Comprehensive analysis of student grades and progress','2 days ago'],
+    ['Class Attendance','Attendance reports for all classes and time periods','1 week ago'],
+    ['Course Analytics','Course completion rates and student engagement metrics','3 days ago'],
+    ['Teacher Performance','Teaching effectiveness and student feedback analysis','1 month ago']
+  ];
+  return pageHead('Reports','Generate and view various analytical reports','') +
+  `<div class="grid lg:grid-cols-3 gap-6 mb-6">
+    ${card(`<div class="p-6"><div class="flex items-center justify-between flex-wrap gap-3"><p class="card-title text-ink-900">Attendance vs Performance</p>
+        <div class="flex gap-4">${legendDot('#3b5bf6','Attendance %')}${legendDot('#8b5cf6','Avg. score')}</div></div>
+      <div class="mt-5">${areaChart([
+        {name:'Attendance %',values:[88,90,89,93,92,95,94,96],color:'#3b5bf6'},
+        {name:'Avg. score',values:[72,75,74,79,81,84,83,87],color:'#8b5cf6',fill:false}
+      ],['Apr','May','Jun','Jul','Aug','Sep','Oct','Nov'],{w:700,h:250,max:110})}</div></div>`,'lg:col-span-2')}
+    ${card(`<div class="p-6"><p class="card-title text-ink-900">Grade Distribution</p>
+      <div class="mt-6">${donut([['A grade',34,'#10b981'],['B grade',41,'#3b5bf6'],['C grade',19,'#f59e0b'],['D grade',6,'#ef4444']],{size:150,thickness:22,center:['87%','Pass rate']})}</div></div>`)}
+  </div>
+  <div class="grid lg:grid-cols-2 gap-6 mb-6">
+    ${card(`<div class="p-6"><p class="card-title text-ink-900">Attendance by Class</p>
+      <div class="mt-5">${barChart(DB.classes.map((c,i)=>[c.name.replace('Grade ','G')+c.section,[94,89,96,91,87][i]||90]),{w:660,h:210})}</div></div>`)}
+    ${card(`<div class="p-6"><p class="card-title text-ink-900">Subject Engagement</p>
+      <div class="mt-5">${barChart([['Mathematics',92],['Physics',85],['English Literature',88],['Chemistry',79],['Biology',83],['History',74]],{w:660,h:230,horizontal:true})}</div></div>`)}
+  </div>
+  <div class="grid md:grid-cols-2 gap-6">
+    ${reports.map(r=>`<div class="bg-white rounded-2xl border border-ink-200 shadow-card p-6 hover:shadow-pop transition-shadow">
+      <div class="flex items-center gap-3"><div class="h-11 w-11 rounded-xl bg-primary-50 text-primary-600 grid place-items-center text-lg">◍</div>
+        <p class="card-title text-ink-900">${r[0]}</p></div>
+      <p class="mt-4 text-sm text-ink-500">${r[1]}</p>
+      <p class="mt-3 text-xs text-ink-400">Last generated: ${r[2]}</p>
+      <div class="mt-5 flex gap-2">
+        <button onclick="modalGenerateReport('${r[0]}')" class="flex-1 rounded-lg bg-primary-600 hover:bg-primary-700 text-white text-sm font-semibold py-2.5">Generate Report</button>
+        <button onclick="toast('Opening report history for ${r[0]}')" class="flex-1 rounded-lg border border-ink-200 hover:bg-ink-50 text-sm font-semibold py-2.5">View History</button>
+      </div></div>`).join('')}
+  </div>` +
+  card(`<div class="p-6"><p class="card-title text-ink-900">Quick Stats</p>
+    <div class="mt-6 grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
+      ${gauge(92,'Average Attendance','#0ea5e9')}
+      ${gauge(87,'Course Completion','#10b981')}
+      ${gauge(84,'Student Satisfaction (4.2/5)','#f59e0b')}
+      ${gauge(95,'Teacher Efficiency','#3b5bf6')}
+    </div></div>`,'mt-6');
+}
+
+function pageSettings(){
+  const sections = [
+    ['General Settings','Basic school information and preferences',['School Information','Academic Year Settings','Time Zone','Language Preferences']],
+    ['User Management','Manage users, roles and permissions',['User Roles','Access Permissions','Account Settings','Password Policies']],
+    ['Notifications','Configure system notifications and alerts',['Email Notifications','SMS Settings','Push Notifications','Alert Preferences']],
+    ['Academic Settings','Course and grading system configuration',['Grading Scale','Course Categories','Assessment Types','Report Card Settings']]
+  ];
+  return pageHead('Settings','Configure your school management system','') +
+  card(`<div class="px-6 py-5 border-b border-ink-100"><p class="card-title text-ink-900">School Profile</p></div>
+    <div class="p-6 grid sm:grid-cols-2 lg:grid-cols-3 gap-6 text-sm">
+      ${[['School Name',DB.school.name],['Registration Number',DB.school.registrationNumber],['Email',DB.school.email],['Phone',DB.school.phone],
+         ['Address',`${DB.school.address}, ${DB.school.city}, ${DB.school.state} ${DB.school.pinCode}`],['Subscription Plan',DB.school.plan]]
+        .map(f=>`<div><p class="micro-label text-ink-400">${f[0]}</p><p class="mt-1.5 font-medium text-ink-800">${esc(f[1])}</p></div>`).join('')}
+    </div>
+    <div class="px-6 pb-6"><button onclick="modalSchoolProfile()" class="ctl bg-primary-600 hover:bg-primary-700 text-white font-semibold px-4">Edit School Profile</button></div>`,'mb-6') +
+  `<div class="grid md:grid-cols-2 gap-6">
+    ${sections.map(s=>`<div class="bg-white rounded-2xl border border-ink-200 shadow-card p-6">
+      <div class="flex items-center gap-3"><div class="h-11 w-11 rounded-xl bg-primary-50 text-primary-600 grid place-items-center text-lg">⚙</div>
+        <div><p class="card-title text-ink-900">${s[0]}</p><p class="text-xs text-ink-400">${s[1]}</p></div></div>
+      <div class="mt-5 divide-y divide-ink-100">
+        ${s[2].map(o=>`<div class="flex items-center justify-between py-3"><span class="text-sm text-ink-700">${o}</span>
+          <button onclick="modalConfigure('${o}')" class="rounded-lg text-primary-600 text-sm font-semibold px-3 py-1.5 hover:bg-primary-50">Configure</button></div>`).join('')}
+      </div></div>`).join('')}
+  </div>` +
+  card(`<div class="p-6"><p class="card-title text-ink-900">System Information</p>
+    <div class="mt-5 grid sm:grid-cols-2 gap-8 text-sm">
+      <div><p class="font-semibold text-ink-800">System Status</p>
+        <div class="mt-3 space-y-2 text-ink-500">
+          <div class="flex justify-between"><span>Version</span><span class="font-medium text-ink-800">v2.1.0</span></div>
+          <div class="flex justify-between"><span>Last Updated</span><span class="font-medium text-ink-800">2 days ago</span></div>
+          <div class="flex justify-between"><span>Status</span>${pill('Operational','bg-emerald-50 text-emerald-700')}</div>
+        </div></div>
+      <div><p class="font-semibold text-ink-800">Storage</p>
+        <div class="mt-4">${donut([['Used (GB)',2.1,'#3b5bf6'],['Available (GB)',7.9,'#dde1e9']],{size:130,thickness:20,center:['21%','of 10 GB']})}</div></div>
+    </div></div>`,'mt-6');
+}
+
+function pagePayment(){
+  const kpis = [
+    ['Fees Collected · This Term', 4820000, '↑ 12% vs last term', '#10b981', [31,34,36,39,42,45,48]],
+    ['Outstanding Dues',            645000, '38 students pending',  '#f59e0b', [11,10,9,8,8,7,6]],
+    ['Salary Payout · This Month', 1875000, '143 staff members',    '#3b5bf6', [17,17,18,18,18,19,19]],
+    ['Net Position · This Term',   2300000, 'After all outgoings',  '#8b5cf6', [14,16,17,19,20,22,23]]
+  ];
+  const txns = [
+    ['Aarav Mehta',      'Term Fee · Grade 8 A',      '2026-09-06',  42000, 'Paid'],
+    ['Diya Sharma',      'Term Fee · Grade 8 A',      '2026-09-05',  42000, 'Paid'],
+    ['Dr. Sarah Smith',  'Salary · September',        '2026-09-01',  96000, 'Paid'],
+    ['Kabir Rao',        'Term Fee · Grade 9 B',      '2026-09-01',  45000, 'Pending'],
+    ['Prof. John Johnson','Salary · September',       '2026-09-01',  88000, 'Paid'],
+    ['Ishita Nair',      'Transport Fee · Grade 10 A','2026-08-28',  12500, 'Overdue']
+  ];
+  const tone = s => ({Paid:'bg-emerald-50 text-emerald-700',Pending:'bg-amber-50 text-amber-700',Overdue:'bg-rose-50 text-rose-700'}[s]);
+  return pageHead('Payment & Salary Management','Fee collection, salary disbursement and financial position — all amounts in ₹',
+    `<button onclick="toast('Financial statement exported')" class="ctl border border-ink-200 bg-white px-3.5 font-semibold hover:bg-ink-50">Export Statement</button>`) +
+  `<div class="rounded-xl bg-primary-50 border border-primary-100 px-4 py-3 mb-6 flex items-center gap-2.5">
+     <span class="text-primary-600">◷</span>
+     <p class="text-sm text-primary-800"><span class="font-semibold">Preview of the upcoming module.</span> Figures shown are indicative sample data.</p>
+   </div>
+   <div class="grid sm:grid-cols-2 xl:grid-cols-4 gap-6">
+    ${kpis.map(k=>`<div class="bg-white rounded-2xl border border-ink-200 shadow-card p-6">
+      <p class="micro-label text-ink-400">${k[0]}</p>
+      <p class="mt-4 stat-value text-ink-900">${inrShort(k[1])}</p>
+      <p class="mt-1.5 text-xs text-ink-400">${k[2]}</p>
+      <div class="mt-4 h-8">${sparkline(k[4],k[3])}</div></div>`).join('')}
+   </div>
+   <div class="mt-6 grid lg:grid-cols-3 gap-6">
+    ${card(`<div class="p-6 h-full flex flex-col"><div class="flex items-center justify-between flex-wrap gap-3">
+        <p class="card-title text-ink-900">Fee Collection vs Salary Outgo</p>
+        <div class="flex gap-4">${legendDot('#10b981','Collected (₹ lakh)')}${legendDot('#3b5bf6','Salaries (₹ lakh)')}</div></div>
+      <div class="mt-5 flex-1 flex items-center">${areaChart([
+        {name:'Collected',values:[31,34,36,39,42,45,48],color:'#10b981'},
+        {name:'Salaries', values:[17,17,18,18,18,19,19],color:'#3b5bf6',fill:false}
+      ],['Mar','Apr','May','Jun','Jul','Aug','Sep'],{w:700,h:250})}</div></div>`,'lg:col-span-2')}
+    ${card(`<div class="p-6"><p class="card-title text-ink-900">Collection Status</p>
+      <div class="mt-6">${donut([['Collected',4820000,'#10b981'],['Pending',645000,'#f59e0b'],['Overdue',185000,'#ef4444']],
+        {size:150,thickness:22,center:['88%','Collected'],fmt:inrShort})}</div></div>`)}
+   </div>` +
+  card(`<div class="px-6 py-5 border-b border-ink-100 flex items-center justify-between gap-4">
+      <p class="card-title text-ink-900">Recent Transactions</p>
+      <button onclick="toast('Opening full transaction ledger')" class="ctl border border-ink-200 px-3.5 font-semibold hover:bg-ink-50">View All</button></div>
+    <div class="overflow-x-auto"><table class="w-full text-sm min-w-[720px]">
+      <thead class="bg-ink-50 text-ink-500 border-b border-ink-200"><tr>
+        ${['Name','Description','Date','Amount','Status'].map((h,i)=>`<th class="${i===3?'text-right':'text-left'} micro-label px-6 py-3">${h}</th>`).join('')}</tr></thead>
+      <tbody class="divide-y divide-ink-100">
+        ${txns.map(t=>`<tr class="hover:bg-ink-50/60">
+          <td class="px-6 py-4"><div class="flex items-center gap-3">${avatarImg(t[0],'h-9 w-9')}
+            <span class="font-semibold text-ink-900">${esc(t[0])}</span></div></td>
+          <td class="px-6 py-4 text-ink-600">${esc(t[1])}</td>
+          <td class="px-6 py-4 text-ink-600">${fmtDate(t[2])}</td>
+          <td class="px-6 py-4 text-right font-semibold text-ink-900 tabular-nums">${inr(t[3])}</td>
+          <td class="px-6 py-4">${pill(t[4],tone(t[4]))}</td></tr>`).join('')}
+      </tbody></table></div>`,'mt-6 mb-6') +
+    comingSoon('Payment & Salary Management',
+      'This comprehensive payment system will handle all financial transactions, salary management and payment tracking for your educational institution.',
+      [['Salary Processing','Automated salary calculations and disbursements'],['Fee Management','Student fee collection and tracking'],
+       ['Payment Schedules','Flexible payment scheduling options'],['Financial Reports','Comprehensive financial analytics']],
+      [['Payment Processing',['Multiple payment gateway integration','Automated recurring payments','Payment reminders and notifications','Digital receipts and invoices']],
+       ['Salary Management',['Payroll processing automation','Tax calculations and deductions','Salary slip generation','Bank transfer integration']]]);
+}
+function pageLeave(){
+  return pageHead('Leave Management','Applications, approvals and balances','') +
+    comingSoon('Leave Management System',
+      'A comprehensive leave management system to handle all leave applications, approvals and tracking for teachers, staff and students.',
+      [['Leave Applications','Digital leave application submission'],['Approval Workflow','Multi-level approval processes'],
+       ['Leave Calendar','Visual leave tracking calendar'],['Balance Tracker','Leave balance management']],
+      [['Application Management',['Online leave application forms','Document attachment support','Automated email notifications','Leave history tracking']],
+       ['Administrative Tools',['Bulk approval capabilities','Leave policy configuration','Reporting and analytics','Integration with payroll']]]);
+}
+
+/* ══════════════════════════ MODALS ══════════════════════════ */
+function modalClass(mode,id){
+  const c = DB.classes.find(x=>x.id===id) || {name:'',section:'',classTeacherId:''};
+  if(mode==='view'){
+    const roster = DB.students.filter(s=>s.classId===id);
+    return openModal(`${modalHeader(`${c.name} ${c.section}`,'Class details')}
+      <div class="p-6 space-y-5">
+        <div class="grid grid-cols-2 gap-6 text-sm">
+          ${[['Class Name',c.name],['Section',c.section],['Class Teacher',tName(c.classTeacherId)],['Room',c.room],['Total Students',roster.length],['Attendance',roster.length?Math.round(roster.filter(s=>s.status==='Present').length/roster.length*100)+'%':'N/A']]
+            .map(f=>`<div><p class="micro-label text-ink-400">${f[0]}</p><p class="mt-1 font-medium text-ink-800">${esc(f[1])}</p></div>`).join('')}
+        </div>
+        <div><p class="text-sm font-bold text-ink-900 mb-2">Class Roster</p>
+          <div class="rounded-xl border border-ink-200 divide-y divide-ink-100 max-h-60 overflow-y-auto">
+            ${roster.length?roster.map(s=>`<div class="flex items-center justify-between px-4 py-2.5 text-sm"><span>${esc(s.firstName)} ${esc(s.lastName)}</span><span class="text-ink-400">Roll ${s.rollNumber}</span></div>`).join(''):'<p class="px-4 py-6 text-center text-sm text-ink-400">No students enrolled.</p>'}
+          </div></div>
+      </div>
+      <div class="px-6 pb-6"><button onclick="closeModal()" class="w-full rounded-lg border border-ink-200 py-2.5 text-sm font-semibold hover:bg-ink-50">Close</button></div>`);
+  }
+  if(mode==='delete') return confirmDelete('class',id,`${c.name} ${c.section}`);
+  openModal(`${modalHeader(mode==='add'?'Add New Class':'Edit Class', mode==='add'?'Create a class and assign a class teacher':'Update class details')}
+    <form class="p-6 space-y-4" onsubmit="event.preventDefault();closeModal();toast('Class ${mode==='add'?'added':'updated'} successfully')">
+      ${field('Class Name *',`<input required class="${inputCls}" placeholder="e.g., Grade 10" value="${esc(c.name)}">`)}
+      ${field('Section *',`<select required class="${inputCls} bg-white"><option value="">Select Section</option>${'ABCDEFGHIJKLMNOPQRSTUVWXYZ'.split('').map(s=>`<option ${s===c.section?'selected':''}>${s}</option>`).join('')}</select>`)}
+      ${field('Class Teacher',`<select class="${inputCls} bg-white"><option value="">Select class teacher</option>${DB.teachers.map(t=>`<option value="${t.id}" ${t.id===c.classTeacherId?'selected':''}>${esc(t.name)}</option>`).join('')}</select>`)}
+      ${field('Room',`<input class="${inputCls}" placeholder="e.g., A-101" value="${esc(c.room||'')}">`)}
+      ${modalFooter(mode==='add'?'Add Class':'Save Changes')}
+    </form>`);
+}
+
+function modalTeacher(mode,id){
+  const t = DB.teachers.find(x=>x.id===id) || {};
+  if(mode==='view'){
+    return openModal(`${modalHeader(t.name,'Teacher profile')}
+      <div class="p-6">
+        <div class="flex items-center gap-4">${avatarImg(t.name,'h-16 w-16')}
+          <div><p class="card-title text-ink-900">${esc(t.name)}</p><p class="text-sm text-ink-500">${esc(t.subject)}</p>${statusPill(t.status)}</div></div>
+        <div class="mt-6 grid grid-cols-2 gap-6 text-sm">
+          ${[['Email',t.email],['Phone',t.phone],['Gender',t.gender],['Joining Date',fmtDate(t.joiningDate)],['Address',t.address],['Assigned Classes',DB.classes.filter(c=>c.classTeacherId===t.id).map(c=>c.name+' '+c.section).join(', ')||'—']]
+            .map(f=>`<div><p class="micro-label text-ink-400">${f[0]}</p><p class="mt-1 font-medium text-ink-800">${esc(f[1])}</p></div>`).join('')}
+        </div></div>
+      <div class="px-6 pb-6"><button onclick="closeModal()" class="w-full rounded-lg border border-ink-200 py-2.5 text-sm font-semibold hover:bg-ink-50">Close</button></div>`);
+  }
+  if(mode==='delete') return confirmDelete('teacher',id,t.name);
+  openModal(`${modalHeader(mode==='add'?'Add New Teacher':'Edit Teacher', mode==='add'?'Register a member of teaching staff':'Update staff details')}
+    <form class="p-6 grid sm:grid-cols-2 gap-4" onsubmit="event.preventDefault();closeModal();toast('Teacher ${mode==='add'?'added':'updated'} successfully')">
+      <div class="sm:col-span-2">${field('Name *',`<input required class="${inputCls}" placeholder="e.g., John Doe" value="${esc(t.name||'')}">`)}</div>
+      ${field('Email *',`<input required type="email" class="${inputCls}" placeholder="e.g., john@example.com" value="${esc(t.email||'')}">`)}
+      ${field('Phone *',`<input required class="${inputCls}" placeholder="e.g., 1234567890" value="${esc(t.phone||'')}">`)}
+      ${field('Gender *',`<select required class="${inputCls} bg-white"><option value="">Select Gender</option>${['Male','Female','Other'].map(g=>`<option ${g===t.gender?'selected':''}>${g}</option>`).join('')}</select>`)}
+      ${field('Joining Date',`<input type="date" class="${inputCls}" value="${t.joiningDate||''}">`)}
+      ${field('Subject',`<select class="${inputCls} bg-white"><option value="">Select Subject</option>${DB.subjects.map(s=>`<option ${s===t.subject?'selected':''}>${s}</option>`).join('')}</select>`)}
+      ${field('Assign to Class',`<select class="${inputCls} bg-white"><option value="">None</option>${DB.classes.map(c=>`<option>${c.name} ${c.section}</option>`).join('')}</select>`)}
+      <div class="sm:col-span-2">${field('Address',`<input class="${inputCls}" placeholder="e.g., 123 Main St" value="${esc(t.address||'')}">`)}</div>
+      <div class="sm:col-span-2 -mx-6 -mb-6">${modalFooter(mode==='add'?'Add Teacher':'Save Changes')}</div>
+    </form>`,'max-w-2xl');
+}
+
+function modalStudent(mode,id){
+  const s = DB.students.find(x=>x.id===id) || {};
+  if(mode==='view'){
+    return openModal(`${modalHeader(`${s.firstName} ${s.lastName}`,'Student record')}
+      <div class="p-6">
+        <div class="flex items-center gap-4">${avatarImg(s.firstName+' '+s.lastName,'h-16 w-16')}
+          <div><p class="card-title text-ink-900">${esc(s.firstName)} ${esc(s.lastName)}</p><p class="text-sm text-ink-500">${cName(s.classId)} · Roll ${s.rollNumber}</p>${statusPill(s.status)}</div></div>
+        <div class="mt-6 grid grid-cols-2 gap-6 text-sm">
+          ${[['SR Number',s.srNumber],['Roll Number',s.rollNumber],['Email',s.email],['Date of Birth',fmtDate(s.dob)],['Gender',s.gender],['Class',cName(s.classId)]]
+            .map(f=>`<div><p class="micro-label text-ink-400">${f[0]}</p><p class="mt-1 font-medium text-ink-800">${esc(f[1])}</p></div>`).join('')}
+        </div>
+        <div class="mt-6 pt-6 border-t border-ink-100">
+          <p class="text-sm font-bold text-ink-900">Parent / Guardian Details</p>
+          <div class="mt-4 grid grid-cols-2 gap-6 text-sm">
+            ${[["Father's Name",s.father],["Mother's Name",s.mother],['Contact Email',s.guardianEmail],['Contact Phone',s.guardianPhone]]
+              .map(f=>`<div><p class="micro-label text-ink-400">${f[0]}</p><p class="mt-1 font-medium text-ink-800">${esc(f[1])}</p></div>`).join('')}
+          </div></div>
+      </div>
+      <div class="px-6 pb-6"><button onclick="closeModal()" class="w-full rounded-lg border border-ink-200 py-2.5 text-sm font-semibold hover:bg-ink-50">Close</button></div>`,'max-w-2xl');
+  }
+  if(mode==='delete') return confirmDelete('student',id,`${s.firstName} ${s.lastName}`);
+  openModal(`${modalHeader(mode==='add'?'Add New Student':'Edit Student', mode==='add'?'Enrol a learner and place them in a class':'Update student record')}
+    <form class="p-6 grid sm:grid-cols-2 gap-4" onsubmit="event.preventDefault();closeModal();toast('Student ${mode==='add'?'enrolled':'updated'} successfully')">
+      ${field('Sr No *',`<input required class="${inputCls}" placeholder="e.g., 2001" value="${esc(s.srNumber||'')}">`)}
+      ${field('Roll Number *',`<input required class="${inputCls}" placeholder="e.g., R2001" value="${esc(s.rollNumber||'')}">`)}
+      ${field('First Name *',`<input required class="${inputCls}" placeholder="e.g., John" value="${esc(s.firstName||'')}">`)}
+      ${field('Last Name *',`<input required class="${inputCls}" placeholder="e.g., Doe" value="${esc(s.lastName||'')}">`)}
+      <div class="sm:col-span-2">${field('Email *',`<input required type="email" class="${inputCls}" placeholder="e.g., john.doe@example.com" value="${esc(s.email||'')}">`)}</div>
+      ${field('Class *',`<select required class="${inputCls} bg-white"><option value="">Select a class</option>${DB.classes.map(c=>`<option value="${c.id}" ${c.id===s.classId?'selected':''}>${c.name} ${c.section}</option>`).join('')}</select>`)}
+      ${field('Gender *',`<select required class="${inputCls} bg-white"><option value="">Select Gender</option>${['Male','Female','Other'].map(g=>`<option ${g===s.gender?'selected':''}>${g}</option>`).join('')}</select>`)}
+      <div class="sm:col-span-2">${field('Date of Birth *',`<input required type="date" class="${inputCls}" value="${s.dob||''}">`)}</div>
+      <div class="sm:col-span-2 pt-2 border-t border-ink-100"><p class="text-sm font-bold text-ink-900 pt-3">Parent / Guardian Details</p></div>
+      ${field("Father's Name",`<input class="${inputCls}" placeholder="e.g., Robert Doe" value="${esc(s.father||'')}">`)}
+      ${field("Mother's Name",`<input class="${inputCls}" placeholder="e.g., Mary Doe" value="${esc(s.mother||'')}">`)}
+      ${field('Guardian Email',`<input type="email" class="${inputCls}" placeholder="e.g., parent@example.com" value="${esc(s.guardianEmail||'')}">`)}
+      ${field('Guardian Phone',`<input class="${inputCls}" placeholder="e.g., 9876543210" value="${esc(s.guardianPhone||'')}">`)}
+      <div class="sm:col-span-2 -mx-6 -mb-6">${modalFooter(mode==='add'?'Add Student':'Save Changes')}</div>
+    </form>`,'max-w-2xl');
+}
+
+function modalAnnouncement(id){
+  const a = DB.announcements.find(x=>x.id===id) || {title:'',detail:'',date:'',announcedBy:STATE.role};
+  openModal(`${modalHeader(id?'Edit Announcement':'Add New Announcement','Publish a notice to your institution')}
+    <form class="p-6 space-y-4" onsubmit="event.preventDefault();closeModal();toast('Announcement ${id?'updated':'published'} successfully')">
+      ${field('Title *',`<input required class="${inputCls}" placeholder="Enter announcement title" value="${esc(a.title)}">`)}
+      ${field('Detail *',`<textarea required rows="5" class="${inputCls}" placeholder="Enter announcement details">${esc(a.detail)}</textarea>`)}
+      ${field('Date *',`<input required type="date" class="${inputCls}" value="${a.date||''}">`)}
+      ${field('Announced By',`<input class="${inputCls}" value="${esc(a.announcedBy)}">`)}
+      ${field('School',`<input class="${inputCls} bg-ink-50" value="${esc(DB.school.name)}" readonly>`)}
+      ${modalFooter(id?'Save Changes':'Add Announcement')}
+    </form>`);
+}
+function modalViewAnnouncement(id){
+  const a = DB.announcements.find(x=>x.id===id);
+  openModal(`${modalHeader(a.title,`${a.announcedBy} · ${fmtDate(a.date)}`)}
+    <div class="p-6"><p class="text-sm text-ink-600 leading-relaxed">${esc(a.detail)}</p>
+      <div class="mt-6 rounded-xl bg-ink-50 p-4 text-sm"><p class="text-ink-500">Visible to all members of <span class="font-semibold text-ink-800">${esc(DB.school.name)}</span>.</p></div></div>
+    <div class="px-6 pb-6"><button onclick="closeModal()" class="w-full rounded-lg border border-ink-200 py-2.5 text-sm font-semibold hover:bg-ink-50">Close</button></div>`);
+}
+
+function modalRoom(mode,id){
+  const r = DB.rooms.find(x=>x.id===id)||{};
+  if(mode==='delete') return confirmDelete('room',id,r.name);
+  if(mode==='join'){
+    return openModal(`${modalHeader('Join Room',`Enter the passcode for ${r.name}`)}
+      <form class="p-6 space-y-4" onsubmit="event.preventDefault();closeModal();STATE.roomId='${id}';location.hash='#/chat/${id}';toast('Joined ${esc(r.name)}')">
+        ${field('Room Name',`<input class="${inputCls} bg-ink-50" value="${esc(r.name)}" readonly>`)}
+        ${field('Password *',`<input required type="password" class="${inputCls}" placeholder="Enter room passcode">`)}
+        ${modalFooter('Join Room')}
+      </form>`,'max-w-md');
+  }
+  openModal(`${modalHeader('Create Meeting Room','Set up a secure collaboration space')}
+    <form class="p-6 space-y-4" onsubmit="event.preventDefault();closeModal();toast('Meeting room created')">
+      ${field('Room Name *',`<input required class="${inputCls}" placeholder="e.g., Grade 10 Doubt Session">`)}
+      ${field('Description (optional)',`<input class="${inputCls}" placeholder="What is this room for?">`)}
+      ${field('Password *',`<input required type="password" class="${inputCls}" placeholder="Set a passcode for participants">`)}
+      ${field('Created By',`<input class="${inputCls} bg-ink-50" value="${esc(STATE.role)}" readonly>`)}
+      ${modalFooter('Create')}
+    </form>`,'max-w-md');
+}
+
+function modalFillAttendance(){
+  const roster = DB.students.filter(s=>s.classId===STATE.attendanceClass);
+  STATE.attendance = {}; roster.forEach(s=>STATE.attendance[s.id]='Absent');
+  openModal(`${modalHeader('Fill Attendance',`${cName(STATE.attendanceClass)} · ${new Date().toLocaleDateString('en-GB')}`)}
+    <div class="px-6 pt-4 flex gap-2">
+      <button onclick="bulkAttendance('Present')" class="rounded-lg bg-emerald-50 text-emerald-700 text-xs font-bold px-3 py-2">Mark all Present</button>
+      <button onclick="bulkAttendance('Absent')" class="rounded-lg bg-rose-50 text-rose-700 text-xs font-bold px-3 py-2">Mark all Absent</button>
+    </div>
+    <div id="attList" class="p-6 pt-4 space-y-2 max-h-80 overflow-y-auto">${attRows(roster)}</div>
+    <div class="sticky bottom-0 bg-white px-6 py-5 border-t border-ink-100 flex justify-end gap-2">
+      <button onclick="closeModal()" class="rounded-lg border border-ink-200 px-4 py-2.5 text-sm font-semibold hover:bg-ink-50">Cancel</button>
+      <button onclick="saveAttendance()" class="rounded-lg bg-primary-600 hover:bg-primary-700 text-white px-4 py-2.5 text-sm font-semibold">Save</button>
+    </div>`);
+}
+function attRows(roster){
+  return roster.map(s=>{
+    const v=STATE.attendance[s.id];
+    return `<div class="flex items-center justify-between rounded-xl border border-ink-200 px-4 py-3">
+      <div><p class="text-sm font-semibold text-ink-900">${esc(s.firstName)} ${esc(s.lastName)}</p><p class="text-xs text-ink-400">Roll ${s.rollNumber} · ${esc(s.srNumber)}</p></div>
+      <div class="flex gap-1">${['Present','Absent','Late','Leave'].map(o=>`
+        <button onclick="setAtt('${s.id}','${o}')" class="rounded-lg px-2.5 py-1.5 text-xs font-bold ${v===o?{Present:'bg-emerald-600 text-white',Absent:'bg-rose-600 text-white',Late:'bg-amber-500 text-white',Leave:'bg-sky-600 text-white'}[o]:'bg-ink-100 text-ink-500 hover:bg-ink-200'}">${o}</button>`).join('')}</div>
+    </div>`}).join('');
+}
+function setAtt(id,val){ STATE.attendance[id]=val; $('#attList').innerHTML = attRows(DB.students.filter(s=>s.classId===STATE.attendanceClass)); }
+function bulkAttendance(val){ Object.keys(STATE.attendance).forEach(k=>STATE.attendance[k]=val); $('#attList').innerHTML = attRows(DB.students.filter(s=>s.classId===STATE.attendanceClass)); }
+function saveAttendance(){
+  DB.students.forEach(s=>{ if(STATE.attendance[s.id]) s.status=STATE.attendance[s.id]; });
+  closeModal(); toast('Attendance saved for '+cName(STATE.attendanceClass)); renderApp();
+}
+
+function modalGenerateReport(name){
+  openModal(`${modalHeader('Generate Report',name)}
+    <form class="p-6 space-y-4" onsubmit="event.preventDefault();closeModal();toast('${esc(name)} report generated')">
+      ${field('Report Type',`<input class="${inputCls} bg-ink-50" value="${esc(name)}" readonly>`)}
+      <div class="grid grid-cols-2 gap-4">
+        ${field('From Date',`<input type="date" class="${inputCls}">`)}
+        ${field('To Date',`<input type="date" class="${inputCls}">`)}
+      </div>
+      ${field('Scope',`<select class="${inputCls} bg-white"><option>Whole school</option>${DB.classes.map(c=>`<option>${c.name} ${c.section}</option>`).join('')}</select>`)}
+      ${field('Format',`<select class="${inputCls} bg-white"><option>PDF</option><option>Excel (XLSX)</option><option>CSV</option></select>`)}
+      ${modalFooter('Generate')}
+    </form>`);
+}
+function modalConfigure(name){
+  openModal(`${modalHeader(name,'Institution configuration')}
+    <form class="p-6 space-y-4" onsubmit="event.preventDefault();closeModal();toast('${esc(name)} updated')">
+      ${field('Setting',`<input class="${inputCls} bg-ink-50" value="${esc(name)}" readonly>`)}
+      ${field('Value',`<input class="${inputCls}" placeholder="Enter new value">`)}
+      ${field('Applies To',`<select class="${inputCls} bg-white"><option>All users</option><option>Staff only</option><option>Students and parents</option></select>`)}
+      <label class="flex items-center gap-2.5 text-sm text-ink-600"><input type="checkbox" class="rounded border-ink-300" checked> Record this change in the audit log</label>
+      ${modalFooter('Save Setting')}
+    </form>`,'max-w-md');
+}
+function modalSchoolProfile(){
+  const s=DB.school;
+  openModal(`${modalHeader('Edit School Profile','Institution details and subscription')}
+    <form class="p-6 grid sm:grid-cols-2 gap-4" onsubmit="event.preventDefault();closeModal();toast('School profile updated')">
+      <div class="sm:col-span-2">${field('School Name *',`<input required class="${inputCls}" value="${esc(s.name)}">`)}</div>
+      ${field('Registration Number *',`<input required class="${inputCls}" value="${esc(s.registrationNumber)}">`)}
+      ${field('Email *',`<input required type="email" class="${inputCls}" value="${esc(s.email)}">`)}
+      ${field('Phone *',`<input required class="${inputCls}" value="${esc(s.phone)}">`)}
+      ${field('Subscription Plan',`<select class="${inputCls} bg-white">${['Basic','Professional','Enterprise'].map(p=>`<option ${p===s.plan?'selected':''}>${p}</option>`).join('')}</select>`)}
+      <div class="sm:col-span-2">${field('Address *',`<input required class="${inputCls}" value="${esc(s.address)}">`)}</div>
+      ${field('City *',`<input required class="${inputCls}" value="${esc(s.city)}">`)}
+      ${field('State *',`<input required class="${inputCls}" value="${esc(s.state)}">`)}
+      ${field('Pin Code *',`<input required class="${inputCls}" value="${s.pinCode}">`)}
+      ${field('Subscription Date',`<input type="date" class="${inputCls}" value="${s.subscriptionDate}">`)}
+      <div class="sm:col-span-2 -mx-6 -mb-6">${modalFooter('Save Changes')}</div>
+    </form>`,'max-w-2xl');
+}
+function confirmDelete(kind,id,label){
+  openModal(`${modalHeader('Confirm Deletion','This action cannot be undone')}
+    <div class="p-6">
+      <div class="rounded-xl bg-rose-50 border border-rose-200 p-5">
+        <p class="text-sm text-rose-800">You are about to delete the ${esc(kind)} <span class="font-bold">${esc(label)}</span>. Related records will no longer reference it.</p>
+      </div>
+    </div>
+    <div class="px-6 pb-6 flex justify-end gap-2">
+      <button onclick="closeModal()" class="rounded-lg border border-ink-200 px-4 py-2.5 text-sm font-semibold hover:bg-ink-50">Cancel</button>
+      <button onclick="doDelete('${kind}','${id}')" class="rounded-lg bg-rose-600 hover:bg-rose-700 text-white px-4 py-2.5 text-sm font-semibold">Delete ${esc(kind)}</button>
+    </div>`,'max-w-md');
+}
+function doDelete(kind,id){
+  const map={class:'classes',teacher:'teachers',student:'students',announcement:'announcements',room:'rooms'};
+  const key=map[kind]; if(key) DB[key]=DB[key].filter(x=>x.id!==id);
+  closeModal(); toast(kind.charAt(0).toUpperCase()+kind.slice(1)+' deleted'); renderApp();
+}
+
+/* ══════════════════════════ STANDALONE SCREENS ══════════════════════════ */
+function screenChat(roomId){
+  const room = DB.rooms.find(r=>r.id===roomId)||DB.rooms[0];
+  return `<div class="min-h-screen bg-ink-50 flex flex-col">
+    <header class="h-16 bg-white border-b border-ink-200 flex items-center gap-4 px-5">
+      <a href="#/dashboard/meeting" class="h-9 w-9 rounded-lg hover:bg-ink-100 grid place-items-center text-ink-500">←</a>
+      <div class="h-10 w-10 rounded-xl bg-primary-50 text-primary-600 grid place-items-center">◉</div>
+      <div><p class="card-title text-ink-900">${esc(room.name)}</p><p class="text-xs text-emerald-600">● ${room.participants} participants online</p></div>
+      <div class="ml-auto flex gap-2">
+        <button onclick="location.hash='#/video-call/${room.id}'" class="rounded-lg bg-primary-600 hover:bg-primary-700 text-white text-sm font-semibold px-4 py-2.5">Start Video Call</button>
+        <button onclick="location.hash='#/dashboard/meeting';toast('Left ${esc(room.name)}')" class="rounded-lg border border-ink-200 bg-white text-sm font-semibold px-4 py-2.5">Leave Room</button>
+      </div>
+    </header>
+    <div class="flex-1 flex max-w-7xl w-full mx-auto">
+      <div class="flex-1 flex flex-col">
+        <div id="chatLog" class="flex-1 overflow-y-auto p-6 space-y-4">
+          <p class="text-center text-xs text-ink-400">Conversation history loaded · ${DB.messages.length} messages</p>
+          ${DB.messages.map(m=>chatBubble(m)).join('')}
+          <p id="typing" class="text-xs text-ink-400 italic">Ms. Emily Davis is typing…</p>
+        </div>
+        <form class="p-5 bg-white border-t border-ink-200 flex gap-3" onsubmit="sendMessage(event)">
+          <input id="chatInput" required placeholder="Type your message…" class="flex-1 rounded-lg border border-ink-200 px-4 py-3 text-sm outline-none focus:ring-2 focus:ring-primary-200">
+          <button class="rounded-lg bg-primary-600 hover:bg-primary-700 text-white font-semibold px-6">Send</button>
+        </form>
+      </div>
+      <aside class="hidden lg:block w-72 bg-white border-l border-ink-200 p-5">
+        <p class="text-xs font-semibold uppercase tracking-wider text-ink-400">Participants</p>
+        <div class="mt-4 space-y-2">
+          ${['Admin (You)','Dr. Sarah Smith','Prof. John Johnson','Ms. Emily Davis','Mrs. Neha Kulkarni'].map(p=>`
+            <div class="flex items-center gap-3 rounded-lg px-2 py-2 hover:bg-ink-50">
+              <div class="relative">${avatarImg(p,'h-9 w-9')}
+                <span class="absolute -bottom-0.5 -right-0.5 h-3 w-3 rounded-full bg-emerald-500 border-2 border-white"></span></div>
+              <p class="text-sm font-medium text-ink-800">${p}</p></div>`).join('')}
+        </div>
+        <p class="mt-7 text-xs font-semibold uppercase tracking-wider text-ink-400">Room Info</p>
+        <div class="mt-3 text-sm text-ink-500 space-y-2">
+          <p>${esc(room.description)}</p><p>Created by <span class="font-medium text-ink-800">${esc(room.createdBy)}</span></p>
+          <p class="inline-flex items-center gap-1.5">🔒 Passcode protected</p></div>
+      </aside>
+    </div></div>`;
+}
+function chatBubble(m){
+  return `<div class="flex gap-3 ${m.me?'flex-row-reverse':''}">
+    ${avatarImg(m.user,'h-9 w-9 shrink-0')}
+    <div class="max-w-md ${m.me?'items-end text-right':''} flex flex-col">
+      <p class="text-xs text-ink-400 mb-1">${esc(m.user)} · ${esc(m.time)}</p>
+      <div class="rounded-2xl px-4 py-2.5 text-sm ${m.me?'bg-primary-600 text-white rounded-tr-sm':'bg-white border border-ink-200 text-ink-700 rounded-tl-sm'}">${esc(m.text)}</div>
+    </div></div>`;
+}
+function sendMessage(e){
+  e.preventDefault();
+  const input=$('#chatInput'); if(!input.value.trim()) return;
+  const m={user:'Admin',text:input.value,time:new Date().toLocaleTimeString('en-GB',{hour:'2-digit',minute:'2-digit'}),me:true};
+  DB.messages.push(m);
+  $('#typing').insertAdjacentHTML('beforebegin',chatBubble(m));
+  input.value=''; $('#chatLog').scrollTop=$('#chatLog').scrollHeight;
+}
+
+function screenVideo(roomId){
+  const room = DB.rooms.find(r=>r.id===roomId)||DB.rooms[0];
+  const people=['Admin (You)','Dr. Sarah Smith','Prof. John Johnson','Ms. Emily Davis'];
+  return `<div class="min-h-screen bg-ink-900 flex flex-col">
+    <header class="h-16 flex items-center gap-4 px-5 border-b border-ink-800">
+      <a href="#/dashboard/meeting" class="h-9 w-9 rounded-lg hover:bg-ink-800 grid place-items-center text-ink-400">←</a>
+      <div><p class="font-bold text-white">Video Call — ${esc(room.name)}</p><p class="text-xs text-ink-400">${people.length} participants · Connected</p></div>
+      <span class="ml-auto rounded-full bg-emerald-500/15 text-emerald-400 text-xs font-bold px-3 py-1.5">● LIVE</span>
+    </header>
+    <div class="flex-1 p-6 grid sm:grid-cols-2 gap-4 content-start">
+      ${people.map((p,i)=>`<div class="relative aspect-video rounded-2xl bg-ink-800 border border-ink-700 grid place-items-center overflow-hidden">
+        <img src="${portrait(p,160)}" alt="${esc(p)}" class="h-24 w-24 rounded-full object-cover ring-4 ring-ink-700 shadow-lg">
+        <div class="absolute bottom-3 left-3 flex items-center gap-2">
+          <span class="rounded-lg bg-ink-900/80 text-white text-xs font-medium px-2.5 py-1.5">${p}</span>
+          ${i%2?'<span class="rounded-lg bg-rose-500/90 text-white text-xs px-2 py-1.5">🔇</span>':''}
+        </div></div>`).join('')}
+    </div>
+    <div class="p-6 border-t border-ink-800 flex justify-center gap-3">
+      <button onclick="this.classList.toggle('bg-rose-600');this.classList.toggle('bg-ink-800');toast('Microphone toggled')" class="h-12 w-12 rounded-full bg-ink-800 text-white grid place-items-center text-lg">🎤</button>
+      <button onclick="this.classList.toggle('bg-rose-600');this.classList.toggle('bg-ink-800');toast('Camera toggled')" class="h-12 w-12 rounded-full bg-ink-800 text-white grid place-items-center text-lg">🎥</button>
+      <button onclick="toast('Screen sharing started')" class="h-12 w-12 rounded-full bg-ink-800 text-white grid place-items-center text-lg">🖵</button>
+      <button onclick="location.hash='#/chat/${room.id}'" class="h-12 w-12 rounded-full bg-ink-800 text-white grid place-items-center text-lg">💬</button>
+      <button onclick="location.hash='#/dashboard/meeting';toast('Call ended')" class="h-12 rounded-full bg-rose-600 hover:bg-rose-700 text-white font-semibold px-7">Leave Call</button>
+    </div></div>`;
+}
+function screenUnauthorized(){
+  return `<div class="min-h-screen grid place-items-center bg-ink-50 p-6">
+    <div class="text-center max-w-md">
+      <div class="mx-auto h-20 w-20 rounded-2xl bg-rose-50 text-rose-500 grid place-items-center text-3xl">⛔</div>
+      <h1 class="mt-6 text-3xl font-extrabold text-ink-900">Unauthorized</h1>
+      <p class="mt-3 text-ink-500">Your current role does not have permission to view this area. Contact your school administrator if you believe this is a mistake.</p>
+      <div class="mt-7 flex gap-3 justify-center">
+        <button onclick="history.back()" class="rounded-lg border border-ink-200 bg-white font-semibold px-5 py-2.5">Go Back</button>
+        <a href="#/dashboard" class="rounded-lg bg-primary-600 hover:bg-primary-700 text-white font-semibold px-5 py-2.5">Go to Dashboard</a>
+      </div></div></div>`;
+}
+function screenNotFound(){
+  return `<div class="min-h-screen grid place-items-center bg-ink-50 p-6">
+    <div class="text-center max-w-md">
+      <p class="text-6xl font-extrabold text-primary-600">404</p>
+      <h1 class="mt-4 text-2xl font-extrabold text-ink-900">Page not found</h1>
+      <p class="mt-3 text-ink-500">The page you're looking for doesn't exist or has been moved.</p>
+      <a href="#/" class="mt-7 inline-block rounded-lg bg-primary-600 hover:bg-primary-700 text-white font-semibold px-5 py-2.5">Back to Home</a>
+    </div></div>`;
+}
+
+/* ══════════════════════════ ROUTER ══════════════════════════ */
+const DASH_PAGES = {
+  '/dashboard':pageHome,'/dashboard/classes':pageClasses,'/dashboard/teachers':pageTeachers,'/dashboard/students':pageStudents,
+  '/dashboard/attendance':pageAttendance,'/dashboard/announcements':pageAnnouncements,'/dashboard/meeting':pageMeetings,
+  '/dashboard/schedule':pageSchedule,'/dashboard/reports':pageReports,'/dashboard/settings':pageSettings,
+  '/dashboard/payment':pagePayment,'/dashboard/leave':pageLeave
+};
+const TITLES = {'/dashboard':'Dashboard','/dashboard/classes':'Classes','/dashboard/teachers':'Teachers','/dashboard/students':'Students',
+  '/dashboard/attendance':'Attendance','/dashboard/announcements':'Announcements','/dashboard/meeting':'Meetings','/dashboard/schedule':'Schedule',
+  '/dashboard/reports':'Reports','/dashboard/settings':'Settings','/dashboard/payment':'Payment','/dashboard/leave':'Leave'};
+
+function show(shell){ ['publicShell','appShell','soloShell'].forEach(id=>$('#'+id).hidden = (id!==shell)); }
+function renderApp(keepFocus){
+  const path = location.hash.replace('#','')||'/';
+  const active = document.activeElement, sel = active&&active.selectionStart;
+  $('#appMain').innerHTML = (DASH_PAGES[path]||pageHome)();
+  $('#crumbTitle').textContent = TITLES[path]||'Dashboard';
+  $('#crumbPath').textContent = 'Home / '+(TITLES[path]||'Dashboard');
+  if(keepFocus && active && active.placeholder){
+    const next = $$('input').find(i=>i.placeholder===active.placeholder);
+    if(next){ next.focus(); try{ next.setSelectionRange(sel,sel); }catch(e){} }
+  }
+  renderSideNav();
+}
+function route(){
+  const raw = location.hash.replace('#','')||'/';
+  const path = raw.split('?')[0];
+  closeModal(); $('#profileMenu').hidden=true; window.scrollTo(0,0);
+  $('#sidebar').classList.add('-translate-x-full'); $('#sidebarBackdrop').hidden=true;
+  togglePublicNav(false);
+
+  if(path.startsWith('/chat/')){ show('soloShell'); $('#soloMain').innerHTML = screenChat(path.split('/')[2]); return; }
+  if(path.startsWith('/video-call/')){ show('soloShell'); $('#soloMain').innerHTML = screenVideo(path.split('/')[2]); return; }
+  if(path==='/unauthorized'){ show('soloShell'); $('#soloMain').innerHTML = screenUnauthorized(); return; }
+
+  if(path.startsWith('/dashboard')){
+    if(!DASH_PAGES[path]){ show('soloShell'); $('#soloMain').innerHTML = screenNotFound(); return; }
+    if(!can(path)){ show('soloShell'); $('#soloMain').innerHTML = screenUnauthorized(); return; }
+    show('appShell'); renderProfile(); renderApp(); return;
+  }
+  const known = PUBLIC_NAV.map(p=>p.p);
+  if(!known.includes(path)){ show('soloShell'); $('#soloMain').innerHTML = screenNotFound(); return; }
+  show('publicShell');
+  $$('[data-public]').forEach(s=>s.hidden = s.dataset.public!==path);
+  $$('[data-pnav]').forEach(a=>a.className = `text-sm font-medium px-3.5 py-2 rounded-lg ${a.dataset.pnav===path?'bg-primary-50 text-primary-700':'hover:bg-ink-50'}`);
+  $$('[data-pnav-m]').forEach(a=>a.className = `rounded-lg px-3 h-11 flex items-center text-sm font-medium ${a.dataset.pnavM===path?'bg-primary-50 text-primary-700':'hover:bg-ink-50'}`);
+}
+window.addEventListener('hashchange',route);
+renderPublicChrome(); renderProfile();
+if(!location.hash) location.hash='#/';
+route();
+</script>
+</body>
+</html>

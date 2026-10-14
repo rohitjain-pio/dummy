@@ -1,0 +1,14 @@
+<Solution>
+  <Folder Name="/src/">
+    <Project Path="src/SchoolSync.Api/SchoolSync.Api.csproj" />
+    <Project Path="src/SchoolSync.Application/SchoolSync.Application.csproj" />
+    <Project Path="src/SchoolSync.Domain/SchoolSync.Domain.csproj" />
+    <Project Path="src/SchoolSync.Infrastructure/SchoolSync.Infrastructure.csproj" />
+  </Folder>
+  <Folder Name="/tests/">
+    <Project Path="tests/SchoolSync.IntegrationTests/SchoolSync.IntegrationTests.csproj" />
+  </Folder>
+  <Folder Name="/tools/">
+    <Project Path="tools/DbSeeder/DbSeeder.csproj" />
+  </Folder>
+</Solution>

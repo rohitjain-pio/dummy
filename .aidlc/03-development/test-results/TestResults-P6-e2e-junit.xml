@@ -1,0 +1,238 @@
+<testsuites id="" name="" tests="116" failures="0" skipped="0" errors="0" time="108.53547599999999">
+<testsuite name="a11y.spec.ts" timestamp="2026-09-15T08:48:04.366Z" hostname="chromium" tests="108" failures="0" skipped="0" time="366.012" errors="0">
+<testcase name="bp-sm (640px) › UI-001 Home — WCAG 2.1 AA, no horizontal overflow" classname="a11y.spec.ts" time="4.268">
+</testcase>
+<testcase name="bp-sm (640px) › UI-002 About — WCAG 2.1 AA, no horizontal overflow" classname="a11y.spec.ts" time="4.268">
+</testcase>
+<testcase name="bp-sm (640px) › UI-003 Contact — WCAG 2.1 AA, no horizontal overflow" classname="a11y.spec.ts" time="4.136">
+</testcase>
+<testcase name="bp-sm (640px) › UI-004 Pricing — WCAG 2.1 AA, no horizontal overflow" classname="a11y.spec.ts" time="4.417">
+</testcase>
+<testcase name="bp-sm (640px) › UI-005 Login modal — WCAG 2.1 AA, no horizontal overflow" classname="a11y.spec.ts" time="3.496">
+</testcase>
+<testcase name="bp-sm (640px) › UI-005 Register modal — WCAG 2.1 AA, no horizontal overflow" classname="a11y.spec.ts" time="3.745">
+</testcase>
+<testcase name="bp-sm (640px) › UI-006/015 Dashboard (leadership) — WCAG 2.1 AA, no horizontal overflow" classname="a11y.spec.ts" time="3.35">
+</testcase>
+<testcase name="bp-sm (640px) › UI-015 Dashboard (teacher) — WCAG 2.1 AA, no horizontal overflow" classname="a11y.spec.ts" time="3.167">
+</testcase>
+<testcase name="bp-sm (640px) › UI-015 Dashboard (student) — WCAG 2.1 AA, no horizontal overflow" classname="a11y.spec.ts" time="2.695">
+</testcase>
+<testcase name="bp-sm (640px) › UI-015 Dashboard (parent) — WCAG 2.1 AA, no horizontal overflow" classname="a11y.spec.ts" time="3.109">
+</testcase>
+<testcase name="bp-sm (640px) › UI-015 Dashboard (platform operator) — WCAG 2.1 AA, no horizontal overflow" classname="a11y.spec.ts" time="2.882">
+</testcase>
+<testcase name="bp-sm (640px) › UI-007 Classes — WCAG 2.1 AA, no horizontal overflow" classname="a11y.spec.ts" time="3.688">
+</testcase>
+<testcase name="bp-sm (640px) › UI-008 Teachers — WCAG 2.1 AA, no horizontal overflow" classname="a11y.spec.ts" time="3.96">
+</testcase>
+<testcase name="bp-sm (640px) › UI-009 Students — WCAG 2.1 AA, no horizontal overflow" classname="a11y.spec.ts" time="4.91">
+</testcase>
+<testcase name="bp-sm (640px) › UI-009 Student detail — WCAG 2.1 AA, no horizontal overflow" classname="a11y.spec.ts" time="4.491">
+</testcase>
+<testcase name="bp-sm (640px) › UI-010 Attendance — WCAG 2.1 AA, no horizontal overflow" classname="a11y.spec.ts" time="3.43">
+</testcase>
+<testcase name="bp-sm (640px) › UI-010 Fill attendance — WCAG 2.1 AA, no horizontal overflow" classname="a11y.spec.ts" time="3.747">
+</testcase>
+<testcase name="bp-sm (640px) › UI-011 Announcements — WCAG 2.1 AA, no horizontal overflow" classname="a11y.spec.ts" time="2.576">
+</testcase>
+<testcase name="bp-sm (640px) › UI-012 Meetings — WCAG 2.1 AA, no horizontal overflow" classname="a11y.spec.ts" time="2.381">
+</testcase>
+<testcase name="bp-sm (640px) › UI-013 Chat — WCAG 2.1 AA, no horizontal overflow" classname="a11y.spec.ts" time="2.568">
+</testcase>
+<testcase name="bp-sm (640px) › UI-014 Video call — WCAG 2.1 AA, no horizontal overflow" classname="a11y.spec.ts" time="2.479">
+</testcase>
+<testcase name="bp-sm (640px) › UI-016 Schedule — WCAG 2.1 AA, no horizontal overflow" classname="a11y.spec.ts" time="2.888">
+</testcase>
+<testcase name="bp-sm (640px) › UI-017 Reports — WCAG 2.1 AA, no horizontal overflow" classname="a11y.spec.ts" time="2.94">
+</testcase>
+<testcase name="bp-sm (640px) › UI-018 Settings (leadership) — WCAG 2.1 AA, no horizontal overflow" classname="a11y.spec.ts" time="2.922">
+</testcase>
+<testcase name="bp-sm (640px) › UI-018 Settings (student) — WCAG 2.1 AA, no horizontal overflow" classname="a11y.spec.ts" time="2.158">
+</testcase>
+<testcase name="bp-sm (640px) › UI-019 Unauthorized — WCAG 2.1 AA, no horizontal overflow" classname="a11y.spec.ts" time="2.305">
+</testcase>
+<testcase name="bp-sm (640px) › UI-020 Not found — WCAG 2.1 AA, no horizontal overflow" classname="a11y.spec.ts" time="2.117">
+</testcase>
+<testcase name="bp-md (768px) › UI-001 Home — WCAG 2.1 AA, no horizontal overflow" classname="a11y.spec.ts" time="2.634">
+</testcase>
+<testcase name="bp-md (768px) › UI-002 About — WCAG 2.1 AA, no horizontal overflow" classname="a11y.spec.ts" time="2.569">
+</testcase>
+<testcase name="bp-md (768px) › UI-003 Contact — WCAG 2.1 AA, no horizontal overflow" classname="a11y.spec.ts" time="3.031">
+</testcase>
+<testcase name="bp-md (768px) › UI-004 Pricing — WCAG 2.1 AA, no horizontal overflow" classname="a11y.spec.ts" time="2.996">
+</testcase>
+<testcase name="bp-md (768px) › UI-005 Login modal — WCAG 2.1 AA, no horizontal overflow" classname="a11y.spec.ts" time="2.905">
+</testcase>
+<testcase name="bp-md (768px) › UI-005 Register modal — WCAG 2.1 AA, no horizontal overflow" classname="a11y.spec.ts" time="3.175">
+</testcase>
+<testcase name="bp-md (768px) › UI-006/015 Dashboard (leadership) — WCAG 2.1 AA, no horizontal overflow" classname="a11y.spec.ts" time="2.678">
+</testcase>
+<testcase name="bp-md (768px) › UI-015 Dashboard (teacher) — WCAG 2.1 AA, no horizontal overflow" classname="a11y.spec.ts" time="2.594">
+</testcase>
+<testcase name="bp-md (768px) › UI-015 Dashboard (student) — WCAG 2.1 AA, no horizontal overflow" classname="a11y.spec.ts" time="2.407">
+</testcase>
+<testcase name="bp-md (768px) › UI-015 Dashboard (parent) — WCAG 2.1 AA, no horizontal overflow" classname="a11y.spec.ts" time="2.472">
+</testcase>
+<testcase name="bp-md (768px) › UI-015 Dashboard (platform operator) — WCAG 2.1 AA, no horizontal overflow" classname="a11y.spec.ts" time="2.423">
+</testcase>
+<testcase name="bp-md (768px) › UI-007 Classes — WCAG 2.1 AA, no horizontal overflow" classname="a11y.spec.ts" time="2.754">
+</testcase>
+<testcase name="bp-md (768px) › UI-008 Teachers — WCAG 2.1 AA, no horizontal overflow" classname="a11y.spec.ts" time="3.298">
+</testcase>
+<testcase name="bp-md (768px) › UI-009 Students — WCAG 2.1 AA, no horizontal overflow" classname="a11y.spec.ts" time="3.922">
+</testcase>
+<testcase name="bp-md (768px) › UI-009 Student detail — WCAG 2.1 AA, no horizontal overflow" classname="a11y.spec.ts" time="3.989">
+</testcase>
+<testcase name="bp-md (768px) › UI-010 Attendance — WCAG 2.1 AA, no horizontal overflow" classname="a11y.spec.ts" time="3.405">
+</testcase>
+<testcase name="bp-md (768px) › UI-010 Fill attendance — WCAG 2.1 AA, no horizontal overflow" classname="a11y.spec.ts" time="4.371">
+</testcase>
+<testcase name="bp-md (768px) › UI-011 Announcements — WCAG 2.1 AA, no horizontal overflow" classname="a11y.spec.ts" time="3.059">
+</testcase>
+<testcase name="bp-md (768px) › UI-012 Meetings — WCAG 2.1 AA, no horizontal overflow" classname="a11y.spec.ts" time="2.629">
+</testcase>
+<testcase name="bp-md (768px) › UI-013 Chat — WCAG 2.1 AA, no horizontal overflow" classname="a11y.spec.ts" time="2.882">
+</testcase>
+<testcase name="bp-md (768px) › UI-014 Video call — WCAG 2.1 AA, no horizontal overflow" classname="a11y.spec.ts" time="2.912">
+</testcase>
+<testcase name="bp-md (768px) › UI-016 Schedule — WCAG 2.1 AA, no horizontal overflow" classname="a11y.spec.ts" time="3.081">
+</testcase>
+<testcase name="bp-md (768px) › UI-017 Reports — WCAG 2.1 AA, no horizontal overflow" classname="a11y.spec.ts" time="3.024">
+</testcase>
+<testcase name="bp-md (768px) › UI-018 Settings (leadership) — WCAG 2.1 AA, no horizontal overflow" classname="a11y.spec.ts" time="3.476">
+</testcase>
+<testcase name="bp-md (768px) › UI-018 Settings (student) — WCAG 2.1 AA, no horizontal overflow" classname="a11y.spec.ts" time="2.427">
+</testcase>
+<testcase name="bp-md (768px) › UI-019 Unauthorized — WCAG 2.1 AA, no horizontal overflow" classname="a11y.spec.ts" time="2.358">
+</testcase>
+<testcase name="bp-md (768px) › UI-020 Not found — WCAG 2.1 AA, no horizontal overflow" classname="a11y.spec.ts" time="2.106">
+</testcase>
+<testcase name="bp-lg (1024px) › UI-001 Home — WCAG 2.1 AA, no horizontal overflow" classname="a11y.spec.ts" time="2.626">
+</testcase>
+<testcase name="bp-lg (1024px) › UI-002 About — WCAG 2.1 AA, no horizontal overflow" classname="a11y.spec.ts" time="2.437">
+</testcase>
+<testcase name="bp-lg (1024px) › UI-003 Contact — WCAG 2.1 AA, no horizontal overflow" classname="a11y.spec.ts" time="2.99">
+</testcase>
+<testcase name="bp-lg (1024px) › UI-004 Pricing — WCAG 2.1 AA, no horizontal overflow" classname="a11y.spec.ts" time="3.16">
+</testcase>
+<testcase name="bp-lg (1024px) › UI-005 Login modal — WCAG 2.1 AA, no horizontal overflow" classname="a11y.spec.ts" time="3.415">
+</testcase>
+<testcase name="bp-lg (1024px) › UI-005 Register modal — WCAG 2.1 AA, no horizontal overflow" classname="a11y.spec.ts" time="3.971">
+</testcase>
+<testcase name="bp-lg (1024px) › UI-006/015 Dashboard (leadership) — WCAG 2.1 AA, no horizontal overflow" classname="a11y.spec.ts" time="3.152">
+</testcase>
+<testcase name="bp-lg (1024px) › UI-015 Dashboard (teacher) — WCAG 2.1 AA, no horizontal overflow" classname="a11y.spec.ts" time="3.225">
+</testcase>
+<testcase name="bp-lg (1024px) › UI-015 Dashboard (student) — WCAG 2.1 AA, no horizontal overflow" classname="a11y.spec.ts" time="2.841">
+</testcase>
+<testcase name="bp-lg (1024px) › UI-015 Dashboard (parent) — WCAG 2.1 AA, no horizontal overflow" classname="a11y.spec.ts" time="2.923">
+</testcase>
+<testcase name="bp-lg (1024px) › UI-015 Dashboard (platform operator) — WCAG 2.1 AA, no horizontal overflow" classname="a11y.spec.ts" time="2.478">
+</testcase>
+<testcase name="bp-lg (1024px) › UI-007 Classes — WCAG 2.1 AA, no horizontal overflow" classname="a11y.spec.ts" time="3.103">
+</testcase>
+<testcase name="bp-lg (1024px) › UI-008 Teachers — WCAG 2.1 AA, no horizontal overflow" classname="a11y.spec.ts" time="3.932">
+</testcase>
+<testcase name="bp-lg (1024px) › UI-009 Students — WCAG 2.1 AA, no horizontal overflow" classname="a11y.spec.ts" time="5.157">
+</testcase>
+<testcase name="bp-lg (1024px) › UI-009 Student detail — WCAG 2.1 AA, no horizontal overflow" classname="a11y.spec.ts" time="4.927">
+</testcase>
+<testcase name="bp-lg (1024px) › UI-010 Attendance — WCAG 2.1 AA, no horizontal overflow" classname="a11y.spec.ts" time="4.913">
+</testcase>
+<testcase name="bp-lg (1024px) › UI-010 Fill attendance — WCAG 2.1 AA, no horizontal overflow" classname="a11y.spec.ts" time="5.726">
+</testcase>
+<testcase name="bp-lg (1024px) › UI-011 Announcements — WCAG 2.1 AA, no horizontal overflow" classname="a11y.spec.ts" time="3.189">
+</testcase>
+<testcase name="bp-lg (1024px) › UI-012 Meetings — WCAG 2.1 AA, no horizontal overflow" classname="a11y.spec.ts" time="2.844">
+</testcase>
+<testcase name="bp-lg (1024px) › UI-013 Chat — WCAG 2.1 AA, no horizontal overflow" classname="a11y.spec.ts" time="3.164">
+</testcase>
+<testcase name="bp-lg (1024px) › UI-014 Video call — WCAG 2.1 AA, no horizontal overflow" classname="a11y.spec.ts" time="3.782">
+</testcase>
+<testcase name="bp-lg (1024px) › UI-016 Schedule — WCAG 2.1 AA, no horizontal overflow" classname="a11y.spec.ts" time="3.63">
+</testcase>
+<testcase name="bp-lg (1024px) › UI-017 Reports — WCAG 2.1 AA, no horizontal overflow" classname="a11y.spec.ts" time="4.044">
+</testcase>
+<testcase name="bp-lg (1024px) › UI-018 Settings (leadership) — WCAG 2.1 AA, no horizontal overflow" classname="a11y.spec.ts" time="4.131">
+</testcase>
+<testcase name="bp-lg (1024px) › UI-018 Settings (student) — WCAG 2.1 AA, no horizontal overflow" classname="a11y.spec.ts" time="2.917">
+</testcase>
+<testcase name="bp-lg (1024px) › UI-019 Unauthorized — WCAG 2.1 AA, no horizontal overflow" classname="a11y.spec.ts" time="2.975">
+</testcase>
+<testcase name="bp-lg (1024px) › UI-020 Not found — WCAG 2.1 AA, no horizontal overflow" classname="a11y.spec.ts" time="2.853">
+</testcase>
+<testcase name="bp-xl (1280px) › UI-001 Home — WCAG 2.1 AA, no horizontal overflow" classname="a11y.spec.ts" time="4.656">
+</testcase>
+<testcase name="bp-xl (1280px) › UI-002 About — WCAG 2.1 AA, no horizontal overflow" classname="a11y.spec.ts" time="4.304">
+</testcase>
+<testcase name="bp-xl (1280px) › UI-003 Contact — WCAG 2.1 AA, no horizontal overflow" classname="a11y.spec.ts" time="4.666">
+</testcase>
+<testcase name="bp-xl (1280px) › UI-004 Pricing — WCAG 2.1 AA, no horizontal overflow" classname="a11y.spec.ts" time="4.639">
+</testcase>
+<testcase name="bp-xl (1280px) › UI-005 Login modal — WCAG 2.1 AA, no horizontal overflow" classname="a11y.spec.ts" time="3.854">
+</testcase>
+<testcase name="bp-xl (1280px) › UI-005 Register modal — WCAG 2.1 AA, no horizontal overflow" classname="a11y.spec.ts" time="3.956">
+</testcase>
+<testcase name="bp-xl (1280px) › UI-006/015 Dashboard (leadership) — WCAG 2.1 AA, no horizontal overflow" classname="a11y.spec.ts" time="3.742">
+</testcase>
+<testcase name="bp-xl (1280px) › UI-015 Dashboard (teacher) — WCAG 2.1 AA, no horizontal overflow" classname="a11y.spec.ts" time="3.527">
+</testcase>
+<testcase name="bp-xl (1280px) › UI-015 Dashboard (student) — WCAG 2.1 AA, no horizontal overflow" classname="a11y.spec.ts" time="3.339">
+</testcase>
+<testcase name="bp-xl (1280px) › UI-015 Dashboard (parent) — WCAG 2.1 AA, no horizontal overflow" classname="a11y.spec.ts" time="3.386">
+</testcase>
+<testcase name="bp-xl (1280px) › UI-015 Dashboard (platform operator) — WCAG 2.1 AA, no horizontal overflow" classname="a11y.spec.ts" time="3.028">
+</testcase>
+<testcase name="bp-xl (1280px) › UI-007 Classes — WCAG 2.1 AA, no horizontal overflow" classname="a11y.spec.ts" time="3.077">
+</testcase>
+<testcase name="bp-xl (1280px) › UI-008 Teachers — WCAG 2.1 AA, no horizontal overflow" classname="a11y.spec.ts" time="3.274">
+</testcase>
+<testcase name="bp-xl (1280px) › UI-009 Students — WCAG 2.1 AA, no horizontal overflow" classname="a11y.spec.ts" time="4.523">
+</testcase>
+<testcase name="bp-xl (1280px) › UI-009 Student detail — WCAG 2.1 AA, no horizontal overflow" classname="a11y.spec.ts" time="3.874">
+</testcase>
+<testcase name="bp-xl (1280px) › UI-010 Attendance — WCAG 2.1 AA, no horizontal overflow" classname="a11y.spec.ts" time="3.656">
+</testcase>
+<testcase name="bp-xl (1280px) › UI-010 Fill attendance — WCAG 2.1 AA, no horizontal overflow" classname="a11y.spec.ts" time="5.253">
+</testcase>
+<testcase name="bp-xl (1280px) › UI-011 Announcements — WCAG 2.1 AA, no horizontal overflow" classname="a11y.spec.ts" time="3.566">
+</testcase>
+<testcase name="bp-xl (1280px) › UI-012 Meetings — WCAG 2.1 AA, no horizontal overflow" classname="a11y.spec.ts" time="4.15">
+</testcase>
+<testcase name="bp-xl (1280px) › UI-013 Chat — WCAG 2.1 AA, no horizontal overflow" classname="a11y.spec.ts" time="4.653">
+</testcase>
+<testcase name="bp-xl (1280px) › UI-014 Video call — WCAG 2.1 AA, no horizontal overflow" classname="a11y.spec.ts" time="3.128">
+</testcase>
+<testcase name="bp-xl (1280px) › UI-016 Schedule — WCAG 2.1 AA, no horizontal overflow" classname="a11y.spec.ts" time="3.334">
+</testcase>
+<testcase name="bp-xl (1280px) › UI-017 Reports — WCAG 2.1 AA, no horizontal overflow" classname="a11y.spec.ts" time="4.034">
+</testcase>
+<testcase name="bp-xl (1280px) › UI-018 Settings (leadership) — WCAG 2.1 AA, no horizontal overflow" classname="a11y.spec.ts" time="3.696">
+</testcase>
+<testcase name="bp-xl (1280px) › UI-018 Settings (student) — WCAG 2.1 AA, no horizontal overflow" classname="a11y.spec.ts" time="3.156">
+</testcase>
+<testcase name="bp-xl (1280px) › UI-019 Unauthorized — WCAG 2.1 AA, no horizontal overflow" classname="a11y.spec.ts" time="3.486">
+</testcase>
+<testcase name="bp-xl (1280px) › UI-020 Not found — WCAG 2.1 AA, no horizontal overflow" classname="a11y.spec.ts" time="2.88">
+</testcase>
+</testsuite>
+<testsuite name="flows.spec.ts" timestamp="2026-09-15T08:48:04.366Z" hostname="chromium" tests="8" failures="0" skipped="0" time="13.147" errors="0">
+<testcase name="UI-006 app shell › nav shows exactly the Teacher set, marks the active route, and a deep link outside it renders Unauthorized" classname="flows.spec.ts" time="1.838">
+</testcase>
+<testcase name="UI-006 app shell › profile menu is a disclosure that closes on Escape and offers no role switcher" classname="flows.spec.ts" time="1.422">
+</testcase>
+<testcase name="UI-006 app shell › below bp-lg the side nav is off-canvas and dismisses from the backdrop" classname="flows.spec.ts" time="1.55">
+</testcase>
+<testcase name="UI-006 app shell › a signed-out deep link lands on Home with the login modal open" classname="flows.spec.ts" time="1.119">
+</testcase>
+<testcase name="UI-005 login › success keeps the token out of web storage and script-readable cookies, then redirects to the dashboard" classname="flows.spec.ts" time="2.159">
+</testcase>
+<testcase name="UI-005 login › Escape closes the modal and focus stays trapped inside it while open" classname="flows.spec.ts" time="1.946">
+</testcase>
+<testcase name="UI-014 video call states in a real browser (fake ACS, Q-234) › connecting → connected → participant drop shows reconnecting → leave returns to rooms" classname="flows.spec.ts" time="1.57">
+</testcase>
+<testcase name="UI-003 contact › on-blur email check is announced; a valid submit toasts and resets the form" classname="flows.spec.ts" time="1.543">
+</testcase>
+</testsuite>
+</testsuites>
